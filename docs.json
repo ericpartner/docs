@@ -150,6 +150,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "User Guide",
+        "groups": [
+          {
+            "group": "Positions",
+            "pages": [
+              "user-guide/positions/retire-a-position"
+            ]
+          }
+        ]
       }
     ]
   },
