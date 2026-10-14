@@ -157,8 +157,14 @@
           {
             "group": "Positions",
             "pages": [
-              "user-guide/positions/retire-a-position"
+              "user-guide/positions/retire-a-position",
+              "user-guide/positions/relieve-an-employee",
+              "user-guide/positions/assign-a-job-family"
             ]
+          },
+          {
+            "group": "Readiness",
+            "pages": []
           }
         ]
       }
