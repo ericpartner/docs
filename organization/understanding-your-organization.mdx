@@ -27,7 +27,7 @@ A responsibility is a specific area of work someone must be able to perform, suc
 
 The chain is simple: **Position → Role → Responsibility → Employee**.
 
-When you assign an employee to a position, they automatically receive every role and responsibility attached to it. You don't assign anything individually; the structure does the work for you.
+A responsibility can also be attached directly to a position, skipping the role. Either way, when you assign an employee to a position, they automatically receive every responsibility attached to it. You don't assign anything individually; the structure does the work for you.
 
 ## Departments
 
@@ -54,7 +54,9 @@ To see readiness by team, you group the three positions into a **Café Delight �
 
 <AccordionGroup>
   <Accordion title="Do I have to set up roles, or can I attach responsibilities directly to positions?">
-    You need roles: responsibilities reach a position only through a role. Grouping related responsibilities into a role lets you attach the whole bundle to as many positions as need it, and update it in one place when anything changes.
+    You can do either. A responsibility can reach a position through a role, or you can attach it directly to the position. Use a role when a group of responsibilities is shared by several positions, so you define it once and update it in one place. Attach directly when a responsibility belongs to only one position and doesn't need a role around it.
+
+    Employees assigned to the position receive the responsibility either way. If the same responsibility ends up on a position both directly and through a role, the direct attachment is marked **Redundant**, and you can remove it.
   </Accordion>
   <Accordion title="If I change a role, does it update everywhere?">
     Yes. Roles are shared across positions. Add or remove a responsibility from a role and every position that includes it picks up the change automatically, along with every employee assigned to those positions.
