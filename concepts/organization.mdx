@@ -1,6 +1,6 @@
 ---
 title: "Organizational concepts"
-description: "Key organizational concepts in exIQtive: employees, positions, roles, responsibilities, assignments, commitment, importance, and FTE."
+description: "Key organizational concepts in exIQtive: employees, the six organizational objects and their shared codes, assignments, commitment, importance, and FTE."
 ---
 
 exIQtive describes what's expected of your employees with a small set of building blocks. This page defines each one and the rules that connect them.
@@ -11,17 +11,32 @@ An employee is any individual who works in your organization. Each employee has 
 
 ## Organizational objects
 
-exIQtive uses three building blocks, collectively called organizational objects:
+exIQtive uses six building blocks, collectively called organizational objects:
 
-- **Position**: the job someone holds
-- **Role**: a group of responsibilities attached to a position
-- **Responsibility**: a specific area of work someone must be able to perform
+| Object | What it is |
+| --- | --- |
+| **Position** | The job someone holds |
+| **Role** | A group of responsibilities attached to a position |
+| **Responsibility** | A specific area of work someone must be able to perform |
+| **Department** | An organizational unit that contains positions and may have a parent department |
+| **Job Family** | A grouping of positions by discipline (Engineering, Sales, Finance), with ordered levels for seniority |
+| **Job Category** | A grouping of positions that represent work of equal value |
 
-They connect in a chain: you attach Responsibilities to Roles, attach Roles to Positions, and assign Employees to Positions. Everything flows from that chain automatically.
+Positions, Roles, and Responsibilities connect in a chain: you attach Responsibilities to Roles, attach Roles to Positions, and assign Employees to Positions. Everything flows from that chain automatically. Departments, Job Families, and Job Categories classify positions; they don't change which responsibilities an employee receives.
 
 ### Organizational object codes
 
-Every Position, Role, and Responsibility in your account has a unique numeric code, shown as something like **#345**. Use these codes to search for and refer to specific objects precisely, which helps in larger organizations where names can be similar across teams.
+Every organizational object (Position, Role, Responsibility, Department, Job Family, and Job Category) has a unique numeric code, shown as something like **#345**. Use these codes to search for and refer to specific objects precisely, which helps in larger organizations where names can be similar across teams.
+
+The rules for codes are the same for all six object types:
+
+- **System-generated.** You never choose a code. exIQtive assigns the next number when you create the object.
+- **Shared numbering.** All six types draw from one counter per account, so no two objects in your account share a code, whatever their type. A Department and a Role can't both be #345.
+- **Permanent.** A code doesn't change when you rename, move, or retire the object, or when its status changes.
+- **Never reused.** A code is never given to another object, even after the original is retired or archived. Deleting a draft object doesn't release its code, so you may see gaps in the numbering. That's expected.
+- **Your account only.** Each account has its own numbering, so another account can also have a #345.
+
+Job Family levels don't have codes. A level is identified by its family and its position in the family's ladder.
 
 ## Position
 
@@ -94,6 +109,26 @@ Every responsibility has a clearly defined scope: what the person is trusted to 
 - Responsibilities reach employees through the Position → Role → Responsibility chain; you never assign a responsibility directly to an employee
 - The same responsibility can be attached to any number of roles
 - Each responsibility has a unique name in your account
+
+## Department
+
+A Department is an organizational unit that groups positions into a hierarchy mirroring your company's structure, such as _Company → Division → Team_. Departments can be nested to any depth and can contain positions, sub-departments, or both. A position belongs to only one department at a time.
+
+Departments are for navigation and reporting. They don't change which responsibilities an employee receives. The one exception is Fair Pay: a position without its own Performance Scorecard or Bonus Eligibility Criteria inherits them from its department. See [Departments](/organization/departments).
+
+## Job Family
+
+A Job Family groups positions by **discipline**, such as Engineering, Sales, Finance, or Operations. Each job family has an ordered set of **levels** that represent seniority within that discipline, from level 1 at the bottom of the ladder upward.
+
+A position is assigned to exactly one job family and exactly one level within it. To move a position to a different family, remove its current family first, then assign the new one. See [Assign a job family](/user-guide/positions/assign-a-job-family).
+
+## Job Category
+
+A Job Category groups positions that represent **work of equal value**, regardless of discipline. Where a job family answers "what kind of work is this, and how senior?", a job category answers "how much is this work worth?". The two are independent, so a position's family and category don't have to move together.
+
+<Note>
+  Job Families and Job Categories are turned on or off separately in **Account → Settings → Configuration → Jobs**. Both are off by default, and only Owners and Co-Owners can change the setting. Turning one off hides it but keeps your data, which reappears when you turn it back on.
+</Note>
 
 ## Assignment importance
 
