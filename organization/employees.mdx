@@ -1,0 +1,121 @@
+---
+title: "Employees"
+description: "Add employees, manage their status and portal access, and set their availability in exIQtive."
+---
+
+Every employee in exIQtive has two independent things going on at once: their **Employee Status** (where they are in the employment lifecycle) and their **Access Status** (whether they can log in to the portal and see their Readiness). This page explains both, and how to manage employees day to day.
+
+Go to **Organization → Employees** to manage your employees.
+
+## Employee Status and Access Status
+
+- **Employee Status** — where they are in their employment lifecycle: Draft, Active, Terminated, or Archived.
+- **Access Status** — whether they can log in to the portal and see their Readiness.
+
+You manage these separately. An employee can be Active but have no portal access because you haven't given it to them yet. An employee can have access while still in Draft because you set up their login before activating them. They're independent by design, so you can handle each at the right moment.
+
+## Employee Status
+
+Employee Status controls whether an employee can be assigned to positions and whether they count as active in the organization.
+
+| Status | What it means |
+| --- | --- |
+| **Draft** | Just created. Can't be assigned to a position yet, and can still be deleted. |
+| **Active** | Ready to work. Can be assigned to positions and inherits responsibilities through them. |
+| **Terminated** | No longer active and removed from all position assignments. Can be reactivated or archived. |
+| **Archived** | Long-term storage. All history is preserved, and the employee is no longer assignable. |
+
+## Access Status
+
+Access Status tells you whether an employee can log in to the portal and see their Responsibilities, badges, and Readiness. Giving access is a deliberate step you take when the employee is ready to use the platform.
+
+| Dot color | What it means |
+| --- | --- |
+| Empty | No access given yet. You haven't sent an invitation. |
+| Blue | Invitation sent. Waiting for the employee to sign up. |
+| Green | Signed up. The employee can log in. |
+| Red | Access suspended. The employee is temporarily blocked from logging in. |
+| Black | Email blocked by the system administrator across all accounts. |
+
+## Add a new employee
+
+<Steps>
+  <Step title="Open Employees">
+    Go to **Organization → Employees**.
+  </Step>
+  <Step title="Add the employee">
+    Click **+ Add Employee** and enter the employee's name.
+  </Step>
+  <Step title="Save">
+    Save the new employee.
+  </Step>
+</Steps>
+
+The employee is created in **Draft** status with no access. From there you can activate them, give them access, and assign them to a position, in whatever order suits your workflow.
+
+## Employee actions
+
+All actions are in the three-dot menu (⋯) on the right of the employee's row.
+
+| Action | Available when | What it does |
+| --- | --- | --- |
+| **Delete** | Draft only | Permanently removes the employee. Once activated, use Terminate instead. |
+| **Activate** | Draft only | Makes the employee Active so they can be assigned to positions. |
+| **Terminate** | Active only | Marks the employee Terminated, removes them from their position assignments, and automatically suspends their portal access. |
+| **Reactivate** | Terminated only | Returns the employee to Active. Doesn't restore position assignments or portal access; do those separately. |
+| **Archive** | Terminated only | Moves the employee to long-term storage. All history is preserved. |
+| **Edit** | Always | Updates the employee's name. |
+| **Change Picture** | Always | Uploads a profile picture for the employee. |
+| **Give Access** | No access yet | Starts the invitation flow. Enter an email address and the employee receives a signup invitation. |
+| **Suspend Access** | Access is active | Immediately stops the employee from logging in. Their account is preserved and can be restored. |
+
+## Employee availability
+
+Every employee has an availability measured in FTE (Full-Time Equivalent): 1.0 for full-time, 0.5 for part-time. Availability determines which positions they can be assigned to.
+
+To change it, click the availability icon next to the employee's name. You can change availability any time the employee is in Draft or Active status, **as long as they're not currently allocated to a Primary Position**. If they are, relieve them from that position first.
+
+| Availability | FTE | Currently allocated |
+| --- | --- | --- |
+| Full-time, unallocated | 1.0 | 0 |
+| Full-time, fully allocated | 1.0 | 1.0 |
+| Part-time, unallocated | 0.5 | 0 |
+| Part-time, fully allocated | 0.5 | 0.5 |
+| External helper | 0 | Can't be assigned to positions |
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="What's the difference between Employee Status and Access Status?">
+    Employee Status is about the employee's place in the organization: whether they can hold a position and receive responsibilities. Access Status is about their login: whether they can use the portal. You can have an Active employee with no portal access, or a Draft employee with an invitation already sent. Each is managed independently so you can set things up at your own pace.
+  </Accordion>
+  <Accordion title="Can I delete an employee I've already activated?">
+    No. Once an employee is activated, deletion isn't available. Use Terminate instead, which preserves all their history. If you made a mistake and genuinely need to remove them, contact your Account Owner.
+  </Accordion>
+  <Accordion title="Why can't I change the employee's availability right now?">
+    If the employee is currently allocated to a Primary Position, relieve them from that assignment first. Their availability has to match what the position requires, and changing it while they're allocated could break the assignment.
+  </Accordion>
+  <Accordion title="What happens to an employee's responsibilities when I terminate them?">
+    They lose all their responsibilities immediately, because responsibilities flow through Position → Role → Responsibility and terminating removes them from their positions. Their badge history and Readiness records are fully preserved.
+  </Accordion>
+  <Accordion title="The blue invitation dot has been showing for a week. What should I do?">
+    Follow up with the employee directly. The invitation may have landed in spam, or the email address may have a typo. Use **Resend Invite** on the [Account Users](/account/account-users) page (**Settings → Users**) to send a fresh one. If the address is wrong, use **Change Email** on the same page to correct it.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Key organizational concepts" icon="sitemap" href="/concepts/organization">
+    The definitions behind employees, positions, and roles.
+  </Card>
+  <Card title="Employee/position assignments" icon="user-plus" href="/organization/employee-position-assignments">
+    How to assign employees and how FTE matching works.
+  </Card>
+  <Card title="Positions" icon="briefcase" href="/organization/positions">
+    Create and manage the positions employees fill.
+  </Card>
+  <Card title="Account users" icon="users" href="/account/account-users">
+    Resend invites and change login emails.
+  </Card>
+</CardGroup>

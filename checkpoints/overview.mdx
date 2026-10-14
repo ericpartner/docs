@@ -1,0 +1,133 @@
+---
+title: "Checkpoints"
+description: "What checkpoints are, how they make up a responsibility's inspection checklist, and how to manage them one at a time or in bulk."
+---
+
+A checkpoint is a single, verifiable unit of competency within a responsibility's checklist. Each checkpoint defines something an employee must be able to do: not what they've learned, but what they can demonstrably perform.
+
+## What is a checkpoint?
+
+Every checkpoint is written with one of four fixed prefixes, which sets the type of evidence required:
+
+| Prefix | Meaning |
+| --- | --- |
+| **CAN** | The employee can perform the task when asked |
+| **DOES** | The employee performs the task consistently as part of their normal work |
+| **DEMONSTRATED** | The employee has shown the capability in an observed setting |
+| **PROVED** | The employee has provided formal proof of the capability |
+
+A checkpoint can also include a **microlearning**: a short video or article that teaches the employee what they need to know before being assessed. Depending on how the checkpoint is set up, it can also have a quiz, an inspection, or both.
+
+## What checkpoints are used for
+
+Checkpoints are the building blocks of Readiness. Together they form the **inspection checklist** for a responsibility: the set of criteria a Coach uses to certify that an employee is ready.
+
+Checkpoints serve three purposes:
+
+1. **Learning**: the microlearning prepares the employee before inspection.
+2. **Assessment**: the criteria define exactly what the Coach inspects for.
+3. **Evidence**: once passed, a checkpoint contributes to the employee's Readiness for that responsibility and becomes part of the permanent record.
+
+Within a responsibility, checkpoints are organized by Readiness level (Apprentice → Proficient → Coach → Architect) and by sequence within each level. Employees progress through them in order.
+
+## Checkpoint lifecycle
+
+| Status | What it means |
+| --- | --- |
+| **Draft** | Being created or edited. Not visible to employees. |
+| **Active** | Published and live. Employees can be assessed against it. |
+| **Retired** | Removed from active use but preserved. Can be reactivated. |
+| **Archived** | Fully decommissioned. Can be unarchived back to Retired. |
+
+## Checkpoint operations
+
+### Create a checkpoint
+
+From a responsibility's checklist, click **+ Add Checkpoint**. Choose the type of microlearning to attach, or choose **No learning content needed** for an inspection-only checkpoint.
+
+The checkpoint is created in Draft and isn't visible to employees until you activate it. See [Editing a checkpoint](/checkpoints/editing-a-checkpoint) for the starting options in detail.
+
+### Edit a checkpoint
+
+Open the checkpoint in the checklist and click **Edit** to take the edit lock. While it's in Draft you can update the criteria, the microlearning, the quiz, and the inspection.
+
+Only one person can hold the edit lock at a time. If someone else is editing, the checkpoint shows as locked.
+
+### Activate a checkpoint
+
+When a Draft checkpoint is complete, click **Activate** to publish it. It becomes Active and visible to employees and Coaches.
+
+**Activate** is only available when the checkpoint meets all requirements: complete criteria, and microlearning ready if it's required.
+
+### Publish changes to an active checkpoint
+
+To update an Active checkpoint, start a draft of your changes, make your edits, then click **Publish**. You'll be asked for a short note describing what changed, and whether existing employee inspections should be marked obsolete. See [Editing a checkpoint](/checkpoints/editing-a-checkpoint#landing-on-the-checkpoint-editor) for how proposed changes work.
+
+### Retire a checkpoint
+
+**Retire** removes a checkpoint from active use. It's no longer used in new inspections, but its history is preserved. You can **Reactivate** a Retired checkpoint.
+
+### Archive a checkpoint
+
+**Archive** a Retired checkpoint to fully decommission it. You can **Unarchive** it back to Retired. There's no direct path from Archived to Active.
+
+### Discard a draft checkpoint
+
+**Discard Draft** permanently deletes a checkpoint that's still in Draft. This isn't available while another user holds the edit lock.
+
+<Warning>
+Discarding a draft checkpoint can't be undone.
+</Warning>
+
+### Move a checkpoint to another responsibility
+
+You can move a checkpoint to a different responsibility while keeping its full history, status, and existing inspection records. Open the checkpoint's menu and select **Move to Responsibility**.
+
+### Change a checkpoint's level or order
+
+In a responsibility's checklist, drag and drop checkpoints to reorder them within their Readiness level. To move a checkpoint to a different level (for example, from Apprentice to Proficient), use the level selector on the checkpoint header.
+
+## Bulk actions
+
+Bulk actions let you apply the same operation to many checkpoints at once, which saves time on large checklists.
+
+### Select multiple checkpoints
+
+In the responsibility checklist view, check the box next to each checkpoint you want. A selection toolbar appears showing how many are selected and which bulk actions are available.
+
+### Available bulk actions
+
+| Bulk action | Applies to | What it does |
+| --- | --- | --- |
+| **Retire** | Active checkpoints | Retires all selected Active checkpoints |
+| **Reactivate** | Retired checkpoints | Reactivates all selected Retired checkpoints |
+| **Change Level** | Draft or Active checkpoints | Moves all selected checkpoints to a different Readiness level |
+| **Move to Responsibility** | Draft, Active, or Retired checkpoints | Moves all selected checkpoints to another responsibility |
+| **Archive** | Retired checkpoints | Archives all selected Retired checkpoints |
+
+<Note>
+A bulk action only applies to checkpoints whose status allows it. Any selected checkpoint that isn't eligible is skipped, and you'll see a summary when the operation finishes.
+</Note>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Editing a checkpoint" icon="pen-to-square" href="/checkpoints/editing-a-checkpoint">
+    The checkpoint editor, tab by tab.
+  </Card>
+  <Card title="Quizzes for checkpoints" icon="circle-question" href="/checkpoints/quizzes">
+    Build and generate checkpoint quizzes.
+  </Card>
+  <Card title="Inspecting a responsibility" icon="clipboard-check" href="/coaching/inspecting-a-responsibility">
+    How Coaches certify employees.
+  </Card>
+  <Card title="The Badge Ladder" icon="stairs" href="/user-guide/readiness/badge-ladder">
+    Novice through Architect.
+  </Card>
+  <Card title="Managing responsibilities" icon="list-check" href="/responsibilities/managing-responsibilities">
+    Lifecycle and actions for responsibilities.
+  </Card>
+  <Card title="Responsibilities Catalog" icon="book" href="/responsibilities/catalog">
+    Every responsibility in your account.
+  </Card>
+</CardGroup>

@@ -1,0 +1,220 @@
+---
+title: "Positions"
+description: "Create, activate, and manage positions, attach roles, and assign employees in exIQtive."
+---
+
+A **Position** represents a job in your organization, such as *HR Manager*, *Team Leader*, or *Finance Director*. Positions are the bridge between people and work: employees are assigned to positions, and through those positions they inherit roles and responsibilities.
+
+Positions control:
+
+- Which responsibilities an employee receives
+- How work is allocated (FTE, availability, vacancy)
+- How readiness is measured
+
+For the underlying definitions, see [Key organizational concepts](/concepts/organization).
+
+## How positions work
+
+Positions sit at the center of the exIQtive structure:
+
+**Employee → Position → Role → Responsibility → Checkpoints → Readiness**
+
+In practice:
+
+1. A position is created and activated.
+2. One or more roles are attached to the position.
+3. Each role contains responsibilities.
+4. An employee is assigned to the position.
+5. The employee automatically receives every responsibility linked to that position.
+
+This keeps things consistent and avoids manual, one-off assignments.
+
+## Position lifecycle
+
+**Draft → Active → Retired → Archived**
+
+| Status | What it means | What you can do |
+| --- | --- | --- |
+| **Draft** | Newly created and not yet in use. Can't be assigned to employees. | Rename, Attach Roles, Delete, Activate |
+| **Active** | Live and operational. | Assign Employees, Attach or manage Roles, Rename, Retire |
+| **Retired** | Removed from active use. Existing assignments are retired and data is preserved. Can't be assigned. | Rename, Attach Roles, Reactivate, Archive |
+| **Archived** | Stored for historical reference only. Can't be assigned. | Unarchive (returns the position to Retired) |
+
+## Add a new position
+
+<Steps>
+  <Step title="Open Positions">
+    Go to **Organization → Positions**.
+  </Step>
+  <Step title="Add the position">
+    Click **Add Position** and enter the position name.
+  </Step>
+  <Step title="Save">
+    Click **Save**.
+  </Step>
+</Steps>
+
+The position is created in **Draft**. While in Draft it can't be assigned to employees.
+
+{/* MEDIA TODO: screenshots of the Positions list with the Add Position button, and the Add Position dialog. */}
+
+## Position actions
+
+All actions are in the three-dot menu on the right side of the position row.
+
+### Activate
+
+Available in Draft. Moves the position to Active so it can be assigned to employees and used to distribute responsibilities. An Active position can't go back to Draft.
+
+{/* MEDIA TODO: screenshot of the Activate confirmation dialog. */}
+
+### Rename
+
+Available at all times. Updates the position name everywhere it's used. No assignments are affected.
+
+{/* MEDIA TODO: screenshot of the Rename dialog. */}
+
+### Attach Role
+
+Available at all times. Opens a dialog to attach an existing Role, or to create a new Role and attach it. A position needs at least one Role to distribute responsibilities to employees. See [Attach roles to positions](#attach-roles-to-positions) below.
+
+### Retire
+
+Available when Active. Removes the position from active use and retires all current employee assignments.
+
+{/* MEDIA TODO: screenshot of the Retire confirmation dialog. */}
+
+### Reactivate
+
+Available when Retired. Returns the position to Active so it can be assigned again.
+
+{/* MEDIA TODO: screenshot of the Reactivate confirmation dialog. */}
+
+### Archive
+
+Available when Retired. Moves the position into long-term storage. Archived positions can't be assigned.
+
+### Unarchive
+
+Available when Archived. Returns the position to Retired. From there you can reactivate it.
+
+### Clone
+
+Available at all times. Creates a new position with the same roles attached and no employees assigned. Handy when you need several similar positions.
+
+{/* MEDIA TODO: screenshot of the Clone position dialog. */}
+
+### Delete
+
+Available only in Draft. Permanently deletes the position.
+
+<Warning>
+Deleting a position can't be undone.
+</Warning>
+
+{/* MEDIA TODO: screenshot of the Delete confirmation dialog. */}
+
+## Attach roles to positions
+
+A position needs at least one Role attached before it can distribute responsibilities to employees.
+
+### See how many roles are attached
+
+The Positions table shows how many Roles are attached to each position. A position with zero roles can't give any responsibilities to its employee.
+
+{/* MEDIA TODO: screenshot of the Positions table showing the Roles count column. */}
+
+### Open a position to manage roles
+
+{/* CONTENT TODO: UI steps pending walkthrough */}
+
+{/* MEDIA TODO: screenshots of opening a position and its Roles tab. */}
+
+### Attach an existing role
+
+{/* CONTENT TODO: UI steps pending walkthrough */}
+
+{/* MEDIA TODO: four screenshots of the Attach Role dialog, selecting an existing role, and the confirmation. */}
+
+### Create a new role and attach it
+
+{/* CONTENT TODO: UI steps pending walkthrough */}
+
+{/* MEDIA TODO: screenshots of the create-and-attach role dialog. */}
+
+### View responsibilities under a role
+
+{/* CONTENT TODO: UI steps pending walkthrough */}
+
+{/* MEDIA TODO: screenshot of a position's role expanded to show its responsibilities. */}
+
+## Assign employees to positions
+
+Each employee holds **one Primary Position** at a time. For full assignment rules and FTE matching, see [Employee/position assignments](/organization/employee-position-assignments).
+
+<Steps>
+  <Step title="Find the employee">
+    Find the employee in **Organization → Employees**.
+  </Step>
+  <Step title="Start the assignment">
+    Click **Assign to Primary**.
+  </Step>
+  <Step title="Pick a position">
+    Select a vacant position. Only positions with enough vacancy are shown.
+  </Step>
+  <Step title="Confirm">
+    Confirm the assignment.
+  </Step>
+</Steps>
+
+An employee can be assigned to a position only when:
+
+- The employee has availability
+- The position has enough vacancy
+- The employee isn't an External Helper
+- The employee doesn't already occupy another Primary Position
+
+## Rules and constraints
+
+- A position must be **Active** to assign employees.
+- An employee can have **only one Primary Position**.
+- External Helpers (0 FTE) can't occupy positions.
+- Positions distribute responsibilities **only through roles**.
+- Deleting a position is permanent and only possible in Draft.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Why can't I assign an employee to this position?">
+    The position may be inactive or full, or the employee may not have enough availability.
+  </Accordion>
+  <Accordion title="Why doesn't the employee see any responsibilities?">
+    The position may have no roles attached, or its roles may not contain active responsibilities.
+  </Accordion>
+  <Accordion title="Can I attach responsibilities directly to a position?">
+    No. Responsibilities are always attached through roles.
+  </Accordion>
+  <Accordion title="What happens if I change a position's name?">
+    The name updates everywhere the position appears. No assignments are affected.
+  </Accordion>
+  <Accordion title="Why clone a position instead of creating a new one?">
+    Cloning saves time when several positions share the same role structure.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Employee/position assignments" icon="user-plus" href="/organization/employee-position-assignments">
+    Assignment types, rules, and FTE matching.
+  </Card>
+  <Card title="Roles" icon="layer-group" href="/organization/roles">
+    Build the roles you attach to positions.
+  </Card>
+  <Card title="Retire a position" icon="box-archive" href="/user-guide/positions/retire-a-position">
+    Take a position out of active use.
+  </Card>
+  <Card title="Assign a job family" icon="tags" href="/user-guide/positions/assign-a-job-family">
+    Group positions into job families.
+  </Card>
+</CardGroup>

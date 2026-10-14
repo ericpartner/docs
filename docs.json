@@ -29,11 +29,23 @@
         "groups": [
           {
             "group": "Welcome",
-            "pages": ["index"]
+            "pages": [
+              "index",
+              "get-started/what-is-exiqtive",
+              "get-started/who-its-for",
+              "get-started/administrator-quickstart",
+              "get-started/employee-quickstart",
+              "get-started/keys-for-success"
+            ]
           },
           {
             "group": "Key concepts",
-            "pages": []
+            "pages": [
+              "concepts/readiness",
+              "concepts/organization",
+              "concepts/personas",
+              "concepts/on-readiness"
+            ]
           }
         ]
       },
@@ -42,24 +54,32 @@
         "groups": [
           {
             "group": "Overview",
-            "pages": []
+            "pages": [
+              "organization/understanding-your-organization",
+              "organization/organizational-tree"
+            ]
           },
           {
             "group": "Employees",
             "pages": [
+              "organization/employees",
+              "organization/employee-position-assignments",
               "user-guide/positions/relieve-an-employee"
             ]
           },
           {
             "group": "Positions",
             "pages": [
+              "organization/positions",
               "user-guide/positions/retire-a-position",
               "user-guide/positions/assign-a-job-family"
             ]
           },
           {
             "group": "Roles and departments",
-            "pages": []
+            "pages": [
+              "organization/roles"
+            ]
           },
           {
             "group": "Fair Reward",
@@ -73,25 +93,43 @@
           {
             "group": "Readiness",
             "pages": [
+              "readiness/overview",
               "user-guide/readiness/how-readiness-is-calculated",
-              "user-guide/readiness/badge-ladder"
+              "user-guide/readiness/badge-ladder",
+              "readiness/communicating-readiness"
             ]
           },
           {
             "group": "Responsibilities",
-            "pages": []
+            "pages": [
+              "responsibilities/managing-responsibilities",
+              "responsibilities/catalog"
+            ]
           },
           {
             "group": "Checkpoints and learning",
-            "pages": []
+            "pages": [
+              "checkpoints/overview",
+              "checkpoints/editing-a-checkpoint",
+              "checkpoints/editing-an-article",
+              "checkpoints/quizzes"
+            ]
           },
           {
             "group": "Coaches and Architects",
-            "pages": []
+            "pages": [
+              "coaching/what-is-a-coach",
+              "coaching/coach-operations",
+              "coaching/inspecting-a-responsibility",
+              "coaching/what-is-an-architect",
+              "coaching/architect-operations"
+            ]
           },
           {
             "group": "IQ",
-            "pages": []
+            "pages": [
+              "iq/ask-iq"
+            ]
           }
         ]
       },
@@ -100,11 +138,20 @@
         "groups": [
           {
             "group": "Roles and permissions",
-            "pages": []
+            "pages": [
+              "account/roles-and-permissions",
+              "account/account-owner",
+              "account/co-owner",
+              "account/administrator",
+              "account/orm",
+              "account/account-users"
+            ]
           },
           {
             "group": "Notifications",
-            "pages": []
+            "pages": [
+              "account/email-notifications"
+            ]
           }
         ]
       }

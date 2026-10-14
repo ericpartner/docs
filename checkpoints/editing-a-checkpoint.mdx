@@ -1,0 +1,82 @@
+---
+title: "Editing a checkpoint"
+description: "How the checkpoint editor works: starting options, the Video/Article, Quiz, and Inspection tabs, versions, and publishing changes."
+---
+
+This page walks through the checkpoint editor itself: what changes depending on how a checkpoint starts, and how each tab works. For checkpoint statuses and other operations (Retire, Archive, Move, bulk actions), see [Checkpoints](/checkpoints/overview). For the article writing tools, see [Editing an article](/checkpoints/editing-an-article).
+
+## Landing on the checkpoint editor
+
+You reach the same editor two ways, depending on whether the checkpoint already exists:
+
+- **New checkpoint**: creating a checkpoint lands you on it in Draft, with a single editing surface. Nothing is visible to employees until you click **Activate**.
+- **Existing Active checkpoint**: open it and click **Propose Changes** to get a two-tab view, **Active Checkpoint** and **Proposed Changes**. Make your edits on the Proposed Changes side; employees keep seeing the current Active version until you click **Publish**. Use **Copy content from the active Checkpoint** to start from what's already live instead of from scratch.
+
+Click **Save** to save as you go.
+
+<Warning>
+Changes aren't saved automatically. Save periodically if you're editing over a longer session.
+</Warning>
+
+Only one person can hold the edit lock at a time. If someone else is already editing, you'll see who (with a live avatar) and can ask to take over.
+
+## Choosing how the checkpoint starts
+
+When you create a checkpoint, you pick one of four starting points:
+
+<AccordionGroup>
+  <Accordion title="Start with a Video" icon="video">
+    Upload a video of up to 5 minutes. The editor opens once it finishes processing.
+  </Accordion>
+  <Accordion title="Start with an Article" icon="file-lines">
+    Write the microlearning directly in exIQtive's built-in editor. See [Editing an article](/checkpoints/editing-an-article) for the writing and formatting tools.
+  </Accordion>
+  <Accordion title="No learning content needed" icon="clipboard-check">
+    Skip microlearning and go straight to the inspection criteria. You can add microlearning later from within the checkpoint. This option includes a note field for prep instructions to the employee.
+  </Accordion>
+  <Accordion title="Task an employee to upload a video" icon="user-plus">
+    Assign the video upload to an employee instead of doing it yourself. The checkpoint waits in a pending-upload state, with reminders, until they deliver it.
+  </Accordion>
+</AccordionGroup>
+
+## The three tabs: Video/Article, Quiz, Inspection
+
+Inside the editor, content is organized into up to three tabs. A mode setting on the checkpoint controls which tabs apply: **Both** (quiz and inspection), **Skip inspection**, or **Skip quiz**.
+
+- **Video/Article**: the microlearning itself. For a video, this is also where you generate and manage an AI-suggested breakdown (chapters or steps) from the footage once it's ready.
+- **Quiz**: the multiple-choice questions an employee answers after completing the microlearning. See [Quizzes for checkpoints](/checkpoints/quizzes).
+- **Inspection**: the criteria a Coach checks off while observing the employee do the work.
+
+Each tab shows a validity indicator, so you can see at a glance whether it has what it needs before you activate or publish.
+
+## Version history
+
+Every time you activate or publish, exIQtive creates a new version. Open the version history to see past versions, the publish note for each, and an automatically generated summary of what changed.
+
+## Activate vs. publish
+
+| Action | When you use it | What happens |
+| --- | --- | --- |
+| **Activate** | The first time, on a brand-new Draft | Creates version 1 and makes the checkpoint live |
+| **Publish** | On the Proposed Changes side of an existing checkpoint | Adds the next version; employees see the update with no interruption |
+
+## Discarding your edits
+
+To throw away what you've started, use **Discard Draft** (or the equivalent on Proposed Changes):
+
+- For a checkpoint that was never activated, this deletes it outright.
+- For proposed changes to an Active checkpoint, it drops your edits and leaves the live version untouched.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Checkpoints" icon="list-check" href="/checkpoints/overview">
+    Statuses, operations, and bulk actions.
+  </Card>
+  <Card title="Editing an article" icon="file-lines" href="/checkpoints/editing-an-article">
+    Writing and formatting tools.
+  </Card>
+  <Card title="Quizzes for checkpoints" icon="circle-question" href="/checkpoints/quizzes">
+    Add or generate quiz questions.
+  </Card>
+</CardGroup>

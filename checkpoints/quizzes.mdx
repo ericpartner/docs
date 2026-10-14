@@ -1,0 +1,105 @@
+---
+title: "Quizzes for checkpoints"
+description: "Add, generate, and edit the multiple-choice quiz that checks an employee understood a checkpoint's microlearning."
+---
+
+A quiz is a short set of multiple-choice questions attached to a checkpoint. It tests whether an employee understood the checkpoint's microlearning (the video or article) before they're inspected.
+
+## What is a checkpoint quiz?
+
+A quiz holds **up to 5 questions**. Each question has several answer options, with at least one marked correct.
+
+The checkpoint's **To Pass requires** setting decides how the quiz is used:
+
+| To Pass requires | What it means |
+| --- | --- |
+| **Quiz and Inspection** | The employee must pass the quiz and the Coach's inspection |
+| **Quiz Only** | Passing the quiz is enough |
+| **Inspection Only** | No quiz is used |
+
+## Where to find the quiz
+
+<Steps>
+  <Step title="Open the checkpoint">
+    Open the checkpoint in a responsibility's checklist.
+  </Step>
+  <Step title="Take the edit lock">
+    Click **Edit**. Only one person can edit a checkpoint at a time.
+  </Step>
+  <Step title="Open the Quiz tab">
+    If the quiz has no questions yet, you'll see **No questions found** with two options: **Add Question** and **Suggest**.
+  </Step>
+</Steps>
+
+<Note>
+On an Active checkpoint, quiz changes are made under **Proposed Changes** and take effect when you publish. See [Editing a checkpoint](/checkpoints/editing-a-checkpoint).
+</Note>
+
+## Generate a quiz with Suggest
+
+**Suggest** asks IQ to write the questions for you from the checkpoint's microlearning. It reads the video or the article, including any images in an article.
+
+<Steps>
+  <Step title="Click Suggest">
+    On the Quiz tab, click **Suggest**.
+  </Step>
+  <Step title="Let IQ work">
+    A thinking banner replaces the questions while IQ works, and you can watch it reason through the content.
+  </Step>
+  <Step title="Review every question">
+    The new questions appear as normal question cards. Edit or delete anything that's wrong, unclear, or not what you want to test.
+  </Step>
+</Steps>
+
+<Warning>
+**Suggest replaces the existing questions.** If the quiz already has questions, Suggest clears them and shows only the new ones. Add any questions you want to keep by hand afterward, or edit the new ones.
+</Warning>
+
+### While IQ is generating
+
+- **Save Changes** is disabled.
+- The checkpoint's **⋮** menu shows a lock icon, and no checkpoint actions are available until generation finishes.
+
+### If generation fails
+
+A red banner appears with **Retry**. Nothing is saved when generation fails: an empty quiz stays empty, and existing questions are untouched. Click **Retry** to try again, or **Exit Edit** to leave without generating.
+
+## Review and edit questions
+
+Each question is a card on the Quiz tab. Correct answers are marked with a check.
+
+| To do this | Do this |
+| --- | --- |
+| **Edit** a question or its answers | Click the pencil icon on the card |
+| **Delete** a question | Click the trash icon on the card and confirm |
+| **Reorder** questions | Drag a card by its handle on the left |
+| **Add** a question yourself | Click **Add Question**, write the question and answers, and mark the correct answer(s) |
+| **Delete the whole quiz** | Open the menu next to **Suggest** and choose **Delete quiz** |
+
+### The 5-question limit
+
+Once a quiz has 5 questions, **Add Question** is disabled and shows "You have reached the maximum number of questions". Delete a question to make room.
+
+## Tips for a good quiz
+
+- **Finish the microlearning first.** Suggest can only work from what the video or article actually teaches.
+- **Treat Suggest as a first draft.** You're accountable for the questions employees are tested on.
+- **Test understanding, not memory of wording.** If a question can be answered without watching the video, rewrite or delete it.
+- **Run Suggest again** if the first set misses the point, remembering that it replaces what's there.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Checkpoints" icon="list-check" href="/checkpoints/overview">
+    Statuses, operations, and bulk actions.
+  </Card>
+  <Card title="Editing a checkpoint" icon="pen-to-square" href="/checkpoints/editing-a-checkpoint">
+    The checkpoint editor, tab by tab.
+  </Card>
+  <Card title="Inspecting a responsibility" icon="clipboard-check" href="/coaching/inspecting-a-responsibility">
+    What happens after the quiz.
+  </Card>
+  <Card title="The Badge Ladder" icon="stairs" href="/user-guide/readiness/badge-ladder">
+    Novice through Architect.
+  </Card>
+</CardGroup>
