@@ -1,0 +1,72 @@
+---
+title: "How Readiness is calculated"
+description: "How badges and importance weights roll up into role, employee, and organizational Readiness."
+---
+
+Readiness is measured from 0% to 150%. Where you land tells you how capable and independent you are.
+
+- **0%-50%, Developing:** you're still learning and need support.
+- **51%-100%, Competent:** you can do the work, with growing independence.
+- **101%-150%, Expert:** you can coach others or define the standard.
+
+## Badge levels
+
+Your Readiness for each Responsibility comes from the badge you hold for it.
+
+| Badge | Readiness | What it means |
+| --- | --- | --- |
+| Novice (no badge) | 0% | Not yet certified |
+| Apprentice | 50% | Can perform, but needs supervision |
+| Proficient | 100% | Can perform independently |
+| Coach | 125% | Can inspect and certify others |
+| Architect | 150% | Can define the standard and train Coaches |
+
+Only current badges count. An Expired or Removed badge contributes 0%. See [The Badge Ladder](/user-guide/readiness/badge-ladder).
+
+## Importance: how much each Responsibility counts
+
+Each Responsibility has an importance level that weights the calculation.
+
+| Importance | Weight | What it means |
+| --- | --- | --- |
+| Very important | 3 | Critical to the role, the biggest pull on your score |
+| Important | 2 | Contributes significantly |
+| Somewhat important | 1 | Nice to have |
+| Not currently relevant | 0 | Excluded from the calculation |
+
+Your Responsibilities are listed from highest to lowest potential impact, so you always know where to focus.
+
+## The roll-up
+
+<Steps>
+  <Step title="Role Readiness">
+    The weighted average of your Readiness across all Responsibilities in the role.
+  </Step>
+  <Step title="Employee Readiness">
+    The weighted average across all roles in your position. With multiple positions, role readiness is calculated per position, then averaged across positions.
+  </Step>
+  <Step title="Organizational Readiness">
+    The weighted average of Employee Readiness across all positions. A vacant position contributes 0%, so filling vacancies matters as much as training people.
+  </Step>
+</Steps>
+
+## Badges vs. active assignments
+
+A badge stays on your record after it's issued, even if you're reassigned away from that Responsibility. But your Readiness score only counts badges for Responsibilities you're **currently assigned** to. That's why your badge count and your Readiness percentage can differ.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Why is my Readiness lower than I expected?">
+    Usually your highest-importance Responsibilities have low badge levels. A Novice badge on a Very important Responsibility pulls the score down far more than one on a Somewhat important Responsibility.
+  </Accordion>
+  <Accordion title="What if a Responsibility is set to importance 0?">
+    It's excluded from scoring. You're still assigned and expected to learn it, but it won't affect your percentage until the importance is raised.
+  </Accordion>
+  <Accordion title="If my badge expires, does Readiness drop immediately?">
+    Yes, an expired badge counts as 0%. Automatic expiry is processed overnight, so the drop shows the next day. A badge removed manually by the ORM drops immediately.
+  </Accordion>
+  <Accordion title="Why is a vacant position 0%?">
+    A position is only as ready as the person in it. No employee means no readiness to measure, and the score reflects that gap honestly.
+  </Accordion>
+</AccordionGroup>
