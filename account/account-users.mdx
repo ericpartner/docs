@@ -1,0 +1,159 @@
+---
+title: "Account users"
+description: "Manage who can sign in to your exIQtive account: statuses, permission levels, inviting users, and giving employees access."
+---
+
+An **account user** is a person who can sign in to an exIQtive account. Each account user is identified by a unique email address, and one person can use the same email to access more than one account.
+
+You manage account users at **Account → Settings → Users**. Only Owners and Co-Owners see this menu.
+
+## Users and employees are separate
+
+An **Employee** is an HR record: a person with a name, a Position, Roles, and Responsibilities. An **account user** is a login: an email address that can sign in and use the platform.
+
+The two are connected when you give an Employee access to the portal. Until then:
+
+- The Employee exists in the system but can't log in
+- The account user can log in but holds no Position or Responsibilities
+
+Not every Employee needs a login, and not every account user needs to be an Employee (for example, an external consultant who administers the account).
+
+## Account user status
+
+Each account user's status shows where they are in the access lifecycle. It comes from the user's global state and whether their access to this specific account has been suspended.
+
+| Status | What it means |
+| --- | --- |
+| **Invited** | An invitation email has been sent. The person hasn't signed up and set a password yet, so they can't log in. |
+| **Has Access** | The person has signed up and can log in to this account. |
+| **Suspended** | An Owner or Co-Owner has temporarily removed access to this account. The user record is kept and access can be restored. |
+| **Blocked** | The email has been blocked across all accounts by the exIQtive system administrator. You can't resolve this from your account; contact support. |
+| **Closed** | The user's account has been closed across all accounts by the system administrator. |
+
+While an invitation is in flight, exIQtive also tracks its delivery: sent, delivered, opened, clicked, failed, or bounced. Use this to work out why someone hasn't signed up yet.
+
+## Permissions
+
+Every account user has one of four permission levels. For the full breakdown, see [Account roles and permissions](/account/roles-and-permissions).
+
+| Permission | What they can do |
+| --- | --- |
+| **Owner** | Full access to all account settings and organization management. Can transfer ownership and close the account. Exactly one per account. |
+| **Co-Owner** | Full access to all account settings and organization management. Can't transfer ownership or close the account. An account can have several. |
+| **Administrator** | Access to Organization, Readiness, and other operational menus. Can't see Settings or manage account users. |
+| **App User** | No admin menus. Sees only Your Stuff (their personal Readiness view) and Ask IQ. Must always be linked to an Employee. |
+
+### What each permission sees in the side menu
+
+| Menu item | App User | Administrator | Co-Owner | Owner |
+| --- | --- | --- | --- | --- |
+| Your Stuff | Yes (if linked to Employee) | Yes (if linked to Employee) | Yes (if linked to Employee) | Yes (if linked to Employee) |
+| Ask IQ | Yes | Yes | Yes | Yes |
+| Organization | No | Yes | Yes | Yes |
+| Readiness | No | Yes | Yes | Yes |
+| Fair Reward | No | Yes | Yes | Yes |
+| Settings | No | No | Yes | Yes |
+
+## Add a new account user
+
+<Steps>
+  <Step title="Open Users">
+    Go to **Account → Settings → Users**.
+  </Step>
+  <Step title="Start a new user">
+    Click **+ Add User** and enter the person's email address.
+  </Step>
+  <Step title="Enter their name if needed">
+    If the email isn't already in the system, enter their first and last name. If it is, this step is skipped and the existing name is shown for you to confirm.
+  </Step>
+  <Step title="Choose a permission level">
+    Pick the permission level for this user.
+  </Step>
+  <Step title="Confirm">
+    Confirm to send the invitation email automatically.
+  </Step>
+</Steps>
+
+The new user starts as **Invited** and becomes **Has Access** once they click the invitation link and set a password.
+
+## Give an Employee access to the portal
+
+Giving an Employee access links their Employee record to a login. That's what lets them see **Your Stuff**: their Responsibilities, Readiness score, badges, and preparation materials.
+
+In **Organization → Employees**, use the **Give Access** action on the Employee's row. You'll be asked for an email address and an access type:
+
+- **Employee Portal only**: App User permission. The Employee sees only Your Stuff and Ask IQ.
+- **Co-Owner**: Co-Owner permission. The Employee also gets full admin access.
+
+<Warning>
+If the email already belongs to another Employee, or to a Blocked user, you'll see a warning before you continue.
+</Warning>
+
+## Account user actions
+
+All actions are in the three-dot menu (⋯) at the right of the user's row in **Settings → Users**.
+
+<AccordionGroup>
+  <Accordion title="Resend Invite">
+    Available when the status is **Invited**. Sends a new invitation to the same address. Use it if the original was missed, went to spam, or expired.
+  </Accordion>
+  <Accordion title="Suspend Access">
+    Available when the status is **Has Access**. Immediately stops the user logging in to this account. Their permission level is kept, so if you restore access they return with the same permissions. The Owner can't be suspended; transfer ownership first.
+  </Accordion>
+  <Accordion title="Restore Access">
+    Available when the status is **Suspended**. Lets the user log in again. Only available if any linked Employee is Active (not Terminated or Archived), or there's no linked Employee.
+  </Accordion>
+  <Accordion title="Transfer Ownership">
+    Available only on the Owner's row, and only the Owner can do it. Moves the Owner role to another account user. The previous Owner becomes a Co-Owner.
+  </Accordion>
+  <Accordion title="Change Email">
+    Changes the login email while keeping the same access record and history. Both the old and new addresses get a notification. Available to Owners and Co-Owners on most users; Co-Owners can only change their own email.
+  </Accordion>
+  <Accordion title="Rename User">
+    Updates the display name. Only available when the user isn't linked to an Employee and has access to just this one account. If the user is linked to an Employee, update the name on the Employee record instead.
+  </Accordion>
+  <Accordion title="Change Permissions">
+    Changes the permission level (App User, Administrator, Co-Owner). A user with no Employee link can't be changed to App User.
+  </Accordion>
+  <Accordion title="Delete User">
+    Permanently deletes the user. Only available while the status is **Invited** (they never signed up). After someone signs up, they can only be suspended.
+  </Accordion>
+</AccordionGroup>
+
+## When an Employee is terminated
+
+When you terminate an Employee, their linked account user access is suspended automatically at the same time, so they lose portal access without a separate step. If the termination was a mistake, reactivate the Employee first, then restore access.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="What's the difference between an account user and an Employee?">
+    An Employee is a person in your organization with a Position, Roles, and Responsibilities. An account user is a login with access to the account. They're connected when you give an Employee portal access. An Employee without access can't log in; an account user without an Employee link has no Responsibilities and no Your Stuff menu.
+  </Accordion>
+  <Accordion title="What's the difference between Suspended and Blocked?">
+    **Suspended** means an Owner or Co-Owner removed this person's access to your account, and you can restore it any time. **Blocked** means the exIQtive system administrator blocked the email across all accounts. You can't resolve Blocked from your account; contact support.
+  </Accordion>
+  <Accordion title="Why can't I restore a suspended user?">
+    Restore requires the linked Employee to be Active. If the Employee is Terminated or Archived, reactivate them first, then restore access.
+  </Accordion>
+  <Accordion title="Why can't I change the user's name?">
+    Rename only works when the user has no linked Employee and access to only one account. If they're linked to an Employee, update the Employee record. If they have access to several accounts, a rename would affect all of them, so contact support.
+  </Accordion>
+  <Accordion title="What if I give access to an email that already exists?">
+    If the email belongs to a user already linked to another Employee, you'll see a warning. If it belongs to a user with no Employee link, exIQtive links them to the Employee without creating a new user or re-sending an invite.
+  </Accordion>
+  <Accordion title="Who can give Employees portal access?">
+    Owners, Co-Owners, and Administrators. App Users can't.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Account roles and permissions" icon="user-lock" href="/account/roles-and-permissions">
+  </Card>
+  <Card title="Employees" icon="users" href="/organization/employees">
+  </Card>
+  <Card title="Email notifications" icon="bell" href="/account/email-notifications">
+  </Card>
+</CardGroup>

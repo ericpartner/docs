@@ -1,0 +1,166 @@
+---
+title: "Employee/position assignments"
+description: "How Primary, Preparing for, and Providing Backup assignments work, and how FTE decides who fits which position."
+---
+
+Assignments connect employees to positions. This page explains the three kinds of assignment, how to assign someone to a Primary Position, and how FTE availability and capacity decide what fits.
+
+## What a Primary Position means
+
+Every employee has one Primary Position: the main job they hold in the organization. It gives them their responsibilities, drives their Readiness score, and represents their core role in the company.
+
+Employees can also be assigned to positions in two other ways:
+
+- **Preparing for** — the employee is getting ready to take on this position in the future.
+- **Providing Backup** — the employee supports whoever holds the position.
+
+These secondary assignments don't make the employee the occupant of the position the way a Primary assignment does.
+
+## Multi-track career preparation
+
+An employee can be assigned to **multiple Preparing for tracks at the same time**, with no cap on the number of tracks. This lets them develop toward more than one future position at once.
+
+Each Preparing for assignment carries an **importance weight** that controls how much the track contributes to the employee's overall Readiness score:
+
+- **Non-zero weight** — the track contributes to Readiness in proportion to its weight.
+- **Zero weight** — the track is *exploratory*. The employee can prepare and develop toward the position, but it has no effect on their Readiness score. Use this for career exploration or shadow paths that shouldn't dilute measured readiness for active assignments.
+
+Only an **admin** can assign an employee to a Preparing for track, set its weight, or change the weight later. Employees can see **all** their Preparing for positions, including zero-weight tracks.
+
+## Promoting a Preparing for track to Primary
+
+Promotion is a **manual, two-step process** handled by an admin. There's no automatic trigger; the admin decides when the employee is ready.
+
+<Steps>
+  <Step title="Relieve the Preparing for assignment">
+    Relieve the employee from the Preparing for assignment on that position.
+  </Step>
+  <Step title="Assign as Primary">
+    Assign the employee to the same position as their Primary.
+  </Step>
+</Steps>
+
+## Career exploration
+
+Any employee can **explore the readiness requirements of any position in the company** without being assigned to it. It's a self-directed, read-only activity that needs no admin action.
+
+- **Open to all employees** — no assignment, approval, or weight needed.
+- **Read-only** — the employee sees which roles and responsibilities the position requires and what badge levels are expected. They can't change anything.
+- **No effect on Readiness** — exploring never changes the employee's Readiness score.
+- **No assignment record** — nothing is stored against the employee's profile.
+- **Private** — admins and managers aren't notified.
+
+Career exploration helps employees understand what it would take to grow into a different role before any formal conversation about a Preparing for track.
+
+## Before you can assign someone
+
+All five of these must be true before a Primary assignment can happen:
+
+1. The position's occupancy slot is free. Only one employee can hold a position as Primary (or Acting As) at a time.
+2. The employee isn't an External Helper (0 FTE).
+3. The employee has enough available FTE to match the position's vacancy.
+4. The position is vacant. Only positions with available capacity appear in the list.
+5. The position has at least one active Role attached. A position without an active Role isn't ready for use, and exIQtive won't let you assign anyone to it.
+
+## Assign an employee to a Primary Position
+
+<Steps>
+  <Step title="Open Employees">
+    Go to **Organization → Employees** and find the employee.
+  </Step>
+  <Step title="Start the assignment">
+    Click **Assign to Primary**.
+  </Step>
+  <Step title="Choose a position">
+    Pick a position from the list. Only positions with enough vacancy are shown.
+  </Step>
+  <Step title="Confirm">
+    Confirm the assignment.
+  </Step>
+</Steps>
+
+## How FTE availability and capacity work
+
+Every employee has an availability, and every position has a capacity, both measured in FTE (Full-Time Equivalent). When you assign an employee, their FTE fills the position's capacity.
+
+- **Full-time employee** = 1.0 FTE
+- **Part-time employee** = 0.5 FTE
+- **External Helper** = 0 FTE (can't occupy positions)
+
+The key rule: you can only assign an employee when their **Employee Vacancy ≤ Position Vacancy**.
+
+- **Employee Vacancy** = Employee Availability − Current Allocation
+- **Position Vacancy** = Position Capacity − Current Allocation
+
+So a full-time employee (1.0 FTE vacancy) only fits a full-time position (1.0 FTE vacancy). A part-time employee (0.5 FTE vacancy) fits either a part-time or a full-time position.
+
+### Possible allocations at a glance
+
+| Employee availability | Position capacity | Can assign? | Position vacancy after |
+| --- | --- | --- | --- |
+| 1.0 FTE | 1.0 FTE | Yes | 0 FTE — fully filled |
+| 0.5 FTE | 0.5 FTE | Yes | 0 FTE — fully filled |
+| 0.5 FTE | 1.0 FTE | Yes | 0.5 FTE — room for another employee |
+| 1.0 FTE | 0.5 FTE | No | Employee vacancy is too large to fit |
+| 0 FTE (External) | Any | No | External Helpers can't occupy positions |
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Why doesn't a position appear in the assignment list?">
+    First, check that it's Active; Draft and Retired positions aren't eligible. Second, check that it has enough vacancy for the employee's available FTE (a full-time employee won't fit a part-time position). Third, and easy to miss: the position needs at least one active Role attached. If the position is Active but still missing or greyed out, open it and make sure a Role is attached and active.
+  </Accordion>
+  <Accordion title="A position is Active but I still can't assign anyone to it. Why?">
+    Active status isn't enough on its own. The position must also be *ready*, which means it has at least one active Role attached. Roles give the position its responsibilities. Open the position, go to the Roles tab, and activate a Role (or attach one if none exist). Then you can assign employees normally.
+  </Accordion>
+  <Accordion title="Can a part-time employee fill a full-time position?">
+    Yes, partially. A 0.5 FTE employee in a 1.0 FTE position leaves 0.5 FTE of vacancy, which another employee can fill. The position shows as partially occupied until then.
+  </Accordion>
+  <Accordion title="What happens to an employee's responsibilities when they're relieved from a position?">
+    They immediately lose the responsibilities that came through that position. Their badge history is preserved, but those responsibilities no longer appear in their active view or count toward their Readiness score.
+  </Accordion>
+  <Accordion title="What's the difference between Primary, Preparing for, and Providing Backup?">
+    **Primary** means the employee occupies the position: they receive its responsibilities and those count toward their Readiness. **Preparing for** also gives the employee the position's responsibilities so they can develop toward it; these count toward Readiness based on the track's importance weight. **Providing Backup** is a supportive relationship that doesn't give the employee any responsibilities.
+  </Accordion>
+  <Accordion title="Can two employees share the same Primary Position?">
+    Only if both are part-time and their combined FTE doesn't exceed the position's capacity. Two 0.5 FTE employees can share a 1.0 FTE position. A full-time employee takes the whole position.
+  </Accordion>
+  <Accordion title="Can an employee prepare for the position they already hold as Primary?">
+    No. An employee can't have a Preparing for assignment on a position they already hold as Primary.
+  </Accordion>
+  <Accordion title="Who can assign or remove a Preparing for track?">
+    Only an admin. Employees can see all their tracks but can't add or remove them.
+  </Accordion>
+  <Accordion title="Does a zero-weight Preparing for track affect Readiness?">
+    No. A zero-weight track is purely exploratory. The employee can work through the position's development content, but it contributes nothing to their Readiness score.
+  </Accordion>
+  <Accordion title="How does an employee get promoted from Preparing for to Primary?">
+    An admin relieves the employee from the Preparing for assignment, then assigns them to the same position as Primary. There's no automatic trigger.
+  </Accordion>
+  <Accordion title="Is there a limit on Preparing for tracks?">
+    No. There's no cap on the number of simultaneous Preparing for tracks.
+  </Accordion>
+  <Accordion title="How is career exploration different from a Preparing for assignment?">
+    Career exploration is self-directed: the employee browses a position's requirements with no admin action, no assignment record, and no effect on Readiness. A Preparing for assignment is created by an admin, appears in the employee's active assignments, and may count toward Readiness depending on its weight.
+  </Accordion>
+  <Accordion title="Can an employee explore a position they're already assigned to?">
+    Yes. An employee can browse any position's requirements regardless of their current assignments.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Key organizational concepts" icon="sitemap" href="/concepts/organization">
+    The definitions behind positions, roles, and assignments.
+  </Card>
+  <Card title="Employees" icon="user" href="/organization/employees">
+    Employee status, access, and availability.
+  </Card>
+  <Card title="Positions" icon="briefcase" href="/organization/positions">
+    Create positions and attach roles.
+  </Card>
+  <Card title="Relieve an employee from a position" icon="user-minus" href="/user-guide/positions/relieve-an-employee">
+    End an assignment cleanly.
+  </Card>
+</CardGroup>

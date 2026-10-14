@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "sequoia",
-  "name": "Knowledge base",
-  "description": "Onboarding, employee handbook, HR guides, IT help, company policies, and department runbooks.",
+  "name": "exIQtive User Guide",
+  "description": "How to set up your organization, measure Readiness, coach your people and reward them fairly in exIQtive.",
   "colors": {
     "primary": "#166E3F",
     "light": "#26BD6C",
@@ -16,51 +16,144 @@
     "timestamp": true
   },
   "contextual": {
-    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+    "options": [
+      "copy",
+      "view",
+      "assistant"
+    ]
   },
   "navigation": {
     "tabs": [
       {
-        "tab": "Onboarding",
+        "tab": "Get started",
         "groups": [
           {
             "group": "Welcome",
-            "pages": ["index"]
-          },
-          {
-            "group": "Your first days",
             "pages": [
-              "onboarding/first-day",
-              "onboarding/first-week",
-              "onboarding/meet-the-team"
+              "index",
+              "get-started/what-is-exiqtive",
+              "get-started/who-its-for",
+              "get-started/administrator-quickstart",
+              "get-started/employee-quickstart",
+              "get-started/keys-for-success"
             ]
           },
           {
-            "group": "Tools & access",
+            "group": "Key concepts",
             "pages": [
-              "onboarding/tools/laptop-setup",
-              "onboarding/tools/account-access",
-              "onboarding/tools/vpn-setup"
+              "concepts/readiness",
+              "concepts/organization",
+              "concepts/personas",
+              "concepts/on-readiness"
             ]
           }
         ]
       },
       {
-        "tab": "User Guide",
+        "tab": "Organization",
         "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "organization/understanding-your-organization",
+              "organization/organizational-tree"
+            ]
+          },
+          {
+            "group": "Employees",
+            "pages": [
+              "organization/employees",
+              "organization/employee-position-assignments",
+              "user-guide/positions/relieve-an-employee"
+            ]
+          },
           {
             "group": "Positions",
             "pages": [
+              "organization/positions",
               "user-guide/positions/retire-a-position",
-              "user-guide/positions/relieve-an-employee",
               "user-guide/positions/assign-a-job-family"
             ]
           },
           {
+            "group": "Roles and departments",
+            "pages": [
+              "organization/roles",
+              "organization/departments"
+            ]
+          },
+          {
+            "group": "Fair Reward",
+            "pages": [
+              "fair-reward/fair-pay"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Readiness",
+        "groups": [
+          {
             "group": "Readiness",
             "pages": [
+              "readiness/overview",
+              "user-guide/readiness/how-readiness-is-calculated",
               "user-guide/readiness/badge-ladder",
-              "user-guide/readiness/how-readiness-is-calculated"
+              "readiness/communicating-readiness"
+            ]
+          },
+          {
+            "group": "Responsibilities",
+            "pages": [
+              "responsibilities/managing-responsibilities",
+              "responsibilities/catalog"
+            ]
+          },
+          {
+            "group": "Checkpoints and learning",
+            "pages": [
+              "checkpoints/overview",
+              "checkpoints/editing-a-checkpoint",
+              "checkpoints/editing-an-article",
+              "checkpoints/quizzes"
+            ]
+          },
+          {
+            "group": "Coaches and Architects",
+            "pages": [
+              "coaching/what-is-a-coach",
+              "coaching/coach-operations",
+              "coaching/inspecting-a-responsibility",
+              "coaching/what-is-an-architect",
+              "coaching/architect-operations"
+            ]
+          },
+          {
+            "group": "IQ",
+            "pages": [
+              "iq/ask-iq"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Account",
+        "groups": [
+          {
+            "group": "Roles and permissions",
+            "pages": [
+              "account/roles-and-permissions",
+              "account/account-owner",
+              "account/co-owner",
+              "account/administrator",
+              "account/orm",
+              "account/account-users"
+            ]
+          },
+          {
+            "group": "Notifications",
+            "pages": [
+              "account/email-notifications"
             ]
           }
         ]
@@ -74,20 +167,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Submit IT ticket",
-        "href": "/it-security/access-requests"
+        "href": "mailto:support@exiqtive.com",
+        "label": "Contact support"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Employee portal",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/yourcompany",
-      "linkedin": "https://linkedin.com/company/yourcompany"
+      "label": "Open exIQtive",
+      "href": "https://exiqtive.com"
     }
   }
 }

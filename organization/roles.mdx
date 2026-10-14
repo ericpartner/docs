@@ -1,0 +1,135 @@
+---
+title: "Roles"
+description: "Create and manage roles, the reusable groups of responsibilities you attach to positions in exIQtive."
+---
+
+A **Role** is a collection of Responsibilities. A Position has Roles attached to it, and each Role has Responsibilities attached to it. When an employee is assigned to a Position, they automatically inherit every Responsibility through that Position's Roles.
+
+For the underlying definitions, see [Key organizational concepts](/concepts/organization).
+
+## How roles work
+
+The exIQtive structure is:
+
+**Employee → Position → Role → Responsibility → Readiness**
+
+A Role is the grouping mechanism. Instead of attaching Responsibilities one by one to every Position, you define a Role once, with its set of Responsibilities, and attach it to as many Positions as need it. When the Role changes, every Position that uses it picks up the change automatically.
+
+## Where to find roles
+
+Go to **Account → Organization → Roles**. The list shows every Role in your account, with its status, the number of attached Responsibilities, and the Positions it's attached to.
+
+## Role lifecycle
+
+**Draft → Active → Retired → Archived**
+
+| Status | What it means | What you can do |
+| --- | --- | --- |
+| **Draft** | Newly created and not yet in use. Doesn't distribute Responsibilities to employees. | Rename, Attach Responsibilities, Delete, Activate |
+| **Active** | Live. Can be attached to Positions and distributes its Responsibilities to assigned employees. | Rename, Attach or detach Responsibilities, Retire |
+| **Retired** | Removed from active use and detached from all Positions. Responsibilities no longer flow through it. Data is preserved. | Rename, Reactivate, Archive |
+| **Archived** | Stored for historical reference only. | Unarchive (returns the Role to Retired) |
+
+## Add a new role
+
+<Steps>
+  <Step title="Open Roles">
+    Go to **Account → Organization → Roles**.
+  </Step>
+  <Step title="Add the role">
+    Click **+ Add Role** and enter the Role name.
+  </Step>
+  <Step title="Save">
+    Click **Save**.
+  </Step>
+</Steps>
+
+The Role is created in **Draft**. You can edit or delete it, but it won't distribute Responsibilities to employees until you activate it.
+
+## Role actions
+
+All actions are in the three-dot menu (⋯) on the right side of the Role row.
+
+| Action | Available when | What it does |
+| --- | --- | --- |
+| **Activate** | Draft | Moves the Role to Active so it can be attached to Positions and distribute its Responsibilities. Can't return to Draft. |
+| **Rename** | Always | Updates the Role name everywhere. No assignments are affected. |
+| **Retire** | Active | Detaches the Role from all Positions and removes it from active use. Employees who inherited Responsibilities through it lose them. |
+| **Reactivate** | Retired | Returns the Role to Active so it can be attached to Positions again. |
+| **Archive** | Retired | Moves the Role into long-term storage. |
+| **Unarchive** | Archived | Returns the Role to Retired. From there you can reactivate it. |
+| **Delete** | Draft only | Permanently deletes the Role. This can't be undone. |
+
+## Attach responsibilities to a role
+
+A Role needs at least one active Responsibility before it meaningfully contributes to employee Readiness.
+
+<Steps>
+  <Step title="Open the role">
+    Find the Role in the Roles list and click its name.
+  </Step>
+  <Step title="Attach a responsibility">
+    Click **+ Attach Responsibility**, then search for and select the Responsibility.
+  </Step>
+  <Step title="Confirm">
+    Confirm. Any employee assigned to a Position that includes this Role automatically receives the Responsibility.
+  </Step>
+</Steps>
+
+To detach a Responsibility, open the Role, find the Responsibility in the list, and use the detach action in its row menu.
+
+## Attach a role to a position
+
+You attach Roles to Positions from the Position detail view, not from the Roles list. See [Positions](/organization/positions) for the steps.
+
+## Role validity
+
+A Role is **valid** when it's Active and has at least one active Responsibility attached. A Role is **invalid** when it's Active but has no active Responsibilities. An invalid Role attached to a Position makes that Position invalid, which blocks employee assignment.
+
+See [Key organizational concepts](/concepts/organization) for the full Position validity rules.
+
+## Rules and constraints
+
+- A Role must be **Active** to distribute Responsibilities to employees.
+- A Role can be attached to any number of Positions.
+- A Responsibility can be attached to any number of Roles.
+- Deleting a Role is permanent and only possible in Draft.
+- Retiring a Role detaches it from all Positions, and employees lose the associated Responsibilities.
+- An Active Role with no active Responsibilities is invalid.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Why don't employees see the Responsibilities I attached to a Role?">
+    Check that: (1) the Role is Active, (2) the Role is attached to a Position, (3) the Position is Active, (4) an employee is assigned to the Position, and (5) the Responsibilities themselves are Active.
+  </Accordion>
+  <Accordion title="Can I attach the same Role to multiple Positions?">
+    Yes. Roles are designed to be reused. A single Role like "Customer Support" can be attached to both a Team Leader Position and a Support Agent Position.
+  </Accordion>
+  <Accordion title="What happens to employees when I retire a Role?">
+    They lose the Responsibilities that came through that Role, and their Readiness for those Responsibilities drops to 0% (Novice). Their badge history is preserved. If the Responsibilities are attached to the same Position again through another Role, they return.
+  </Accordion>
+  <Accordion title="What's the difference between retiring a Role and detaching it from a Position?">
+    Detaching removes the Role from one specific Position. Retiring removes it from all Positions at once and takes it out of active use entirely.
+  </Accordion>
+  <Accordion title="Can I rename a Role without affecting assignments?">
+    Yes. Renaming updates the name everywhere but doesn't change any assignments or affect employee Readiness.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Key organizational concepts" icon="sitemap" href="/concepts/organization">
+    How positions, roles, and responsibilities fit together.
+  </Card>
+  <Card title="Positions" icon="briefcase" href="/organization/positions">
+    Attach roles to positions.
+  </Card>
+  <Card title="Managing responsibilities" icon="list-check" href="/responsibilities/managing-responsibilities">
+    Create and maintain the responsibilities inside a role.
+  </Card>
+  <Card title="Employee/position assignments" icon="user-plus" href="/organization/employee-position-assignments">
+    How employees receive a position's roles.
+  </Card>
+</CardGroup>

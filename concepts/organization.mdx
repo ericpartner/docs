@@ -1,0 +1,161 @@
+---
+title: "Organizational concepts"
+description: "Key organizational concepts in exIQtive: employees, positions, roles, responsibilities, assignments, commitment, importance, and FTE."
+---
+
+exIQtive describes what's expected of your employees with a small set of building blocks. This page defines each one and the rules that connect them.
+
+## Employee
+
+An employee is any individual who works in your organization. Each employee has a first and last name, and optionally a profile picture. Employees are the people you're building readiness for: they receive responsibilities through their positions, and their readiness is what the whole system measures.
+
+## Organizational objects
+
+exIQtive uses three building blocks, collectively called organizational objects:
+
+- **Position**: the job someone holds
+- **Role**: a group of responsibilities attached to a position
+- **Responsibility**: a specific area of work someone must be able to perform
+
+They connect in a chain: you attach Responsibilities to Roles, attach Roles to Positions, and assign Employees to Positions. Everything flows from that chain automatically.
+
+### Organizational object codes
+
+Every Position, Role, and Responsibility in your account has a unique numeric code, shown as something like **#345**. Use these codes to search for and refer to specific objects precisely, which helps in larger organizations where names can be similar across teams.
+
+## Position
+
+A Position is a specific job in your organization, such as *HR Manager*, *Team Leader*, or *Barista*. It's the entry point for everything: when you assign an employee to a position, they automatically receive all the roles and responsibilities that position includes.
+
+### Position validity
+
+A position is **valid** when every role attached to it is valid (each has at least one active responsibility). You can't assign an employee to an invalid position; fix it first by making sure every attached role has at least one active responsibility.
+
+| Status | Meaning |
+| --- | --- |
+| Valid | All attached roles have at least one active responsibility; employees can be assigned |
+| Invalid (no active roles) | No active roles are attached; attach at least one to make the position assignable |
+| Invalid (invalid role attached) | At least one attached role has no active responsibilities; fix the role to make the position assignable |
+
+### Position rules
+
+- One employee can hold a position at a time, but multiple employees can be preparing for it or providing backup
+- An unoccupied position is called **vacant**
+- Positions get responsibilities only through roles; you can't attach a responsibility directly to a position
+
+<Tip>
+**Example:** ACME Corporation has positions for CEO, CFO, VP of Manufacturing, and Assistant to the CEO. John Doe holds the CEO position. When he was assigned, he automatically received all the roles and responsibilities that come with it.
+</Tip>
+
+## Assignment to position
+
+When you assign an employee to a position, you give the assignment an **Effective On** date (when it starts) and, when you later relieve them, an **Effective By** date (when it ends). The Effective By date must be later than the Effective On date. You can't assign an employee to an invalid position.
+
+## Commitment
+
+Every assignment has a commitment level that describes the employee's relationship to the position:
+
+| Level | What it means |
+| --- | --- |
+| **Primary** | The employee holds and occupies the position; they're responsible for it and receive its responsibilities |
+| **Preparing for** | The employee is getting ready to take the position; they don't hold it yet |
+| **Providing Backup** | The employee supports whoever holds the position |
+
+Any number of employees can be preparing for or providing backup to a position, but only one can hold it (Primary) at a time.
+
+## Role
+
+A Role is a named group of responsibilities. You define a role once (for example, "Customer Service" or "Financial Reporting"), attach the relevant responsibilities, and then attach the role to as many positions as need it. When the role changes, every position using it picks up the change automatically.
+
+We sometimes use **Hat** as a synonym for Role, as in "wearing the Customer Service hat".
+
+### Role validity
+
+A role is valid when it has at least one active responsibility attached. A role with no active responsibilities is invalid, and any position it's attached to becomes invalid too, so you can't assign employees to that position until the role is fixed.
+
+### Role rules
+
+- Each role has a unique name in your account
+- A role must be attached to a position before employees can receive its responsibilities
+- The same role can be attached to any number of positions
+
+<Tip>
+**Example:** The Technician position includes the "Technical Support" role, which has two responsibilities: *Troubleshoot and resolve issues* and *Provide customer assistance*. Any employee assigned to the Technician position automatically gets both.
+</Tip>
+
+## Responsibility
+
+A Responsibility is a specific area of work an employee must be able to perform, and be accountable for performing well. It's not a task list; it's the unit of work that exIQtive inspects, certifies, and measures readiness against.
+
+Every responsibility has a clearly defined scope: what the person is trusted to do, and the standard their performance is measured by. That standard is captured in the Inspection Protocol, which the Architect for the responsibility creates and maintains.
+
+### Responsibility rules
+
+- Responsibilities reach employees through the Position → Role → Responsibility chain; you never assign a responsibility directly to an employee
+- The same responsibility can be attached to any number of roles
+- Each responsibility has a unique name in your account
+
+## Assignment importance
+
+Every responsibility assignment has an importance level that controls how much it contributes to the employee's Readiness. Use it to reflect how critical each responsibility is:
+
+| Level | What it means |
+| --- | --- |
+| **3 – Very important** | Critical to the role; has the biggest weight in the Readiness calculation. This is the default. |
+| **2 – Important** | Contributes significantly to outcomes |
+| **1 – Somewhat important** | Nice to have |
+| **0 – Not currently relevant** | Assigned but inactive; excluded entirely from the Readiness calculation |
+
+## FTE (full-time equivalent)
+
+FTE is how exIQtive measures an employee's availability and a position's capacity. 1.0 FTE is a full-time employee (typically 40 hours per week); 0.5 FTE is part-time (20 hours per week).
+
+When you assign an employee to a position, their FTE availability fills the position's FTE capacity:
+
+- **Employee vacancy** = Employee availability − Current allocation
+- **Position vacancy** = Position capacity − Current allocation
+
+You can assign an employee to a position only when their vacancy is less than or equal to the position's vacancy. For example, a full-time employee (1.0 FTE) can't be assigned to a part-time position (0.5 FTE); their availability is too large to fit.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Why don't my employees see any responsibilities after I assign them to a position?">
+    Check the full chain: the position needs active roles attached, those roles need active responsibilities, and the position itself needs to be Active (not Draft or Retired). If any step is broken, responsibilities won't flow through. Start from the position and work down to find the gap.
+  </Accordion>
+  <Accordion title="What's the difference between a Role and a Responsibility?">
+    A Role is the container; a Responsibility is the actual unit of work inside it. Roles let you attach a whole bundle of related responsibilities to a position at once instead of adding them one by one. Change a role and every position using it updates automatically.
+  </Accordion>
+  <Accordion title="Can the same responsibility appear in more than one role?">
+    Yes, responsibilities are reusable. If "Health and Safety Compliance" belongs in three roles, attach it to all three. If an employee gets the same responsibility through multiple roles on the same position, they receive it once per role; each role generates its own independent assignment.
+  </Accordion>
+  <Accordion title="What happens if I assign a part-time employee to a full-time position?">
+    They can be assigned: their 0.5 FTE fills half of the position's 1.0 FTE capacity. The remaining 0.5 FTE of vacancy can be filled by another employee, and exIQtive shows it so you know the position isn't fully covered.
+  </Accordion>
+  <Accordion title="Why does my position show as invalid?">
+    At least one of its attached roles has no active responsibilities. Find that role and either attach an active responsibility to it or detach it from the position. Once every attached role has at least one active responsibility, the position is valid and you can assign employees again.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Positions" icon="briefcase" href="/organization/positions">
+    Create and manage positions.
+  </Card>
+  <Card title="Roles" icon="hat-cowboy" href="/organization/roles">
+    Create and manage roles.
+  </Card>
+  <Card title="Managing responsibilities" icon="list-check" href="/responsibilities/managing-responsibilities">
+    Create and manage responsibilities.
+  </Card>
+  <Card title="Employee/position assignments" icon="user-plus" href="/organization/employee-position-assignments">
+    Assign and relieve employees.
+  </Card>
+  <Card title="Organizational tree" icon="sitemap" href="/organization/organizational-tree">
+    How the objects connect.
+  </Card>
+  <Card title="Departments" icon="building" href="/organization/departments">
+    Group positions into departments.
+  </Card>
+</CardGroup>

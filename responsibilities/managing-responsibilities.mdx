@@ -1,0 +1,125 @@
+---
+title: "Managing responsibilities"
+description: "Create responsibilities, move them through their lifecycle, and connect them to roles so they reach the right employees."
+---
+
+A responsibility is a specific area of work that someone in your organization must be able to perform, and be accountable for performing well. It isn't a task list or a job description: it's the unit of work that exIQtive inspects, certifies, and measures readiness against.
+
+Responsibilities are reusable. You define one once in the [Responsibilities Catalog](/responsibilities/catalog), then attach it to as many roles as need it. Change a responsibility and every role that uses it picks up the change.
+
+## How responsibilities reach employees
+
+You never assign a responsibility directly to an employee. Responsibilities travel through your organizational structure:
+
+<Steps>
+  <Step title="Attach the responsibility to a role">
+  </Step>
+  <Step title="Attach the role to a position">
+  </Step>
+  <Step title="Assign an employee to the position">
+  </Step>
+</Steps>
+
+When the employee is assigned, they automatically inherit everything in that chain. Every employee in the same position gets exactly the same responsibilities, every time.
+
+## Responsibility lifecycle
+
+Each responsibility has a status that controls whether it affects employees and which actions you can take.
+
+| Status | What it means | Available actions |
+| --- | --- | --- |
+| **Draft** | Newly created. Not visible to employees and not in active use. Use it to set up a responsibility before it goes live. | Rename, Attach to a Role, Delete, Activate |
+| **Active** | Live and in use. Employees with this responsibility in their role chain receive it, and inspections, badges, and Readiness all apply. | Rename, Attach to a Role, Retire |
+| **Retired** | Removed from active use and no longer assigned to employees. All historical data is preserved. | Rename, Reactivate |
+| **Archived** | Long-term storage. The responsibility is fully retired and its name is freed for reuse. All history is preserved. | Unarchive (returns to Retired) |
+
+<Tip>
+Archive a responsibility only after retiring it, and only when you're confident it will never come back.
+</Tip>
+
+## Add a responsibility
+
+<Steps>
+  <Step title="Open the catalog">
+    Go to **Account → Readiness → Catalogs → Responsibilities**.
+  </Step>
+  <Step title="Add the responsibility">
+    Click **+ Add Responsibility** and enter a name.
+  </Step>
+  <Step title="Save">
+    Click **Save**. The responsibility is created in Draft status.
+  </Step>
+</Steps>
+
+A new responsibility won't affect any employees until you activate it and attach it to a role.
+
+## Responsibility actions
+
+All actions are in the three-dot menu (⋯) on the right side of the responsibility's row in the catalog.
+
+### Activate
+
+Moves the responsibility from Draft to Active. Employees can then inherit it through their roles, and their Readiness for it starts being tracked.
+
+### Rename
+
+Updates the name everywhere it appears in your account: all roles, positions, and employee views. No assignments are affected.
+
+### Attach to a role
+
+Connects the responsibility to a role. This is how employees eventually receive it: the responsibility travels through the role to any positions the role is attached to, and from there to the employees assigned to those positions.
+
+### Retire
+
+Removes the responsibility from all active assignments. Employees who held it lose it from their profile, and any Current badges for it expire overnight. Badge history is preserved. The responsibility stays attached to its roles; attachments aren't removed.
+
+### Reactivate
+
+Returns a Retired responsibility to Active. Employees don't get it back instantly: new assignments regenerate through the normal position and role chain.
+
+### Delete
+
+Permanently deletes the responsibility. This is only available in Draft. Once a responsibility has been activated it can't be deleted, only retired.
+
+<Warning>
+Deleting a responsibility can't be undone.
+</Warning>
+
+## Rules and constraints
+
+- Responsibilities must be Active to affect employees. Draft and Retired responsibilities don't flow through to anyone.
+- Responsibilities reach employees through roles only. You can't assign one directly.
+- The same responsibility can be attached to any number of roles.
+- Retiring a responsibility removes employee assignments but leaves role attachments intact.
+- You can only delete a responsibility while it's in Draft.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Why can't employees see a responsibility I just created?">
+    A new responsibility starts in Draft and isn't attached to any role yet. Activate it, then attach it to a role that's on a position your employees hold. You need both steps: activating alone won't make it visible if it isn't in the role chain.
+  </Accordion>
+  <Accordion title="What happens to employee badges when I retire a responsibility?">
+    All Current badges for that responsibility expire overnight, and employees lose the Readiness contribution from those badges the following day. Badge history is preserved, so you can still see what was earned, but it no longer counts toward their score.
+  </Accordion>
+  <Accordion title="Can the same responsibility be in multiple roles?">
+    Yes, responsibilities are designed to be reused. If "Fire Safety Compliance" belongs in three roles, attach it to all three. If an employee gets the same responsibility through more than one role on the same position, they receive it once for each role. Each role generates its own independent assignment.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Responsibilities Catalog" icon="book" href="/responsibilities/catalog">
+    Browse and maintain every responsibility in your account.
+  </Card>
+  <Card title="Roles" icon="user-gear" href="/organization/roles">
+    Attach responsibilities to roles.
+  </Card>
+  <Card title="Checkpoints" icon="list-check" href="/checkpoints/overview">
+    Build the inspection checklist for a responsibility.
+  </Card>
+  <Card title="Key organizational concepts" icon="sitemap" href="/concepts/organization">
+    How positions, roles, and responsibilities fit together.
+  </Card>
+</CardGroup>

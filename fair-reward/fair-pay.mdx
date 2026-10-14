@@ -1,0 +1,106 @@
+---
+title: "Fair Pay"
+description: "How Fair Pay resolves Performance Scorecards and bonus eligibility through your departments and positions."
+---
+
+Fair Pay is the compensation module behind the **Fair Reward** pillar of the exIQtive method: pay that reflects the actual value an employee brings, resolved consistently and transparently from how your organization is structured.
+
+## What Fair Pay governs
+
+Fair Pay governs three things, all resolved the same way: through the Department and Position structure, down to the employee's current Primary Position Assignment.
+
+- **Performance Scorecard** — which scorecard an employee is measured against
+- **Collective Bonus Eligibility Criteria** — team or department-level bonus qualification
+- **Individual Bonus Eligibility Criteria** — personal bonus qualification, which an employee's Pay Agreement can override
+
+## The resolution chain
+
+All three follow the same inheritance shape: **Department → Position → Employee**, and the most specific setting wins.
+
+| | Department | Position | Employee |
+| --- | --- | --- | --- |
+| **Performance Scorecard** | May link to a Scorecard. If not, inherits its parent Department's. | Inherits its Department's Scorecard unless it has its own link. | Inherits the Scorecard of their current Primary Position Assignment. This is live and continuous, not tied to a batch. |
+| **Collective Bonus Eligibility Criteria** | May have its own criteria. If not, inherits its parent Department's. | Inherits its Department's criteria unless it has its own. | At bonus batching, resolved through the Primary Position Assignment in effect on the **last day of the bonus period**. |
+| **Individual Bonus Eligibility Criteria** | May have its own criteria. If not, inherits its parent Department's. | Inherits its Department's criteria unless it has its own. | At bonus batching, the employee's own **Pay Agreement** overrides everything else. Without one, resolved the same way as Collective criteria. |
+
+If no Department has a link all the way up to the root of the Department tree, the employee is treated as having no Scorecard or criteria defined. See [Fail-open and fail-closed](#fail-open-and-fail-closed) for what happens then.
+
+## Bonus batching timing
+
+Bonus batching deliberately uses two different reference points:
+
+1. **Which Primary Position Assignment counts** is fixed **as of the last day of the bonus period**: the assignment in effect on that date, not whatever is Primary when the batch runs.
+2. **Which Scorecard and criteria that Position (and its Department chain) carry** is read **on the date the batch is processed**. Department and Position links to Scorecards and eligibility criteria aren't effective-dated.
+
+<Note>
+If you correct a Department's or Position's Fair Pay configuration after a period closes, re-running that period's batch applies the corrected configuration. This is intentional; the batch isn't a snapshot of history.
+</Note>
+
+If an employee has **no Primary Position Assignment** on the last day of the bonus period (for example, a gap between assignments, or they weren't active yet), they're excluded from that batch entirely. This is different from fail-open and fail-closed below: there's no assignment to resolve from at all.
+
+## Fail-open and fail-closed
+
+**Settings → Configuration → Fair Pay** has one account-level setting that decides what happens when an employee's chain (Position → Department → … → root) never resolves to a Scorecard or bonus eligibility criteria:
+
+- **Fail-Closed (default)** — the employee isn't eligible and has no scorecard until the gap is configured.
+- **Fail-Open** — the employee is treated as unrestricted: eligible with no restriction, and with no scorecard subscription.
+
+This single setting applies to Performance Scorecard, Collective Bonus Eligibility, and Individual Bonus Eligibility.
+
+## Position Assignment fields
+
+The Position Assignment record (see [Employee/position assignments](/organization/employee-position-assignments)) is the anchor for an employee's Fair Pay resolution.
+
+| Field | Description |
+| --- | --- |
+| Employee | The employee holding the assignment |
+| Position | The position being assigned |
+| Commitment (Primary / Preparing for / Providing Backup) | Only a **Primary** assignment drives Fair Pay resolution |
+| Performance Scorecard | The resolved Scorecard for this Position (its own link, or inherited from its Department chain). Editing it here edits the Position itself (or creates the Position's own override if none exists). It isn't a personal, per-employee value. |
+| Effective On | Start date of the assignment |
+| Effective By | End date of the assignment |
+
+## Departments and Fair Pay
+
+Department membership doesn't affect an employee's Responsibilities or Readiness (see [Departments](/organization/departments)). Fair Pay is the one exception: Department placement drives Scorecard and Bonus Eligibility resolution whenever a Position doesn't have its own override.
+
+That gives two Department operations Fair Pay consequences:
+
+- **Moving a Position to a different Department** can change which Scorecard or criteria it inherits. exIQtive warns you before completing the move if it would change an active resolution for employees in that Position.
+- **Archiving a Department** leaves its Positions unassigned, which resolves the same as reaching the end of the chain with nothing configured (governed by fail-open or fail-closed). exIQtive warns you before archiving if Positions beneath it rely on its Fair Pay configuration.
+
+An **unassigned Position** (never placed in a Department, or left unassigned after an archive) has nothing to inherit from. It resolves as if the chain ended with nothing configured, subject to the fail-open or fail-closed setting.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Does an employee's Scorecard change immediately if their Primary Position's Department is edited?">
+    Yes for the Scorecard subscription, which is live and continuous. For Bonus Eligibility, the change takes effect at the next bonus batching run, using whatever is configured at that time.
+  </Accordion>
+  <Accordion title="Can a Position have its own Scorecard even though its Department has one?">
+    Yes. A Position's own link always wins. The Department's value only applies when the Position has none.
+  </Accordion>
+  <Accordion title="What happens to Collective Bonus Eligibility for a Position that isn't in any Department?">
+    It resolves as if it reached the end of the chain with nothing configured, governed by the fail-open or fail-closed setting.
+  </Accordion>
+  <Accordion title="Why did re-running last quarter's bonus batch give different eligibility than the original run?">
+    Department and Position Fair Pay links aren't effective-dated. Batches always use the configuration in effect on the date they're processed, not the configuration that existed during the period. If the configuration changed in between, the re-run reflects the change.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Understanding your organization" icon="building" href="/organization/understanding-your-organization">
+    How your structure fits together in exIQtive.
+  </Card>
+  <Card title="Departments" icon="folder-tree" href="/organization/departments">
+    Where Fair Pay inheritance starts.
+  </Card>
+  <Card title="Employee/position assignments" icon="user-plus" href="/organization/employee-position-assignments">
+    The Primary assignment that anchors Fair Pay.
+  </Card>
+  <Card title="Key organizational concepts" icon="sitemap" href="/concepts/organization">
+    The definitions behind the structure.
+  </Card>
+</CardGroup>
