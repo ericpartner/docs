@@ -8,7 +8,10 @@
     "light": "#26BD6C",
     "dark": "#166E3F"
   },
-  "favicon": "/favicon.ico",
+  "favicon": {
+    "light": "/images/favicon-exiqtive.svg",
+    "dark": "/images/favicon-exiqtive.svg"
+  },
   "icons": {
     "library": "lucide"
   },
@@ -161,8 +164,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/exIQtivelogo.png",
+    "dark": "/images/exIQtivelogo.png"
   },
   "navbar": {
     "links": [
