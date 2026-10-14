@@ -150,7 +150,6 @@
               "account/account-owner",
               "account/co-owner",
               "account/administrator",
-              "account/orm",
               "account/account-users"
             ]
           },

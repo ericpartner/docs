@@ -10,7 +10,7 @@ Every organization in exIQtive has an organizational tree made of organizational
 | Object | Description | How to manage |
 | --- | --- | --- |
 | Department | Groups positions into a nested hierarchy (company, division, team) that mirrors your organization's structure. Departments contain positions and sub-departments. | [Departments](/organization/departments) |
-| Position | Describes the roles and responsibilities an employee should have when they occupy it. Positions have roles attached. | [Positions](/organization/positions) |
+| Position | Describes the roles and responsibilities an employee should have when they occupy it. Positions have roles attached, and can also have responsibilities attached directly. | [Positions](/organization/positions) |
 | Role | A collection of responsibilities an employee needs to fulfill. Roles have responsibilities attached. | [Roles](/organization/roles) |
 | Responsibility | A specific area of work. Responsibilities have Inspection Protocols attached. | [Managing responsibilities](/responsibilities/managing-responsibilities) |
 | Job Family | Groups positions by discipline, with ordered levels for seniority. | [Job families](/organization/job-families) |
@@ -24,7 +24,8 @@ All six share one numbering system. See [Organizational object codes](#organizat
 - A position can belong to only one department at a time. A position that isn't placed in a department is unassigned.
 - A responsibility can be attached to multiple roles.
 - A role can be attached to multiple positions.
-- When you assign an employee to a position, they're automatically assigned its roles and the responsibilities attached to those roles.
+- A responsibility can also be attached directly to a position.
+- When you assign an employee to a position, they're automatically assigned its roles, the responsibilities attached to those roles, and any responsibilities attached directly to the position.
 - An employee's responsibilities come from the position, not from its department. Moving a position between departments doesn't change them.
 
 ## Organizational object codes
@@ -38,7 +39,7 @@ Each department, position, role, responsibility, job family, and job category ha
     Departments sit at the top of the tree and organize positions into a hierarchy for navigation and filtering. The chain through which employees receive their work is position, then roles, then responsibilities. Departments don't affect which responsibilities an employee holds.
   </Accordion>
   <Accordion title="How does an employee receive a responsibility?">
-    Through the chain: the employee is assigned to a position, the position has roles attached, and each role has responsibilities attached. The employee automatically inherits every responsibility at the end of that chain. Nothing is assigned directly.
+    Through their position: the employee is assigned to a position, and receives every responsibility in the roles attached to it, plus any responsibility attached directly to the position. Responsibilities are never assigned directly to an employee.
   </Accordion>
   <Accordion title="Can the same role be used in multiple positions?">
     Yes. A role can be attached to any number of positions. Define it once with its responsibilities and reuse it wherever it's needed.

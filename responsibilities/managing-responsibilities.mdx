@@ -12,15 +12,17 @@ Responsibilities are reusable. You define one once in the [Responsibilities Cata
 You never assign a responsibility directly to an employee. Responsibilities travel through your organizational structure:
 
 <Steps>
-  <Step title="Attach the responsibility to a role">
+  <Step title="Attach the responsibility to a role, or directly to a position">
+    Use a role when a group of responsibilities is shared by several positions. Attach directly to a position when the responsibility belongs to that position only.
   </Step>
   <Step title="Attach the role to a position">
+    Skip this step if you attached the responsibility directly to the position.
   </Step>
   <Step title="Assign an employee to the position">
   </Step>
 </Steps>
 
-When the employee is assigned, they automatically inherit everything in that chain. Every employee in the same position gets exactly the same responsibilities, every time.
+When the employee is assigned, they automatically inherit every responsibility on the position. Every employee in the same position gets exactly the same responsibilities, every time.
 
 ## Responsibility lifecycle
 
@@ -29,7 +31,7 @@ Each responsibility has a status that controls whether it affects employees and 
 | Status | What it means | Available actions |
 | --- | --- | --- |
 | **Draft** | Newly created. Not visible to employees and not in active use. Use it to set up a responsibility before it goes live. | Rename, Attach to a Role, Delete, Activate |
-| **Active** | Live and in use. Employees with this responsibility in their role chain receive it, and inspections, badges, and Readiness all apply. | Rename, Attach to a Role, Retire |
+| **Active** | Live and in use. Employees whose position carries this responsibility receive it, and inspections, badges, and Readiness all apply. | Rename, Attach to a Role, Retire |
 | **Retired** | Removed from active use and no longer assigned to employees. All historical data is preserved. | Rename, Reactivate |
 | **Archived** | Long-term storage. The responsibility is fully retired and its name is freed for reuse. All history is preserved. | Unarchive (returns to Retired) |
 
@@ -88,7 +90,7 @@ Deleting a responsibility can't be undone.
 ## Rules and constraints
 
 - Responsibilities must be Active to affect employees. Draft and Retired responsibilities don't flow through to anyone.
-- Responsibilities reach employees through roles only. You can't assign one directly.
+- Responsibilities reach employees through roles or by being attached directly to a position. You can't assign one directly to an employee.
 - The same responsibility can be attached to any number of roles.
 - Retiring a responsibility removes employee assignments but leaves role attachments intact.
 - You can only delete a responsibility while it's in Draft.
@@ -97,7 +99,7 @@ Deleting a responsibility can't be undone.
 
 <AccordionGroup>
   <Accordion title="Why can't employees see a responsibility I just created?">
-    A new responsibility starts in Draft and isn't attached to any role yet. Activate it, then attach it to a role that's on a position your employees hold. You need both steps: activating alone won't make it visible if it isn't in the role chain.
+    A new responsibility starts in Draft and isn't attached to any role yet. Activate it, then attach it to a role that's on a position your employees hold, or directly to that position. You need both steps: activating alone won't make it visible if it isn't attached to a position your employees hold.
   </Accordion>
   <Accordion title="What happens to employee badges when I retire a responsibility?">
     All Current badges for that responsibility expire overnight, and employees lose the Readiness contribution from those badges the following day. Badge history is preserved, so you can still see what was earned, but it no longer counts toward their score.

@@ -1,17 +1,17 @@
 ---
 title: "Account roles and permissions"
-description: "The four Account Roles in exIQtive (Owner, Co-Owner, Administrator, App User) and what each can see and do."
+description: "The three Account Roles in exIQtive (Owner, Co-Owner, Administrator) and what each can see and do."
 ---
 
 Two separate concepts control who can do what in an exIQtive account. This page covers **Account Roles**: the administrative privileges a user has over the account, including which menus they see and which admin actions they can take.
 
 <Note>
-**Personas** are different. They describe how people use exIQtive in their daily work (Employee, Coach, Architect, ORM) and are tied to Responsibilities, badges, and inspections. See [Personas](/concepts/personas).
+**Personas** are different. They describe how people use exIQtive in their daily work (Employee, Coach, Architect) and are tied to Responsibilities, badges, and inspections. See [Personas](/concepts/personas).
 </Note>
 
-## The four Account Roles
+## The three Account Roles
 
-Every access to an exIQtive account carries one of four roles. Owner, Co-Owner, and Administrator are admin roles. App User has no admin privileges.
+There are three admin Account Roles: Owner, Co-Owner, and Administrator. A user can also have **no admin permission** (shown as **None** in Settings): they use exIQtive only to see their own work.
 
 ### Owner
 
@@ -36,7 +36,7 @@ Beyond everything an Administrator can do, a Co-Owner can:
 - Add or remove other Co-Owners and Administrators
 
 <Warning>
-A Co-Owner can suspend or restore Administrators and App Users, but can't suspend another Co-Owner. A Co-Owner can change their own email, but not another Co-Owner's.
+A Co-Owner can suspend or restore Administrators and users with no admin permission, but can't suspend another Co-Owner. A Co-Owner can change their own email, but not another Co-Owner's.
 </Warning>
 
 ### Administrator
@@ -47,22 +47,22 @@ An Administrator can operate every day-to-day area of the account, but can't acc
 
 - Use all modules: Organization, Readiness, All Tasks, Ask IQ, Activity
 - Manage the organizational tree (employees, positions, roles, responsibilities)
-- Run readiness operations, manage inspections, and assign badges
+- Run readiness operations, manage inspections, and award, give, and remove badges (including the Architect badge)
 
 **An Administrator can't:**
 
 - Access Settings
 - Manage account users (give access, suspend, restore, change email)
 
-### App User
+### Users with no admin permission
 
-An App User has no admin role. App Users use exIQtive only through their Employee link: they see their own responsibilities, badges, and Readiness in **Your Stuff**. An App User must be linked to an Employee. An access with no admin role and no Employee link isn't allowed.
+An employee who has access but no admin permission sees only their own work: their responsibilities, badges, and Readiness in **Your Stuff**, plus **Ask IQ**. A user with no admin permission must be linked to an Employee.
 
 ## Menu visibility by role
 
-| Menu | App User | Administrator | Co-Owner | Owner |
+| Menu | No admin permission | Administrator | Co-Owner | Owner |
 | --- | --- | --- | --- | --- |
-| Your Stuff | ✓ (if Employee-linked) | ✓ (if Employee-linked) | ✓ (if Employee-linked) | ✓ (if Employee-linked) |
+| Your Stuff | ✓ | ✓ (if Employee-linked) | ✓ (if Employee-linked) | ✓ (if Employee-linked) |
 | Organization | — | ✓ | ✓ | ✓ |
 | Readiness | — | ✓ | ✓ | ✓ |
 | All Tasks | — | ✓ | ✓ | ✓ |
@@ -76,9 +76,9 @@ An App User has no admin role. App Users use exIQtive only through their Employe
 
 Account Roles and Personas are independent:
 
-- An Owner is usually also an Employee and may hold Coach, Architect, or ORM personas
+- An Owner is usually also an Employee and may hold Coach or Architect badges
 - A Co-Owner doesn't need to be an Employee. An external consultant can administer the account without holding a position in the organization
-- An Employee with portal access but no admin role is an App User, and uses exIQtive only through Personas
+- An Employee with access but no admin permission uses exIQtive only through Your Stuff
 - An Administrator's responsibilities and Readiness come from their Position, not their Account Role
 
 You assign Account Roles on the [Account users](/account/account-users) page.
@@ -89,7 +89,7 @@ You assign Account Roles on the [Account users](/account/account-users) page.
 - Only the Owner can transfer ownership
 - The Owner can't be suspended; transfer ownership first
 - The Owner or any Co-Owner can add or remove Co-Owners and Administrators
-- An App User must always be linked to an Employee
+- A user with no admin permission must always be linked to an Employee
 - A Co-Owner can't suspend another Co-Owner
 
 ## Common questions
@@ -110,8 +110,8 @@ You assign Account Roles on the [Account users](/account/account-users) page.
   <Accordion title="Can a Co-Owner suspend another Co-Owner?">
     No. Only the Owner can act on a Co-Owner's access.
   </Accordion>
-  <Accordion title="Why does an App User need to be linked to an Employee?">
-    An App User has no admin role, so the only reason for their access is to see their own Employee data: responsibilities, badges, and Readiness. Without an Employee link there's nothing for them to see.
+  <Accordion title="Why does a user with no admin permission need to be linked to an Employee?">
+    Without an admin permission, the only reason for their access is to see their own Employee data: responsibilities, badges, and Readiness. Without an Employee link there's nothing for them to see.
   </Accordion>
 </AccordionGroup>
 
