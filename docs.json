@@ -83,6 +83,10 @@
             ]
           },
           {
+            "group": "Job classification",
+            "pages": []
+          },
+          {
             "group": "Fair Reward",
             "pages": [
               "fair-reward/fair-pay"
