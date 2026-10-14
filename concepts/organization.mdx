@@ -29,13 +29,29 @@ A Position is a specific job in your organization, such as *HR Manager*, *Team L
 
 ### Position validity
 
-A position is **valid** when every role attached to it is valid (each has at least one active responsibility). You can't assign an employee to an invalid position; fix it first by making sure every attached role has at least one active responsibility.
+An active position is **valid** when an employee assigned to it would receive at least one responsibility. That happens when the position has at least one active responsibility reachable in either of two ways:
+
+- **Through a role:** an attached role that is active and has at least one active responsibility.
+- **Directly:** a responsibility attached directly to the position that is active. Attaching a draft, retired, or archived responsibility doesn't count.
+
+Either one is enough. A position with no roles but one active directly attached responsibility is valid. You can't assign an employee to an invalid position; fix it first by giving it at least one active responsibility through either path.
+
+Validity only applies while a position is Active. Draft, Retired, and Archived positions are never shown as invalid.
 
 | Status | Meaning |
 | --- | --- |
-| Valid | All attached roles have at least one active responsibility; employees can be assigned |
-| Invalid (no active roles) | No active roles are attached; attach at least one to make the position assignable |
-| Invalid (invalid role attached) | At least one attached role has no active responsibilities; fix the role to make the position assignable |
+| Valid | At least one active responsibility is reachable, through an active role or attached directly; employees can be assigned |
+| Invalid | No active responsibility is reachable: no active role with an active responsibility, and no active responsibility attached directly; add one to make the position assignable |
+
+An invalid role attached to a position doesn't make the position invalid, as long as the position is covered by another active role or by a direct responsibility.
+
+#### Validity warnings
+
+Some conditions are flagged as warnings. They never make a position invalid and never block assignment:
+
+- An attached active role has no active responsibilities.
+- A directly attached responsibility isn't active (draft, retired, or archived).
+- A directly attached responsibility is also carried by one of the position's active roles (marked **Redundant**).
 
 ### Position rules
 
@@ -72,7 +88,7 @@ We sometimes use **Hat** as a synonym for Role, as in "wearing the Customer Serv
 
 ### Role validity
 
-A role is valid when it has at least one active responsibility attached. A role with no active responsibilities is invalid, and any position it's attached to becomes invalid too, so you can't assign employees to that position until the role is fixed.
+A role is valid when it has at least one active responsibility attached. A role with no active responsibilities is invalid and gives its positions nothing. A position it's attached to is still valid if it has another valid active role or an active responsibility attached directly; otherwise you can't assign employees to that position until the role is fixed.
 
 ### Role rules
 
@@ -134,7 +150,7 @@ You can assign an employee to a position only when their vacancy is less than or
     They can be assigned: their 0.5 FTE fills half of the position's 1.0 FTE capacity. The remaining 0.5 FTE of vacancy can be filled by another employee, and exIQtive shows it so you know the position isn't fully covered.
   </Accordion>
   <Accordion title="Why does my position show as invalid?">
-    At least one of its attached roles has no active responsibilities. Find that role and either attach an active responsibility to it or detach it from the position. Once every attached role has at least one active responsibility, the position is valid and you can assign employees again.
+    An active position is invalid when no active responsibility reaches it: it has no active role with an active responsibility, and no active responsibility attached directly. Attach an active responsibility to one of its roles, attach a valid role, or attach an active responsibility directly to the position. As soon as one of those is in place, the position is valid and you can assign employees again.
   </Accordion>
 </AccordionGroup>
 

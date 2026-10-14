@@ -84,7 +84,7 @@ You attach Roles to Positions from the Position detail view, not from the Roles 
 
 ## Role validity
 
-A Role is **valid** when it's Active and has at least one active Responsibility attached. A Role is **invalid** when it's Active but has no active Responsibilities. An invalid Role attached to a Position makes that Position invalid, which blocks employee assignment.
+A Role is **valid** when it's Active and has at least one active Responsibility attached. A Role is **invalid** when it's Active but has no active Responsibilities. An invalid Role attached to a Position doesn't make the Position invalid by itself. The Position stays valid as long as it has another valid Role or an active Responsibility attached directly. If it has neither, the Position is invalid, which blocks employee assignment.
 
 See [Key organizational concepts](/concepts/organization) for the full Position validity rules.
 
