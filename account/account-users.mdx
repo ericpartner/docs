@@ -34,20 +34,20 @@ While an invitation is in flight, exIQtive also tracks its delivery: sent, deliv
 
 ## Permissions
 
-Every account user has one of four permission levels. For the full breakdown, see [Account roles and permissions](/account/roles-and-permissions).
+Every account user has one of three admin permission levels, or none. For the full breakdown, see [Account roles and permissions](/account/roles-and-permissions).
 
 | Permission | What they can do |
 | --- | --- |
 | **Owner** | Full access to all account settings and organization management. Can transfer ownership. Exactly one per account. |
 | **Co-Owner** | Full access to all account settings and organization management. Can't transfer ownership. An account can have several. |
 | **Administrator** | Access to Organization, Readiness, and other operational menus. Can't see Settings or manage account users. |
-| **App User** | No admin menus. Sees only Your Stuff (their personal Readiness view) and Ask IQ. Must always be linked to an Employee. |
+| **None** | No admin menus. Sees only Your Stuff (their personal Readiness view) and Ask IQ. Must always be linked to an Employee. |
 
 ### What each permission sees in the side menu
 
-| Menu item | App User | Administrator | Co-Owner | Owner |
+| Menu item | None | Administrator | Co-Owner | Owner |
 | --- | --- | --- | --- | --- |
-| Your Stuff | Yes (if linked to Employee) | Yes (if linked to Employee) | Yes (if linked to Employee) | Yes (if linked to Employee) |
+| Your Stuff | Yes | Yes (if linked to Employee) | Yes (if linked to Employee) | Yes (if linked to Employee) |
 | Ask IQ | Yes | Yes | Yes | Yes |
 | Organization | No | Yes | Yes | Yes |
 | Readiness | No | Yes | Yes | Yes |
@@ -81,7 +81,7 @@ Giving an Employee access links their Employee record to a login. That's what le
 
 In **Organization → Employees**, use the **Give Access** action on the Employee's row. You'll be asked for an email address and an access type:
 
-- **Employee Portal only**: App User permission. The Employee sees only Your Stuff and Ask IQ.
+- **Employee Portal only**: no admin permission. The Employee sees only Your Stuff and Ask IQ.
 - **Co-Owner**: Co-Owner permission. The Employee also gets full admin access.
 
 <Warning>
@@ -112,7 +112,7 @@ All actions are in the three-dot menu (⋯) at the right of the user's row in **
     Updates the display name. Only available when the user isn't linked to an Employee and has access to just this one account. If the user is linked to an Employee, update the name on the Employee record instead.
   </Accordion>
   <Accordion title="Change Permissions">
-    Changes the permission level (App User, Administrator, Co-Owner). A user with no Employee link can't be changed to App User.
+    Changes the permission level (None, Administrator, Co-Owner). A user with no Employee link can't be changed to None.
   </Accordion>
   <Accordion title="Delete User">
     Permanently deletes the user. Only available while the status is **Invited** (they never signed up). After someone signs up, they can only be suspended.
@@ -146,7 +146,7 @@ When you terminate an Employee, their linked account user access is suspended au
     If the email belongs to a user already linked to another Employee, you'll see a warning. If it belongs to a user with no Employee link, exIQtive links them to the Employee without creating a new user or re-sending an invite.
   </Accordion>
   <Accordion title="Who can give Employees portal access?">
-    Owners, Co-Owners, and Administrators. App Users can't.
+    Owners, Co-Owners, and Administrators. Users with no admin permission can't.
   </Accordion>
 </AccordionGroup>
 
