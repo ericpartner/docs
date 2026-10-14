@@ -9,7 +9,9 @@ Responsibilities are reusable. You define one once in the [Responsibilities Cata
 
 ## How responsibilities reach employees
 
-You never assign a responsibility directly to an employee. Responsibilities travel through your organizational structure:
+You never assign a responsibility directly to an employee. Responsibilities travel through your organizational structure, in one of two ways.
+
+**Through a role** (best when several positions share the responsibility):
 
 <Steps>
   <Step title="Attach the responsibility to a role">
@@ -20,7 +22,16 @@ You never assign a responsibility directly to an employee. Responsibilities trav
   </Step>
 </Steps>
 
-When the employee is assigned, they automatically inherit everything in that chain. Every employee in the same position gets exactly the same responsibilities, every time.
+**Directly to a position** (skips the role):
+
+<Steps>
+  <Step title="Attach the responsibility to a position">
+  </Step>
+  <Step title="Assign an employee to the position">
+  </Step>
+</Steps>
+
+When the employee is assigned, they automatically inherit everything attached to the position. Every employee in the same position gets exactly the same responsibilities, every time.
 
 ## Responsibility lifecycle
 
@@ -88,7 +99,7 @@ Deleting a responsibility can't be undone.
 ## Rules and constraints
 
 - Responsibilities must be Active to affect employees. Draft and Retired responsibilities don't flow through to anyone.
-- Responsibilities reach employees through roles only. You can't assign one directly.
+- Responsibilities reach employees through their position, either via a role or attached directly to the position. You can't assign one directly to an employee.
 - The same responsibility can be attached to any number of roles.
 - Retiring a responsibility removes employee assignments but leaves role attachments intact.
 - You can only delete a responsibility while it's in Draft.
@@ -97,7 +108,7 @@ Deleting a responsibility can't be undone.
 
 <AccordionGroup>
   <Accordion title="Why can't employees see a responsibility I just created?">
-    A new responsibility starts in Draft and isn't attached to any role yet. Activate it, then attach it to a role that's on a position your employees hold. You need both steps: activating alone won't make it visible if it isn't in the role chain.
+    A new responsibility starts in Draft and isn't attached to any role yet. Activate it, then attach it to a role that's on a position your employees hold, or attach it directly to that position. You need both steps: activating alone won't make it visible if it isn't attached to the position.
   </Accordion>
   <Accordion title="What happens to employee badges when I retire a responsibility?">
     All Current badges for that responsibility expire overnight, and employees lose the Readiness contribution from those badges the following day. Badge history is preserved, so you can still see what was earned, but it no longer counts toward their score.
