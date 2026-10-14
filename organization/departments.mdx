@@ -1,13 +1,9 @@
 ---
 title: "Departments"
-description: "Group positions into a department tree to navigate your organization and view readiness by team."
+description: "Group positions into a department tree to navigate and filter your organization by team."
 ---
 
 Departments let you group Positions into a hierarchy that mirrors your organization's structure. They help you organize and navigate your workforce; they don't change how Responsibilities are assigned or how Readiness is calculated.
-
-<Note>
-**The one exception is Fair Pay.** If a Position doesn't have its own Performance Scorecard or Bonus Eligibility Criteria, it inherits them from its Department. See [Fair Pay](/fair-reward/fair-pay) for how that works.
-</Note>
 
 ## Where to find departments
 
@@ -16,34 +12,9 @@ Go to **Account → Organization → Departments**. The view shows your organiza
 ## What departments are for
 
 - **Navigation** — ORMs and Co-Owners can browse the organization by team, division, or unit instead of scrolling a flat list of Positions.
-- **Reporting** — Readiness can be viewed per Department, showing how ready a specific team or division is.
+- **Filtering** — filter the Employees and Positions lists by Department.
 
 An employee's Responsibilities come from the Position → Role → Responsibility structure, not from their Department. See [Key organizational concepts](/concepts/organization).
-
-## View department readiness
-
-Every Department row in the tree shows its own Readiness, so you don't need a separate report.
-
-<Steps>
-  <Step title="Open the tree">
-    Go to **Account → Organization → Departments**. The tree view opens by default.
-  </Step>
-  <Step title="Read the Readiness column">
-    Each row shows a **Readiness** bar and percentage.
-  </Step>
-  <Step title="Drill in">
-    Click the Readiness bar (or anywhere on the row, or either position count) to see that Department's Positions.
-  </Step>
-</Steps>
-
-The percentage in the tree is always the **subtree** figure: the pooled average across that Department and every Department nested beneath it, at any depth. When you're scanning the whole organization, the rollup is what matters.
-
-Once you drill in, you can toggle between:
-
-- **This Department only** — just the Positions directly in this Department
-- **Including sub-departments** — the same subtree rollup shown in the tree
-
-A Department with no active Positions in scope shows **0%**. A retired Department also shows **0%**, because retiring a Department releases all its Positions.
 
 ## The department tree
 
@@ -86,17 +57,9 @@ There's no dedicated "Add Sub-department" action in the row menu. To nest a new 
 
 Changes the Department's parent. All Positions and sub-departments inside it move with it.
 
-<Warning>
-If the move would change the Performance Scorecard or Bonus Eligibility Criteria a Position inherits, you'll see a warning before the move completes. See [Fair Pay](/fair-reward/fair-pay).
-</Warning>
-
 ### Archive
 
 Removes the Department from the active tree. Positions inside it become unassigned. Archive a Department only when it no longer represents an active part of the organization.
-
-<Warning>
-If Positions beneath the Department rely on its Fair Pay configuration (Scorecard or Bonus Eligibility Criteria), you'll see a warning before archiving completes.
-</Warning>
 
 ### Delete
 
@@ -118,7 +81,7 @@ Permanently deletes the Department. Only available when it's empty (no Positions
 
 ## Move a position between departments
 
-Drag the Position row from its current Department and drop it into the target Department. Its assignments, Roles, and Responsibilities aren't affected. Its Fair Pay resolution (Performance Scorecard and Bonus Eligibility Criteria) may change if the Position doesn't have its own override. See [Fair Pay](/fair-reward/fair-pay).
+Drag the Position row from its current Department and drop it into the target Department. Its assignments, Roles, and Responsibilities aren't affected.
 
 ## Remove a position from a department
 
@@ -130,7 +93,7 @@ Open the Position's row menu inside the Department and select **Remove from Depa
 - Departments can be nested to any depth.
 - You can delete a Department only when it's empty.
 - Archiving a Department leaves its Positions unassigned. They don't move to the parent Department automatically.
-- Department membership doesn't affect Responsibility assignment or Readiness calculation. Fair Pay (Performance Scorecard, Bonus Eligibility Criteria) is the exception.
+- Department membership doesn't affect Responsibility assignment or Readiness calculation.
 
 ## Common questions
 
@@ -141,17 +104,11 @@ Open the Position's row menu inside the Department and select **Remove from Depa
   <Accordion title="What happens to an employee's Readiness data if their Position moves to another Department?">
     Nothing changes. Readiness is calculated from badges and Responsibilities, not from Department membership.
   </Accordion>
-  <Accordion title="How can I see the readiness of a Department?">
-    Go to **Account → Organization → Departments**. Every Department row shows a **Readiness** bar and percentage, rolled up across that Department and everything beneath it. Click the bar or row to drill in and toggle between the Department's own Positions and the full rollup. See [View department readiness](#view-department-readiness).
-  </Accordion>
   <Accordion title="What does it mean for a Position to be unassigned?">
-    The Position exists but isn't placed in any Department. It still works normally (employees can be assigned and Responsibilities flow through it), but it doesn't appear in any Department's branch of the tree. For Fair Pay, an unassigned Position has no Department to inherit a Scorecard or Bonus Eligibility Criteria from. See [Fair Pay](/fair-reward/fair-pay).
+    The Position exists but isn't placed in any Department. It still works normally (employees can be assigned and Responsibilities flow through it), but it doesn't appear in any Department's branch of the tree.
   </Accordion>
   <Accordion title="Can a Department contain both Positions and sub-departments?">
     Yes, in any mix.
-  </Accordion>
-  <Accordion title="Does moving or archiving a Department affect Fair Pay?">
-    Yes. This is the one place Department placement has a functional effect. A Position without its own Performance Scorecard or Bonus Eligibility Criteria inherits its Department's. Moving or archiving a Department that Positions rely on for that shows a warning before you proceed. See [Fair Pay](/fair-reward/fair-pay).
   </Accordion>
 </AccordionGroup>
 
@@ -166,8 +123,5 @@ Open the Position's row menu inside the Department and select **Remove from Depa
   </Card>
   <Card title="Organizational tree" icon="folder-tree" href="/organization/organizational-tree">
     How the whole structure connects.
-  </Card>
-  <Card title="Fair Pay" icon="scale-balanced" href="/fair-reward/fair-pay">
-    How departments drive scorecards and bonus eligibility.
   </Card>
 </CardGroup>
