@@ -1,0 +1,128 @@
+---
+title: "Job families"
+description: "Group positions by discipline and seniority level: create job families and levels, manage their lifecycle, and assign them to positions."
+icon: "tags"
+---
+
+A job family groups positions by **discipline**, such as Engineering, Sales, Finance, or Operations. Each job family has an ordered set of **levels** that represent seniority within that discipline. A position is assigned to one job family and one level in it, which places the position in your career structure.
+
+Job families describe what kind of work a position is and how senior it is. To group positions by the value of the work instead, see [Job categories](/organization/job-categories). The two are independent, so a position's family and category don't have to move together.
+
+<Note>
+  Job Families are turned on in **Account → Settings → Configuration → Jobs**. The setting is off by default, and only Owners and Co-Owners can change it. Turning it off hides Job Families but keeps all your families, levels, and position assignments, which reappear when you turn it back on.
+</Note>
+
+## Where to find job families
+
+Go to **Organization → Job Families**. The list shows each family with its code, status, number of levels, and number of positions. By default it shows Draft and Active families. Use the filter to include Retired families or show Archived ones, and search by name or code.
+
+## Levels
+
+Levels are the rungs of a family's career ladder. Each family has its own levels, with names that suit its discipline, and can have as many as it needs.
+
+Each level has:
+
+- **Name** (required): a label such as _Engineer I_ or _Senior Engineer_. Names must be unique within a family. Two different families can use the same level name.
+- **Descriptor** (optional): a one-line summary of the level.
+
+Levels are numbered 1 to N with no gaps. **Level 1 is the bottom of the ladder**, and a new level is added on top. The number reflects position only. It isn't read from the level's name. The list shows the highest level first, and levels appear as _number · name_, for example **3 · Senior Engineer**.
+
+<Tip>
+  A good descriptor covers scope of impact, complexity, autonomy, expertise required, and people or budget responsibility. Writing every family's levels against the same criteria makes levels comparable across families.
+</Tip>
+
+### Add, edit, reorder, and delete levels
+
+- **Add:** click **+ Add Level** on the family's Levels tab, enter a name and an optional descriptor, and save. The level goes on top of the ladder.
+- **Edit:** open a level's row menu (⋯) and select **Edit** to change its name or descriptor.
+- **Reorder:** drag a level to a new place. All levels in the family renumber automatically.
+- **Delete:** open the row menu and select **Delete**. If positions are on that level, you must choose another level **in the same family** to move them to before you can delete. You can't delete a family's only level. Add another level first.
+
+Levels have no status of their own. They also have no code. A level is identified by its family and its place in the ladder.
+
+### Suggest levels with IQ
+
+On a family's Levels tab, click **Suggest** to have IQ propose levels and descriptors. IQ uses the family's name, its Context tab (if filled in), your existing levels, and your account's IQ context. It extends your ladder and never deletes or replaces a level you've written. New levels are marked **New** and revised ones **Updated**. Closing the banner ends the review, and **Undo Suggestions** is no longer available after that, or if you leave the page.
+
+## Create a job family
+
+<Steps>
+  <Step title="Open Job Families">
+    Go to **Organization → Job Families**.
+  </Step>
+  <Step title="Add the family">
+    Click **+ Add Job Family** and enter a name. Names must be unique in your account.
+  </Step>
+  <Step title="Save">
+    Click **Save**. The new family opens as a Draft.
+  </Step>
+</Steps>
+
+When you create a family, exIQtive automatically creates its first level, named **No career ladder**. If the family has only one level, rename it and add a descriptor. If it has a ladder, rename it to the bottom rung and add more levels above it.
+
+## Job family status
+
+| Status | What it means |
+| --- | --- |
+| **Draft** | New and not yet in use. You can rename, edit, delete, or activate it. It can't be assigned to positions. |
+| **Active** | Live. Positions can be assigned to it. |
+| **Retired** | No longer offered for new assignments. Positions already assigned to it keep it, for historical reference. |
+| **Archived** | Hidden from the default list. Show it with the **Archived** filter. |
+
+Use the family's row menu (⋯) to change status:
+
+- **Activate:** Draft to Active.
+- **Rename:** available in any status.
+- **Retire:** Active to Retired.
+- **Reactivate:** Retired to Active.
+- **Archive:** Retired to Archived. A family must be retired first.
+- **Unarchive:** Archived to Retired.
+- **Delete:** Draft only. Deleting a Draft family also deletes its levels. Once a family is Active, retire and archive it instead.
+
+If you unarchive a family and another live family now has the same name, rename one of them first.
+
+## Assign a job family to a position
+
+A position can have one job family and one level. Only Active families can be assigned. You pick the family first, then the level. If the family has only one level, it's selected for you. If the family you need doesn't exist, you can create it from the picker: type its name and select **+ Add Job Family**. It's created as Active with one level, so you can assign it right away.
+
+To move a position to a different family, remove its current family first, then assign the new one. A position can't be moved directly from one family to another. For the steps, see [Assign a job family to a position](/user-guide/positions/assign-a-job-family).
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Can a family have sub-families?">
+    No. Job families have one tier: family, then level. If you need finer detail, create narrower families, such as separate Backend Engineering and Frontend Engineering families.
+  </Accordion>
+
+  <Accordion title="What happens to positions if I retire or archive a family?">
+    Positions already assigned keep their family and level. A family that is archived is flagged on those positions, and no new positions can be assigned to a family that isn't Active.
+  </Accordion>
+
+  <Accordion title="Does a job family change a position's responsibilities or readiness?">
+    No. Responsibilities still come from the position's roles. A job family classifies the position for career structure and filtering.
+  </Accordion>
+
+  <Accordion title="Can I filter positions and employees by job family?">
+    Yes. Filter by job family on the Positions and Employees lists. To filter by level, choose the family first, because level numbers repeat across families.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Job categories" icon="scale-balanced" href="/organization/job-categories">
+    Group positions by the value of the work.
+  </Card>
+
+  <Card title="Assign a job family" icon="tags" href="/user-guide/positions/assign-a-job-family">
+    Step-by-step assignment.
+  </Card>
+
+  <Card title="Positions" icon="briefcase" href="/organization/positions">
+    The positions you classify.
+  </Card>
+
+  <Card title="Organizational concepts" icon="book" href="/concepts/organization">
+    Definitions and shared object codes.
+  </Card>
+</CardGroup>

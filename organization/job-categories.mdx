@@ -1,0 +1,116 @@
+---
+title: "Job categories"
+description: "Group positions that represent work of equal value, score each category on four factors, and assign categories to positions."
+icon: "scale-balanced"
+---
+
+A job category groups positions that represent **work of equal value**: positions that, whatever their titles or reporting lines, involve comparable skills, effort, responsibility, and working conditions. Use job categories to compare pay fairly across your company, to analyze pay equity, and to design your organization.
+
+Where a [job family](/organization/job-families) answers "what kind of work is this, and how senior?", a job category answers "how much is this work worth, regardless of discipline?". The two cut across each other. Two positions in the same family, such as a Junior Engineer and a Principal Engineer, usually land in different categories. Two positions in different families, such as a Marketing Manager and an IT Manager, can land in the same category if the work scores comparably.
+
+<Note>
+  Job Categories are turned on in **Account → Settings → Configuration → Jobs**. The setting is off by default, and only Owners and Co-Owners can change it. Turning it off hides Job Categories but keeps all your categories, scores, and position assignments, which reappear when you turn it back on. It is separate from the Job Families setting.
+</Note>
+
+## Where to find job categories
+
+Go to **Organization → Job Categories**. The list shows each category with its code, status, number of positions, and default pay range. By default it shows Draft and Active categories. Use the filter to include Retired or Archived ones, and search by name or code.
+
+## Four-factor scoring
+
+Every job category is scored on four factors, taken from the European Commission's Gender-Neutral Job Evaluation Toolkit (EIGE):
+
+| Factor | What it covers |
+| --- | --- |
+| **Skills** | Knowledge, interpersonal and communication skills, problem-solving, planning and organizational skills, physical skills |
+| **Responsibility** | Responsibility for people, goods and equipment, information, and financial resources |
+| **Effort** | Mental effort, psychosocial and emotional effort, physical effort |
+| **Working conditions** | The physical, psychological, and emotional environment, and the organizational environment |
+
+You score each subfactor against the level descriptions for that factor, and IQ can suggest scores to help. For Skills and Responsibility, IQ draws on the Organization and Readiness data already in exIQtive.
+
+A position can override the Skills and Responsibility scores it gets from its category. Effort and Working conditions are set on the category only.
+
+Scores can be changed while the category is Draft or Active. Once it's Retired or Archived, scores are frozen so history stays accurate.
+
+## Create a job category
+
+<Steps>
+  <Step title="Open Job Categories">
+    Go to **Organization → Job Categories**.
+  </Step>
+  <Step title="Add the category">
+    Click **+ Add Job Category** and enter a name. Names must be unique in your account.
+  </Step>
+  <Step title="Score the factors">
+    Score each subfactor in the four factors, or ask IQ to suggest scores.
+  </Step>
+  <Step title="Activate">
+    Open the row menu (⋯) and select **Activate**. Only Active categories can be assigned to positions.
+  </Step>
+</Steps>
+
+## Job category status
+
+| Status | What it means |
+| --- | --- |
+| **Draft** | New and not yet in use. You can rename, edit its scores, delete, or activate it. |
+| **Active** | Live. Positions can be assigned to it. |
+| **Retired** | No longer offered for new assignments. Positions already assigned to it keep it. |
+| **Archived** | Hidden from the default list. Show it with the **Archived** filter. |
+
+Use the category's row menu (⋯) to change status:
+
+- **Activate:** Draft to Active.
+- **Rename:** available in any status.
+- **Retire:** Active to Retired.
+- **Reactivate:** Retired to Active.
+- **Archive:** Retired to Archived. A category must be retired first.
+- **Unarchive:** Archived to Retired.
+- **Delete:** Draft only. Once a category is Active, retire and archive it instead.
+
+## Assign a job category to a position
+
+A position is assigned to a job category, either by an administrator or with an IQ suggestion. The assignment is a live link, not a copy. If you change the category's scores, every position assigned to it follows.
+
+A category can have a **default pay range**. A position assigned to the category inherits that pay range unless the position has a pay range of its own, which takes priority. Scoring and pay range are separate: a position can override its scores and still inherit the category's pay range, or the reverse.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="What's the difference between a job category and a job family?">
+    A job family groups positions by discipline and seniority. A job category groups positions by the value of the work. Use families for career paths and categories for pay comparison. A position can have both.
+  </Accordion>
+
+  <Accordion title="Is a job category the same as a pay range?">
+    No. A job category compares positions inside your company. A pay range is the external market benchmark. A position can have both.
+  </Accordion>
+
+  <Accordion title="What happens to positions if I retire or archive a category?">
+    Positions already assigned keep the category. No new positions can be assigned to a category that isn't Active.
+  </Accordion>
+
+  <Accordion title="Can I filter positions and employees by job category?">
+    Yes. Filter by job category on the Positions and Employees lists. On Employees, the filter uses the employee's current position. Retired and Archived categories stay available in the filter.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Job families" icon="tags" href="/organization/job-families">
+    Group positions by discipline and level.
+  </Card>
+
+  <Card title="Fair Pay" icon="scale-balanced" href="/fair-reward/fair-pay">
+    How pay connects to readiness.
+  </Card>
+
+  <Card title="Positions" icon="briefcase" href="/organization/positions">
+    The positions you classify.
+  </Card>
+
+  <Card title="Organizational concepts" icon="book" href="/concepts/organization">
+    Definitions and shared object codes.
+  </Card>
+</CardGroup>

@@ -84,7 +84,10 @@
           },
           {
             "group": "Job classification",
-            "pages": []
+            "pages": [
+              "organization/job-families",
+              "organization/job-categories"
+            ]
           },
           {
             "group": "Fair Reward",
