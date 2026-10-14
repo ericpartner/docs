@@ -22,7 +22,7 @@ exIQtive uses six building blocks, collectively called organizational objects:
 | **Job Family** | A grouping of positions by discipline (Engineering, Sales, Finance), with ordered levels for seniority |
 | **Job Category** | A grouping of positions that represent work of equal value |
 
-Positions, Roles, and Responsibilities connect in a chain: you attach Responsibilities to Roles, attach Roles to Positions, and assign Employees to Positions. Everything flows from that chain automatically. Departments, Job Families, and Job Categories classify positions; they don't change which responsibilities an employee receives.
+Positions, Roles, and Responsibilities connect in a chain: you attach Responsibilities to Roles (or directly to a Position), attach Roles to Positions, and assign Employees to Positions. Everything flows from that chain automatically. Departments, Job Families, and Job Categories classify positions; they don't change which responsibilities an employee receives.
 
 ### Organizational object codes
 
@@ -56,7 +56,7 @@ A position is **valid** when every role attached to it is valid (each has at lea
 
 - One employee can hold a position at a time, but multiple employees can be preparing for it
 - An unoccupied position is called **vacant**
-- Positions get responsibilities only through roles; you can't attach a responsibility directly to a position
+- Positions get responsibilities through their roles, and you can also attach a responsibility directly to a position
 
 <Tip>
 **Example:** ACME Corporation has positions for CEO, CFO, VP of Manufacturing, and Assistant to the CEO. John Doe holds the CEO position. When he was assigned, he automatically received all the roles and responsibilities that come with it.
@@ -105,7 +105,7 @@ Every responsibility has a clearly defined scope: what the person is trusted to 
 
 ### Responsibility rules
 
-- Responsibilities reach employees through the Position → Role → Responsibility chain; you never assign a responsibility directly to an employee
+- Responsibilities reach employees through their position, either through a role or attached directly to the position; you never assign a responsibility directly to an employee
 - The same responsibility can be attached to any number of roles
 - Each responsibility has a unique name in your account
 
