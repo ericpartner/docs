@@ -78,12 +78,15 @@
           {
             "group": "Roles and departments",
             "pages": [
-              "organization/roles"
+              "organization/roles",
+              "organization/departments"
             ]
           },
           {
             "group": "Fair Reward",
-            "pages": []
+            "pages": [
+              "fair-reward/fair-pay"
+            ]
           }
         ]
       },
