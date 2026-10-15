@@ -103,7 +103,8 @@
               "readiness/overview",
               "user-guide/readiness/how-readiness-is-calculated",
               "user-guide/readiness/badge-ladder",
-              "readiness/communicating-readiness"
+              "readiness/communicating-readiness",
+              "readiness/tasks"
             ]
           },
           {
@@ -158,6 +159,12 @@
             "group": "Notifications",
             "pages": [
               "account/email-notifications"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "account/operating-countries-and-currencies"
             ]
           }
         ]

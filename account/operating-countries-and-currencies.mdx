@@ -1,0 +1,60 @@
+---
+title: "Operating countries and currencies"
+description: "Choose the countries and currencies your account works in, set a default country, and manage exchange rates."
+icon: "globe"
+---
+
+These two settings define which countries and currencies your account works in. They feed [Fair Pay](/fair-reward/fair-pay), where each pay range is set for a country and a currency.
+
+Go to **Account → Settings → Configuration**.
+
+## Operating countries
+
+Your account has a list of operating countries, and exactly one is the **default country**. A new account starts with the United States as its default.
+
+| Action | What it does |
+| --- | --- |
+| **Add** | Pick a country from the catalog. A country can be added only once. |
+| **Retire** | Stops the country being used for new pay ranges. Existing pay ranges keep working. You can't retire the default country. |
+| **Reactivate** | Makes a retired country selectable again. |
+| **Set as Default** | Makes an active country the default. To retire the current default, set another country as default first. |
+| **Work hours per year** | Select the value in the row to edit it. It sets the working-year hours used to annualize hourly pay for that country. It must be a whole number above 0. |
+
+The default country is always listed first, then the rest A–Z. Retired countries stay in the list, marked **Retired**. The list shows 5 rows per page, and paging appears only when you have more than 5 countries.
+
+After you add a country, exIQtive may offer to add or reactivate that country's main currency as an operating currency. It's only a prompt, and you can decline.
+
+## Operating currencies
+
+Your account has one **reference currency**. Every other operating currency has an exchange rate to it, and that rate is either:
+
+- **Daily**: refreshed automatically each day from the exchange-rate provider.
+- **Corporate**: a rate you set yourself. The daily refresh skips it.
+
+You can add a currency, retire or reactivate it, change a rate or its mode, and use **Set as Reference** to change the reference currency. Changing the reference rebuilds the rates against the new one.
+
+The Currency column of the Operating Currencies table doesn't show country flags.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Does the default country set my reference currency?">
+    No. The two settings are independent.
+  </Accordion>
+
+  <Accordion title="Can I delete a country or currency?">
+    No. You can retire it.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fair Pay" icon="scale-balanced" href="/fair-reward/fair-pay">
+    Set pay ranges by country and currency.
+  </Card>
+
+  <Card title="Account users" icon="users" href="/account/account-users">
+    Manage who can sign in to your account.
+  </Card>
+</CardGroup>
