@@ -159,6 +159,10 @@
             "pages": [
               "account/email-notifications"
             ]
+          },
+          {
+            "group": "Settings",
+            "pages": []
           }
         ]
       }
