@@ -135,7 +135,8 @@
           {
             "group": "IQ",
             "pages": [
-              "iq/ask-iq"
+              "iq/ask-iq",
+              "iq/eu-ai-act-position"
             ]
           }
         ]
