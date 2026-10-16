@@ -81,8 +81,7 @@
           {
             "group": "Roles",
             "pages": [
-              "organization/roles",
-              "organization/departments"
+              "organization/roles"
             ]
           },
           {
@@ -91,7 +90,7 @@
               "responsibilities/managing-responsibilities",
               "responsibilities/catalog",
               {
-                "group": "Checkpoints and learning",
+                "group": "Checkpoints",
                 "pages": [
                   "checkpoints/overview",
                   "checkpoints/editing-a-checkpoint",
@@ -104,18 +103,21 @@
           },
           {
             "group": "Departments",
-            "pages": []
+            "pages": [
+              "organization/departments"
+            ]
           },
           {
             "group": "Job families",
             "pages": [
-              "organization/job-families",
-              "organization/job-categories"
+              "organization/job-families"
             ]
           },
           {
             "group": "Job categories",
-            "pages": []
+            "pages": [
+              "organization/job-categories"
+            ]
           }
         ]
       },
