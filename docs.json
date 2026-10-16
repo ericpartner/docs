@@ -163,7 +163,8 @@
               "account/account-owner",
               "account/co-owner",
               "account/administrator",
-              "account/account-users"
+              "account/account-users",
+              "account/view-as"
             ]
           },
           {
