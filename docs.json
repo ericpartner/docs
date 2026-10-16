@@ -79,18 +79,43 @@
             ]
           },
           {
-            "group": "Roles and departments",
+            "group": "Roles",
             "pages": [
               "organization/roles",
               "organization/departments"
             ]
           },
           {
-            "group": "Job classification",
+            "group": "Responsibilities",
+            "pages": [
+              "responsibilities/managing-responsibilities",
+              "responsibilities/catalog",
+              {
+                "group": "Checkpoints and learning",
+                "pages": [
+                  "checkpoints/overview",
+                  "checkpoints/editing-a-checkpoint",
+                  "checkpoints/editing-an-article",
+                  "checkpoints/importing-a-scribe-article",
+                  "checkpoints/quizzes"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Departments",
+            "pages": []
+          },
+          {
+            "group": "Job families",
             "pages": [
               "organization/job-families",
               "organization/job-categories"
             ]
+          },
+          {
+            "group": "Job categories",
+            "pages": []
           }
         ]
       },
@@ -105,23 +130,6 @@
               "user-guide/readiness/badge-ladder",
               "readiness/communicating-readiness",
               "readiness/tasks"
-            ]
-          },
-          {
-            "group": "Responsibilities",
-            "pages": [
-              "responsibilities/managing-responsibilities",
-              "responsibilities/catalog"
-            ]
-          },
-          {
-            "group": "Checkpoints and learning",
-            "pages": [
-              "checkpoints/overview",
-              "checkpoints/editing-a-checkpoint",
-              "checkpoints/editing-an-article",
-              "checkpoints/importing-a-scribe-article",
-              "checkpoints/quizzes"
             ]
           },
           {
