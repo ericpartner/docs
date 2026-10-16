@@ -44,6 +44,8 @@
           {
             "group": "Key concepts",
             "pages": [
+              "concepts/clarify",
+              "concepts/certify",
               "concepts/readiness",
               "concepts/organization",
               "concepts/personas",
