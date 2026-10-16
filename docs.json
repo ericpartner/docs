@@ -120,6 +120,7 @@
               "checkpoints/overview",
               "checkpoints/editing-a-checkpoint",
               "checkpoints/editing-an-article",
+              "checkpoints/importing-a-scribe-article",
               "checkpoints/quizzes"
             ]
           },
