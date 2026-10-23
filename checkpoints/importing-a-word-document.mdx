@@ -1,0 +1,75 @@
+---
+title: "Importing a Word document"
+description: "Fill a checkpoint's article with the text, structure and images from a Word (.docx) file."
+icon: "file-word"
+---
+
+Bring an existing Word document, such as a procedure or training handout, into a checkpoint's article. exIQtive converts the document's headings, text, lists, tables and images into editable article content, so you don't have to retype it.
+
+## Import a Word document into an article
+
+<Steps>
+  <Step title="Open the checkpoint">
+    Open the checkpoint you want to work on and click **Edit**, or **Lock to Edit** if the checkpoint is already Active.
+  </Step>
+  <Step title="Select the Article tab">
+    In the Microlearning section, select the **Article** tab.
+  </Step>
+  <Step title="Choose Import from Word">
+    Open the **⋯** menu next to the Article, Quiz and Inspection tabs and select **Import from Word**.
+  </Step>
+  <Step title="Select your document">
+    Choose a `.docx` file from your computer, or drag it into the window.
+  </Step>
+  <Step title="Wait for the import to finish">
+    The window closes and the converted content appears in the editor. A short summary tells you what was imported and what wasn't carried over.
+  </Step>
+  <Step title="Review and save">
+    Check the content, make any changes, then click **Save**.
+  </Step>
+</Steps>
+
+## What carries over
+
+| In your document | In the article |
+| --- | --- |
+| Title and Heading styles | Headings. Levels deeper than the editor supports use the deepest level it has. |
+| Paragraphs | Paragraphs. Empty paragraphs used only for spacing are dropped. |
+| Bulleted and numbered lists | Bullet and numbered lists, including nested lists |
+| Tables | Tables |
+| Bold, italic, underline and links | The same formatting and links |
+| PNG, JPEG, GIF and WebP pictures | Images, placed where they appear in the document, with their alt text |
+| Tracked changes | Accepted text: insertions are kept and deletions are dropped |
+
+exIQtive leaves out headers, footers and page numbers. Table of contents entries stay as text.
+
+## What doesn't carry over
+
+- **Comments, footnotes and endnotes.**
+- **Text boxes, charts, SmartArt and drawings.** Add them to the article yourself.
+- **Pictures in other formats**, such as EMF and WMF.
+- **Merged table cells.** exIQtive splits them and keeps the content in the first cell.
+- **Page layout and document styling.**
+
+The import summary tells you what was left out, so you know what to check.
+
+## Before you import
+
+- Use a `.docx` file. If you have an older `.doc` file, open it in Word and save it as `.docx` first.
+- Macro-enabled documents (`.docm`) and password-protected documents can't be imported. Remove the password in Word, then try again.
+- The imported content appears as an unsaved draft. Click **Save** to keep it. See [Editing an article](/checkpoints/editing-an-article).
+- If the article already has content, importing replaces it. exIQtive asks you to confirm first. You can't add imported content to existing text.
+- If the import fails, nothing is added to the article and exIQtive tells you why.
+- Importing the same document twice gives you the same result.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Editing an article" icon="file-lines" href="/checkpoints/editing-an-article">
+    Write and format a checkpoint's article.
+  </Card>
+
+  <Card title="Importing a Scribe article" icon="file-import" href="/checkpoints/importing-a-scribe-article">
+    Fill an article from a Scribe guide.
+  </Card>
+</CardGroup>
