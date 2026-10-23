@@ -1,0 +1,75 @@
+---
+title: "Importing a PDF"
+description: "Fill a checkpoint's article with the text, structure and images from a PDF file."
+icon: "file-pdf"
+---
+
+Bring an existing PDF, such as a procedure, manual or training handout, into a checkpoint's article. exIQtive converts the PDF's text, headings, lists, tables and images into editable article content, so you don't have to retype it.
+
+<Note>
+  Copying text from a PDF viewer and pasting it into the article editor gives you plain, unformatted text with no images. Import the file instead to keep the structure.
+</Note>
+
+## Import a PDF into an article
+
+<Steps>
+  <Step title="Open the checkpoint">
+    Open the checkpoint you want to work on and click **Edit**, or **Lock to Edit** if the checkpoint is already Active.
+  </Step>
+  <Step title="Select the Article tab">
+    In the Microlearning section, select the **Article** tab.
+  </Step>
+  <Step title="Choose Import from PDF">
+    Open the **⋯** menu next to the Article, Quiz and Inspection tabs and select **Import from PDF**.
+  </Step>
+  <Step title="Select your PDF">
+    Choose a PDF from your computer, or drag it into the window.
+  </Step>
+  <Step title="Wait for the import to finish">
+    The window closes and the converted content appears in the editor. A short summary tells you what was imported and what wasn't carried over.
+  </Step>
+  <Step title="Review and save">
+    Check the content, make any changes, then click **Save**.
+  </Step>
+</Steps>
+
+## What carries over
+
+| In your PDF | In the article |
+| --- | --- |
+| Headings | Headings |
+| Paragraphs | Paragraphs, with lines that wrapped on the page joined back together |
+| Bulleted and numbered lists | Bullet and numbered lists, including nested lists |
+| Tables | Tables |
+| Bold, italic, underline and links | The same formatting and links |
+| Pictures | Images, placed where they appear in the PDF |
+
+exIQtive leaves out repeated page headers and footers, page numbers, and the dotted lines and page numbers in a table of contents. Table of contents entries stay as text.
+
+## What doesn't carry over
+
+- **Charts and drawings.** Only embedded pictures are imported. Add charts and drawings to the article yourself.
+- **Scanned PDFs.** The PDF needs selectable text. A PDF made from scanned pages can't be imported.
+- **Password-protected PDFs.** Remove the password in your PDF tool, then try again.
+- **Page layout and visual styling**, form fields and annotations.
+
+Some tables and images may not convert cleanly. The import summary tells you when that happens, so you know what to check.
+
+## Before you import
+
+- The imported content appears as an unsaved draft. Click **Save** to keep it. See [Editing an article](/checkpoints/editing-an-article).
+- If the article already has content, importing replaces it. exIQtive asks you to confirm first. You can't add imported content to existing text.
+- If the import fails, nothing is added to the article and exIQtive tells you why.
+- Importing the same PDF twice gives you the same result.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Editing an article" icon="file-lines" href="/checkpoints/editing-an-article">
+    Write and format a checkpoint's article.
+  </Card>
+
+  <Card title="Importing a Scribe article" icon="file-import" href="/checkpoints/importing-a-scribe-article">
+    Fill an article from a Scribe guide.
+  </Card>
+</CardGroup>
