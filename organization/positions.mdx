@@ -13,6 +13,21 @@ Positions control:
 
 For the underlying definitions, see [Key organizational concepts](/concepts/organization).
 
+## Header dashboard
+
+A row of count tiles sits above the Positions table.
+
+| Tile | What it counts |
+| --- | --- |
+| **Active** | Positions with Active status. |
+| **Draft** | Positions with Draft status. |
+| **Invalid** | Draft or Active positions with no valid role attached and no active responsibility attached directly. Hidden when Readiness isn't turned on. |
+| **Vacant** | Active positions with no employee currently assigned to them. Shown in red when above zero. |
+
+Retired and Archived positions aren't counted. If the counts can't load, the tiles show a dash.
+
+Click a tile to filter the table to that group. The tile replaces all your other filters and your search. Click the same tile again to return to the default view of Draft and Active positions.
+
 ## How positions work
 
 Positions sit at the center of the exIQtive structure:
@@ -36,8 +51,8 @@ This keeps things consistent and avoids manual, one-off assignments.
 | Status | What it means | What you can do |
 | --- | --- | --- |
 | **Draft** | Newly created and not yet in use. Can't be assigned to employees. | Rename, Attach Roles, Delete, Activate |
-| **Active** | Live and operational. | Assign Employees, Attach or manage Roles, Rename, Retire |
-| **Retired** | Removed from active use. Existing assignments are retired and data is preserved. Can't be assigned. | Rename, Attach Roles, Reactivate, Archive |
+| **Active** | Live and operational. | Assign Employees, Attach or manage Roles, Rename, Retire (once no employees are assigned) |
+| **Retired** | Removed from active use. Data is preserved. Can't be assigned. | Rename, Attach Roles, Reactivate, Archive |
 | **Archived** | Stored for historical reference only. Can't be assigned. | Unarchive (returns the position to Retired) |
 
 ## Add a new position
@@ -80,7 +95,7 @@ Available at all times. Opens a dialog to attach an existing Role, or to create 
 
 ### Retire
 
-Available when Active. Removes the position from active use and retires all current employee assignments.
+Available when Active. Retire is unavailable while an employee is assigned to the position, whether as their Primary Position or as the position they're preparing for. Relieve those employees first, then retire the position.
 
 {/* MEDIA TODO: screenshot of the Retire confirmation dialog. */}
 
@@ -119,7 +134,7 @@ Deleting a position can't be undone.
 The Positions tab has a **Categorized** view, next to the list and tree views. It shows one row per position, with columns you can use to classify it directly:
 
 - **Department**
-- **Job Category**, shown only when Job Categories are turned on in **Account → Settings → Configuration → Jobs**
+- **Job Category**, shown only when Job Categories are turned on in **Settings → Configurations → Jobs**
 - **Job Family** and level, shown only when Job Families are turned on
 
 Select a cell to assign, change, or remove its value. Department and Job Family open the same pickers you use elsewhere. The Job Category picker lists only **Active** categories, which you can search by name or code. Draft and Retired categories are greyed out. The Job Category badge shows the category's **Total Score**.
@@ -140,29 +155,25 @@ The Positions table shows how many Roles are attached to each position. A positi
 
 {/* MEDIA TODO: screenshot of the Positions table showing the Roles count column. */}
 
-### Open a position to manage roles
+### Attach a role
 
-{/* CONTENT TODO: UI steps pending walkthrough */}
+<Steps>
+  <Step title="Open the position's menu">
+    On **Organization → Positions**, open the three-dot menu (⋯) on the position's row and select **Attach Role**. It's available for every position except Archived ones.
+  </Step>
+  <Step title="Pick the role">
+    Search for and select an existing Role.
+  </Step>
+  <Step title="Confirm">
+    Click **Attach**. The button is enabled once you've selected a role.
+  </Step>
+</Steps>
 
-{/* MEDIA TODO: screenshots of opening a position and its Roles tab. */}
+If the Role you need doesn't exist yet, use the **\+ Create and attach new** row in the picker. It creates a Draft Role and attaches it in one step. See [Roles](/organization/roles#create-and-attach-from-a-picker).
 
-### Attach an existing role
+An employee assigned to the position receives every responsibility of an Active, valid role attached to it.
 
-{/* CONTENT TODO: UI steps pending walkthrough */}
-
-{/* MEDIA TODO: four screenshots of the Attach Role dialog, selecting an existing role, and the confirmation. */}
-
-### Create a new role and attach it
-
-{/* CONTENT TODO: UI steps pending walkthrough */}
-
-{/* MEDIA TODO: screenshots of the create-and-attach role dialog. */}
-
-### View responsibilities under a role
-
-{/* CONTENT TODO: UI steps pending walkthrough */}
-
-{/* MEDIA TODO: screenshot of a position's role expanded to show its responsibilities. */}
+{/* MEDIA TODO: screenshots of the Attach Role dialog, selecting an existing role, and the confirmation. */}
 
 ## Attach responsibilities directly to positions
 
@@ -220,6 +231,7 @@ An employee can be assigned to a position only when:
 ## Rules and constraints
 
 - A position must be **Active** to assign employees.
+- A position can be retired only when no employee is assigned to it or preparing for it.
 - An employee can have **only one Primary Position**.
 - External Helpers (0 FTE) can't occupy positions.
 - Positions distribute responsibilities through their attached roles and through responsibilities attached directly to the position.
