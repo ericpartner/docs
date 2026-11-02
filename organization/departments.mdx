@@ -7,7 +7,7 @@ Departments let you group Positions into a hierarchy that mirrors your organizat
 
 ## Where to find departments
 
-Go to **Account → Organization → Departments**. The view shows your organization as a tree. Each node is a Department, and Positions (with the employees who hold them) sit inside Departments.
+Go to **Organization → Departments**. The view shows your organization as a tree. Each node is a Department, and Positions (with the employees who hold them) sit inside Departments.
 
 ## What departments are for
 
@@ -15,6 +15,19 @@ Go to **Account → Organization → Departments**. The view shows your organiza
 - **Filtering** — filter the Employees and Positions lists by Department.
 
 An employee's Responsibilities come from the Position → Role → Responsibility structure, not from their Department. See [Key organizational concepts](/concepts/organization).
+
+## Header dashboard
+
+In the tree view, a row of count tiles sits above the table.
+
+| Tile | What it counts |
+| --- | --- |
+| **Active Departments** | Departments with Active status in the current list. |
+| **Draft Departments** | Departments with Draft status in the current list. |
+| Positions without a department | Positions that aren't in any department. Count only, shown in red. |
+| **Not Managed** | Active departments with no manager assigned. Shown in red. |
+
+Click **Active Departments**, **Draft Departments**, or **Not Managed** to filter the tree to that group. The tile replaces your other filters. Click it again to return to the default view. The positions tile is a count only, because those are positions rather than departments.
 
 ## The department tree
 
@@ -24,11 +37,22 @@ Departments are nested. A Department can contain Positions (with their assigned 
 
 A Position can belong to only one Department at a time. Positions not placed in any Department appear as unassigned.
 
+## Department lifecycle
+
+**Draft → Active → Retired → Archived**
+
+| Status | What you can do |
+| --- | --- |
+| **Draft** | Activate, Rename, Delete |
+| **Active** | Retire, Rename |
+| **Retired** | Reactivate, Rename, Archive |
+| **Archived** | Unarchive |
+
 ## Add a new department
 
 <Steps>
   <Step title="Open Departments">
-    Go to **Account → Organization → Departments**.
+    Go to **Organization → Departments**.
   </Step>
   <Step title="Add the department">
     Click **+ Add Department** and enter the Department name.
@@ -53,17 +77,39 @@ Updates the Department name everywhere it appears. No Positions or assignments a
 
 There's no dedicated "Add Sub-department" action in the row menu. To nest a new Department, click **+ Add Department** in the header and choose the existing Department as the parent.
 
+### Activate
+
+Available in Draft. Makes the Department Active.
+
+### Retire
+
+Available when Active. Takes the Department out of active use.
+
+### Reactivate
+
+Available when Retired. Returns the Department to Active.
+
 ### Move
 
-Changes the Department's parent. All Positions and sub-departments inside it move with it.
+Drag a department in the tree.
+
+- Drop it on the middle of another department's row to nest it inside that department.
+- Drop it on the top or bottom edge of a row to reorder it among its siblings.
+- Drop it above or below a top-level department to make it a top-level department.
+
+You can't drop a department inside its own sub-departments, and an Active department's parent must be Active. All positions and sub-departments move with it.
 
 ### Archive
 
-Removes the Department from the active tree. Positions inside it become unassigned. Archive a Department only when it no longer represents an active part of the organization.
+Available when Retired. Moves the Department into long-term storage.
+
+### Unarchive
+
+Available when Archived. Returns the Department to Retired.
 
 ### Delete
 
-Permanently deletes the Department. Only available when it's empty (no Positions and no sub-departments). This can't be undone.
+Available in Draft only. Permanently deletes the Department. This can't be undone.
 
 ## Add a position to a department
 
@@ -91,8 +137,7 @@ Open the Position's row menu inside the Department and select **Remove from Depa
 
 - A Position can belong to only one Department at a time.
 - Departments can be nested to any depth.
-- You can delete a Department only when it's empty.
-- Archiving a Department leaves its Positions unassigned. They don't move to the parent Department automatically.
+- You can delete a Department only in Draft.
 - Department membership doesn't affect Responsibility assignment or Readiness calculation.
 
 ## Common questions
