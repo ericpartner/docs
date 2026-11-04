@@ -158,6 +158,17 @@
         ]
       },
       {
+        "tab": "Fair Pay",
+        "groups": [
+          {
+            "group": "Fair Pay",
+            "pages": [
+              "fair-pay/overview"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Account",
         "groups": [
           {
