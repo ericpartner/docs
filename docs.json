@@ -28,45 +28,9 @@
   "navigation": {
     "products": [
       {
-        "product": "The exIQtive method",
-        "icon": "diagram-project",
-        "description": "The method: Clarify, Certify, Pay fairly, Engage, Synchronize",
-        "tabs": [
-          {
-            "tab": "The exIQtive method",
-            "groups": [
-              {
-                "group": "Introduction",
-                "pages": [
-                  "get-started/what-is-exiqtive",
-                  "get-started/who-its-for"
-                ]
-              },
-              {
-                "group": "The five steps",
-                "pages": [
-                  "concepts/method",
-                  {
-                    "group": "Clarify",
-                    "pages": [
-                      "concepts/clarify",
-                      "concepts/readiness"
-                    ]
-                  },
-                  "concepts/certify",
-                  "concepts/pay-fairly",
-                  "concepts/engage",
-                  "concepts/synchronize"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "product": "exIQtive.com",
+        "product": "Use exIQtive.com",
         "icon": "desktop",
-        "description": "The software: how to use exIQtive",
+        "description": "The software: how to use exIQtive.com",
         "tabs": [
           {
             "tab": "Get started",
@@ -227,6 +191,42 @@
                 "group": "Settings",
                 "pages": [
                   "account/operating-countries-and-currencies"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "product": "The exIQtive method",
+        "icon": "diagram-project",
+        "description": "The method: Clarify, Certify, Pay fairly, Engage, Synchronize",
+        "tabs": [
+          {
+            "tab": "The exIQtive method",
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "get-started/what-is-exiqtive",
+                  "get-started/who-its-for"
+                ]
+              },
+              {
+                "group": "The five steps",
+                "pages": [
+                  "concepts/method",
+                  {
+                    "group": "Clarify",
+                    "pages": [
+                      "concepts/clarify",
+                      "concepts/readiness"
+                    ]
+                  },
+                  "concepts/certify",
+                  "concepts/pay-fairly",
+                  "concepts/engage",
+                  "concepts/synchronize"
                 ]
               }
             ]
