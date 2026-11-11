@@ -143,14 +143,13 @@
               {
                 "group": "Job families",
                 "pages": [
-                  "organization/job-families",
                   "fair-pay/job-families"
                 ]
               },
               {
                 "group": "Job categories",
                 "pages": [
-                  "organization/job-categories"
+                  "fair-pay/job-categories"
                 ]
               }
             ]
@@ -261,6 +260,16 @@
     {
       "source": "/concepts/on-readiness",
       "destination": "/concepts/method"
+    },
+    {
+      "source": "/organization/job-families",
+      "destination": "/fair-pay/job-families",
+      "permanent": true
+    },
+    {
+      "source": "/organization/job-categories",
+      "destination": "/fair-pay/job-categories",
+      "permanent": true
     }
   ]
 }
