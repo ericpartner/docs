@@ -1,0 +1,184 @@
+---
+title: "Pay plans"
+sidebarTitle: "Pay plans"
+description: "What a pay plan is, how its versions work, and how to add, propose, approve, void and correct pay."
+icon: "file-text"
+keywords:
+  - "pay plan"
+  - "pay plan version"
+  - "proposal"
+  - "approval"
+  - "reconcile"
+  - "void"
+  - "base salary"
+  - "effective from"
+  - "lapsed"
+  - "current"
+  - "future"
+---
+
+A pay plan is the record of what you pay one employee: a base salary, with the country, currency, pay basis and FTE it applies to. It keeps the full history of every change, so you can see the pay that applied on any date.
+
+A pay plan never changes in place. When pay should change, you add a **version** with the new salary and a start date. The earlier versions stay.
+
+<Info>
+  Pay plans are part of [Fair Base Pay](/fair-pay/overview). Owners, co-owners and administrators can see and change pay plans. Employees don't see them. See [permission levels](/account/users-and-permissions).
+</Info>
+
+## Pay plan and version
+
+The pay plan is the stable thing: it has a code such as **PP-104** and belongs to one employee. Each version is a dated copy of the base salary, and it is shown as **PP-104.V3**.
+
+| Part | What it holds |
+| --- | --- |
+| **Pay plan** | The identity of the plan: its code, the employee, and its terms. |
+| **Version** | A base salary, with the dates it applies. |
+
+An employee can have only one pay plan in force at a time. After a plan is terminated or voided, you can add a new plan. The new plan gets its own code and starts again at version 1.
+
+### Terms and base salary
+
+A pay plan has four **terms**: country, currency, pay basis (hourly, monthly or annual) and FTE. The base salary is the amount.
+
+- The terms belong to the plan and stay the same for its life.
+- When you propose a new version of an existing plan, the terms are filled in and read-only. You can change only the base salary and the dates.
+- To change a term, such as the FTE, add a new pay plan instead of a new version.
+
+Because the terms never change inside a plan, you can always compare the amounts of its versions.
+
+## Effective dates
+
+Every version has an **Effective from** date and, once a later version exists, an **Effective to** date. Both dates are inclusive. The next version starts the day after the earlier one ends.
+
+- The latest version has no Effective to. It stays in force until you add a newer one or terminate the plan.
+- A version can start in the past, today or the future. A new plan can start on any date, which lets you record a contract that has been in payroll for years.
+- A plan can have a fixed term. When it ends, the plan stays in force but has a gap until you add a new version.
+- The dates of one employee's versions never overlap. Gaps are allowed.
+
+## Status and state
+
+A version has a status that changes when you act on it, and a state that exIQtive.com works out from today's date.
+
+| Status | What it means |
+| --- | --- |
+| **Proposed** | A pay change that isn't in force yet. It waits for approval. A proposed version has no version number. |
+| **In Force** | Committed and applying on its dates. |
+| **Terminated** | Ended because the pay plan was terminated. |
+| **Voided** | Cancelled. It no longer counts on the timeline and keeps its place in the version list. |
+
+| State | What it means |
+| --- | --- |
+| **Lapsed** | The version's dates are in the past. |
+| **Current** | Today falls within the version's dates. |
+| **Future** | The version starts after today. |
+
+A voided version has no state.
+
+## The Pay Plans list
+
+Open **Fair Base Pay** in the side menu and select **Pay Plans**. The list shows every employee with their current pay plan, any proposed change, and their fair pay status.
+
+- Use the **As of** date to see pay plans on another day. The version arrows move the date to the start of the version you pick.
+- Select an employee to open their pay plans and timeline. **Back** returns you to the list.
+- Where you can't add a pay plan or propose a change, the cell shows **Not allowed**. Hover over it to see why, and select it to open the pay plan or proposal that blocks you.
+
+## Add a pay plan
+
+An employee with no pay plan has two options on the **Pay Plans** list.
+
+- **Add Pay Plan** records pay that is already agreed, such as an existing contract. It needs no approval.
+- **Add Pay Plan Proposal** puts a first pay plan through approval.
+
+For either, enter the terms, the base salary and the **Effective from** date. The country and currency are filled in for you, and you can change them.
+
+## Propose a change
+
+When pay should change for an employee who has a pay plan, propose a new version.
+
+<Steps>
+  <Step title="Start the proposal">
+    On the **Pay Plans** list, select **Propose Changes** for the employee. The proposal opens with the current terms and salary filled in.
+  </Step>
+  <Step title="Set the new salary and dates">
+    Enter the new base salary and the **Effective from** date. The terms are read-only.
+  </Step>
+  <Step title="Choose the approvers">
+    exIQtive.com adds the manager of the employee's department as the approver. If that department has no head with access, it looks up the department tree. You can add or remove approvers before you submit.
+  </Step>
+  <Step title="Submit">
+    Submit the proposal for approval.
+  </Step>
+</Steps>
+
+An employee can have only one future pay plan at a time: either one proposal or one scheduled version, never two. While one exists, you can't propose another change.
+
+## Approve and commit a proposal
+
+A proposal moves through these steps.
+
+| Step | What happens |
+| --- | --- |
+| **Draft** | You prepare the proposal. You can edit it, choose approvers, submit it or delete it. |
+| **Pending approval** | Each approver gets a task. Every approver must approve. One rejection rejects the proposal and cancels the other approval tasks. |
+| **Approved** | All approvers approved. |
+| **Pending execution** | An administrator executes the approved proposal. You can't execute a proposal whose effective date has passed. |
+| **Reconcile** | You check the terms against payroll and commit. The proposal becomes an **In Force** version and gets its version number. |
+
+- **No approvers.** If a proposal has no approvers when you submit it, it approves itself. exIQtive.com records your name and the date when you execute it.
+- **Reconcile.** Reconcile stays disabled until you confirm that you verified the terms against payroll. You can also choose whether to notify the employee. The notification is on by default.
+- **Reset to draft.** While a proposal is pending approval or pending execution, you can reset it to draft. This cancels the approval tasks, keeps the same approvers, and lets you change the proposal and submit it again. Resetting needs no reason, and you can choose to notify the approvers.
+- **Delete.** You can delete a proposal that is still a draft.
+- **Void.** You can void a proposal that was approved or rejected. A rejected proposal stays in place and blocks new proposals until you void it.
+
+Approvers see their tasks on the **Tasks** page.
+
+## Void a version
+
+Use **Void** when a version should never have existed. Only administrators can void, and voiding cannot be undone.
+
+- You can void only the newest version of a plan. To void an older one, void the newer versions first.
+- A version that starts in the future can only be voided. You can't edit or delete it.
+- When you void, you enter a reason. The reason appears in the version's chatter.
+- Voiding a version reopens the version before it. If you void the only version, the pay plan is voided too.
+- A voided version keeps its number. You can still open it from the version list.
+
+You can't void a terminated plan.
+
+## Correct a mistake
+
+A version never changes in place. To fix a version with the wrong salary or dates:
+
+<Steps>
+  <Step title="Void the wrong version">
+    Void it, with a reason. The version before it reopens, or the plan is voided if it was the only version.
+  </Step>
+  <Step title="Add the right version">
+    Add a new version or plan with the correct terms.
+  </Step>
+</Steps>
+
+The wrong version stays in the history as voided, so the record of what was entered is complete. If you void the only version of a plan, the corrected plan gets a new code.
+
+## Terminate a pay plan
+
+Use **Terminate** to end a pay plan, for example when an employee leaves. The plan's status becomes **Terminated**, and its current version ends on the termination date. exIQtive.com keeps the plan and its code, and you can add a new plan later.
+
+When you terminate an employee, exIQtive.com ends their position assignments, voids any version that hasn't started, and then terminates the pay plan.
+
+## Pay plans and the pay range
+
+When a version becomes In Force, it keeps a copy of the pay range version its position subscribed to on the version's start date. If you later correct, void or replace that pay range version, the pay plan version keeps what it had. See [Pay ranges and versions](/fair-pay/pay-ranges) and [Positions and pay ranges](/fair-pay/position-subscriptions).
+
+An employee doesn't need a position or a pay range to have a pay plan. Without a pay range on the start date, the version simply has nothing to compare with.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Pay ranges and versions" icon="chart-line" href="/fair-pay/pay-ranges">
+    The minimum and maximum that pay plans are compared with.
+  </Card>
+
+  <Card title="Fair Base Pay overview" icon="scale" href="/fair-pay/overview">
+    Pay ranges, pay plans and fair pay.
+  </Card>
+</CardGroup>
