@@ -33,6 +33,23 @@ A position can override the Skills and Responsibility scores it gets from its ca
 
 Scores can be changed while the category is Draft or Active. Once it's Retired or Archived, scores are frozen so history stays accurate.
 
+## Job value bands
+
+A category's Total Score runs from 0 to 73. Job value bands split that range into equal-width point ranges, so categories that fall in the same band are treated as work of equal value. A category carries its band as a point range, such as **30–43**.
+
+You choose how many bands there are in **Settings → Configuration → Jobs**, in the **Job Category Scoring** card:
+
+1. Enter a **Number of bands**, a whole number from 2 to 10. New accounts start with 5.
+2. Check **Resulting bands (points)**. It updates as you type and shows the range of each band.
+3. Click **Save**, or **Cancel** to go back to the saved count.
+
+With the default 5 bands, the ranges are 0–14, 15–29, 30–43, 44–58, and 59–73. With 10 bands, they are 0–7, 8–14, 15–21, 22–29, 30–36, 37–43, 44–51, 52–58, 59–65, and 66–73.
+
+- **Bands are calculated, not stored.** A band has no name and no number, only its point range. Both ends of the range are inclusive.
+- **No gaps or overlaps.** The ranges cover 0 to 73 exactly once, and the top band always ends at 73.
+- **Changing the count re-bands every category.** The same score lands in a different range when the number of bands changes.
+- **Unscored categories have no band.** A category without a Total Score shows no range.
+
 ## Create a job category
 
 <Steps>
