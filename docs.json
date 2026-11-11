@@ -40,6 +40,7 @@
                 "pages": [
                   "index",
                   "concepts/modules",
+                  "concepts/module-features",
                   "get-started/administrator-quickstart",
                   "get-started/employee-quickstart",
                   "get-started/keys-for-success"

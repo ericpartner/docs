@@ -1,0 +1,129 @@
+---
+title: "Module features and dependencies"
+description: "What each exIQtive.com module includes, and which features need another module."
+icon: "table-cells"
+keywords:
+  - "modules"
+  - "features"
+  - "dependencies"
+  - "requires"
+  - "needs"
+---
+
+Use this page to see what each [module](/concepts/modules) includes and which features need another module. Features marked <Badge>Coming soon</Badge> are not available yet.
+
+## Modules at a glance
+
+| Module | Status | Needs | Works better with |
+| --- | --- | --- | --- |
+| Organization | Free | Nothing | |
+| Readiness | Available | Organization | Knowledge <Badge>Coming soon</Badge> |
+| Knowledge <Badge>Coming soon</Badge> | Coming soon | Organization | Readiness |
+| Procedures <Badge>Coming soon</Badge> | Coming soon | Organization | Readiness |
+| Fair Base Pay | Available | Organization | Readiness |
+| Fair Bonuses <Badge>Coming soon</Badge> | Coming soon | Fair Base Pay | Readiness |
+| IQ | Works in every module | | |
+
+**Needs** means the module can't work without it. **Works better with** means the module works on its own, and a feature in it gets richer when the other module is on.
+
+## Organization
+
+Free. Every other module builds on Organization, so it is always on.
+
+| Feature | Status | Needs another module? |
+| --- | --- | --- |
+| [Employees](/organization/employees) and [position assignments](/organization/employee-position-assignments) | Available | No |
+| [Departments](/organization/departments) | Available | No |
+| [Positions](/organization/positions) | Available | No |
+| [Roles](/organization/roles) | Available | No |
+| [Responsibilities](/responsibilities/catalog) | Available | No |
+| [Organizational tree](/organization/organizational-tree) | Available | No |
+
+## Readiness
+
+Prove that employees are ready for their responsibilities.
+
+| Feature | Status | Needs another module? |
+| --- | --- | --- |
+| [Checkpoints](/checkpoints/overview) | Available | Organization, for the responsibilities they belong to |
+| [Checkpoint quizzes](/checkpoints/quizzes) and microlearning | Available | No. These move to Knowledge when it ships. |
+| [Badges and the badge ladder](/user-guide/readiness/badge-ladder) | Available | No |
+| [Coach inspections](/coaching/inspecting-a-responsibility) | Available | No |
+| [Readiness for each employee, position and department](/user-guide/readiness/how-readiness-is-calculated) | Available | Organization |
+| [Tasks](/readiness/tasks) | Available | No |
+| [Coaches and Architects](/coaching/what-is-a-coach) | Available | No |
+| IQ suggests checkpoints for an inspection protocol | Available | No |
+
+<Note>
+  When Knowledge ships, videos, articles, quizzes and inspection protocols for checkpoints move to Knowledge. Without Knowledge, a checkpoint then lists criteria only, and a Coach evaluates instead of inspecting.
+</Note>
+
+## Knowledge <Badge>Coming soon</Badge>
+
+Capture the versioned videos, articles and quizzes that checkpoints draw on.
+
+| Feature | Status | Needs another module? |
+| --- | --- | --- |
+| Lessons, as videos or articles, with versions | Coming soon | No |
+| Quizzes on lessons | Coming soon | No |
+| Courses, assigned to employees as tasks | Coming soon | No |
+| Inspection protocols for checkpoints | Coming soon | Readiness |
+| Lessons used by checkpoints | Coming soon | Readiness |
+
+## Procedures <Badge>Coming soon</Badge>
+
+Document your standard operating procedures and find root causes.
+
+| Feature | Status | Needs another module? |
+| --- | --- | --- |
+| Standard operating procedures | Coming soon | No |
+| Frictions and root cause analysis | Coming soon | No |
+| SOP readiness | Coming soon | Readiness |
+
+## Fair Base Pay
+
+Pay each person fairly and explain why.
+
+| Feature | Status | Needs another module? |
+| --- | --- | --- |
+| [Pay ranges](/fair-pay/overview#pay-ranges-and-versions), with IQ suggesting a minimum and a maximum | Available | No |
+| [Pay plans](/fair-pay/overview#pay-plans-and-approvals) with full history, proposals and approvals | Available | No |
+| Market Data | Available | No |
+| [Job families](/fair-pay/job-families) | Available | No |
+| [Job categories](/fair-pay/job-categories) | Available | No |
+| Fair pay for each employee | Available | Readiness |
+
+Every Fair Base Pay feature builds on [positions](/organization/positions) from Organization.
+
+## Fair Bonuses <Badge>Coming soon</Badge>
+
+Calculate a fair bonus for each employee, each period.
+
+| Feature | Status | Needs another module? |
+| --- | --- | --- |
+| Bonus plans for each employee | Coming soon | Fair Base Pay |
+| Bonus formulas | Coming soon | Fair Base Pay |
+| Scorecard scores, or a score you enter yourself | Coming soon | No |
+| Eligibility policies | Coming soon | Fair Base Pay |
+| Readiness in the bonus calculation | Coming soon | Readiness is optional. Without it, the bonus calculation skips readiness. |
+
+## IQ
+
+[IQ](/iq/overview) works in every module. IQ suggests and a person decides.
+
+| Module | What IQ does |
+| --- | --- |
+| Readiness | Suggests checkpoints to help build an Inspection Protocol. |
+| Fair Base Pay | Suggests a minimum and a maximum for a pay range. |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Modules" icon="grid-2" href="/concepts/modules">
+    The six modules and the step each one serves.
+  </Card>
+
+  <Card title="The exIQtive method" icon="diagram-project" href="/concepts/method">
+    Why the modules exist.
+  </Card>
+</CardGroup>
