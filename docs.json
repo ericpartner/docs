@@ -103,18 +103,6 @@
                 "pages": [
                   "organization/departments"
                 ]
-              },
-              {
-                "group": "Job families",
-                "pages": [
-                  "organization/job-families"
-                ]
-              },
-              {
-                "group": "Job categories",
-                "pages": [
-                  "organization/job-categories"
-                ]
               }
             ]
           },
@@ -150,6 +138,18 @@
                 "group": "Fair Base Pay",
                 "pages": [
                   "fair-pay/overview"
+                ]
+              },
+              {
+                "group": "Job families",
+                "pages": [
+                  "organization/job-families"
+                ]
+              },
+              {
+                "group": "Job categories",
+                "pages": [
+                  "organization/job-categories"
                 ]
               }
             ]
