@@ -44,8 +44,12 @@
           {
             "group": "Key concepts",
             "pages": [
+              "concepts/method",
               "concepts/clarify",
               "concepts/certify",
+              "concepts/pay-fairly",
+              "concepts/engage",
+              "concepts/synchronize",
               "concepts/readiness",
               "concepts/organization",
               "concepts/personas",
