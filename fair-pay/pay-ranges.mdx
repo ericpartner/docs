@@ -1,0 +1,130 @@
+---
+title: "Pay ranges and versions"
+sidebarTitle: "Pay ranges and versions"
+description: "What a pay range is, how its versions work, and how to add, correct, void, retire and reactivate them."
+icon: "chart-line"
+keywords:
+  - "pay range"
+  - "version"
+  - "effective from"
+  - "effective to"
+  - "new version"
+  - "correct"
+  - "void"
+  - "retire"
+  - "reactivate"
+---
+
+A pay range is the minimum and the maximum you pay for a kind of work, in one country and one currency. Positions [subscribe to pay ranges](/fair-pay/position-subscriptions), so every employee in a position is compared with the right range.
+
+A pay range never changes in place. When the market moves, you add a **version** with new amounts and a start date. The earlier versions stay, so you can always see the range that applied on any date.
+
+## Pay range and version
+
+The pay range is the stable thing: it has a code such as **P-2**, a country, a currency and a name. Each version is a dated copy of the minimum and maximum, and it has its own code such as **P-2.V1**.
+
+| Part | What it holds |
+| --- | --- |
+| **Pay range** | The identity of the range: its code, country, currency and the positions that subscribe to it. |
+| **Version** | A minimum and a maximum, with the dates they apply. |
+
+A pay range can have many versions over time, but only one version applies on any given day.
+
+## Effective dates
+
+Every version has an **Effective from** date and, once a later version exists, an **Effective to** date. Both dates are inclusive. Effective to is the last day the version applies, and the next version starts the day after.
+
+- The versions of a range follow one another with no gaps and no overlaps.
+- The latest version has no Effective to. It stays in force until you add a newer one or retire the range.
+- When you add a version, you set only its Effective from. exIQtive.com sets the Effective to of the version before it to the day before.
+
+## Status and state
+
+A version has a status that you set, and a state that exIQtive.com works out from today's date.
+
+| Status | What it means |
+| --- | --- |
+| **Draft** | Being prepared. It doesn't apply to anyone yet. |
+| **In Force** | Published and applying on its dates. |
+| **Retired** | Closed because you retired the pay range. |
+| **Voided** | Cancelled. It no longer counts on the timeline. |
+
+| State | What it means |
+| --- | --- |
+| **Lapsed** | The version's dates are in the past. |
+| **Current** | Today falls within the version's dates. |
+| **Future** | The version starts after today. |
+
+A pay range has at most one Future version at a time. An archived range shows an **Archived** tag next to its status.
+
+## Add a new version
+
+Add a new version when the market moves.
+
+<Steps>
+  <Step title="Open the pay range">
+    Open **Fair Base Pay** in the side menu, select **Pay Ranges**, and open the range.
+  </Step>
+  <Step title="Start a new version">
+    Select **New version**. The drawer opens with the minimum and the maximum of the current version filled in.
+  </Step>
+  <Step title="Set the new amounts and the start date">
+    Enter the new minimum and maximum, and choose **Effective from**. The new version must start after the current version starts.
+  </Step>
+  <Step title="Publish">
+    Publish the version. The version before it ends the day before your Effective from date.
+  </Step>
+</Steps>
+
+The new minimum and maximum can't both equal the current version's. If nothing changes, there is nothing to add, and the drawer shows an error on the amounts until you change one.
+
+## Correct a version
+
+Use **Correct** to fix a mistake in a version that is already published, such as a wrong date or amount.
+
+- A correction changes the version in place. It keeps its number and its status, and it shows a **Corrected** badge.
+- The correction appears in the pay range's chatter, with the old and new values.
+- If you move a start or end date, the neighbor version moves with it, so the timeline keeps no gap. The drawer shows the effect on the neighbor before you save, and the neighbor shows **Corrected** too.
+- A neighbor always keeps at least one day. To remove a version altogether, void it.
+- The first version has no earliest limit, so you can move its start date back freely.
+
+A correction never changes the pay plans that already used the range. See [Pay plans and the pay range](#pay-plans-and-the-pay-range).
+
+## Void a version
+
+Use **Void** when a version should never have existed. Void is in the version's menu.
+
+- A voided version disappears from the timeline.
+- The version before it is extended to cover the days the voided version had, so the timeline still has no gap. exIQtive.com shows you the version that absorbs the days before you confirm.
+- If you void the first version, the version after it starts earlier to cover the days.
+- If you void the last version, the version before it becomes open-ended again.
+
+ExIQtive.com never deletes a published version. Void is the only way to take one off the timeline.
+
+## Retire and reactivate a pay range
+
+**Retire** stops a pay range from being used going forward. Its history stays.
+
+- Retiring sets every In Force version to Retired.
+- The last version ends on the retire date.
+- Draft versions are discarded.
+
+**Reactivate** is the exact opposite of retire. Every retired version returns to In Force with the same dates and amounts, and the range has no retire date again. Reactivating adds no new version.
+
+A retired range can still have the retire date corrected on its last version. To publish a new version, reactivate the range first. To use a range again after you archive it, unarchive it first.
+
+## Pay plans and the pay range
+
+A pay plan version keeps a copy of the pay range version that applied on the day the plan version started. Correcting, voiding or replacing a pay range version later never changes the plans that already used it.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Positions and pay ranges" icon="briefcase" href="/fair-pay/position-subscriptions">
+    How positions subscribe to pay ranges.
+  </Card>
+
+  <Card title="Fair Base Pay overview" icon="scale" href="/fair-pay/overview">
+    Pay ranges, pay plans and fair pay.
+  </Card>
+</CardGroup>

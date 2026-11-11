@@ -138,7 +138,8 @@
               {
                 "group": "Fair Base Pay",
                 "pages": [
-                  "fair-pay/overview"
+                  "fair-pay/overview",
+                  "fair-pay/pay-ranges"
                 ]
               },
               {
