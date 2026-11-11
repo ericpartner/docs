@@ -171,9 +171,9 @@
             "tab": "Settings",
             "groups": [
               {
-                "group": "Roles and permissions",
+                "group": "Users and permissions",
                 "pages": [
-                  "account/roles-and-permissions",
+                  "account/users-and-permissions",
                   "account/account-owner",
                   "account/co-owner",
                   "account/administrator",
@@ -272,6 +272,11 @@
     {
       "source": "/organization/job-categories",
       "destination": "/fair-pay/job-categories",
+      "permanent": true
+    },
+    {
+      "source": "/account/roles-and-permissions",
+      "destination": "/account/users-and-permissions",
       "permanent": true
     }
   ]
