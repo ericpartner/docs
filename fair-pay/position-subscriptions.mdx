@@ -1,0 +1,75 @@
+---
+title: "Positions and pay ranges"
+sidebarTitle: "Positions and pay ranges"
+description: "How a position subscribes to a pay range, how subscriptions are dated, and how to see which pay range a position had on any date."
+icon: "briefcase"
+keywords:
+  - "subscribe"
+  - "subscription"
+  - "position"
+  - "pay range"
+  - "unsubscribe"
+  - "as of"
+---
+
+A [position](/organization/positions) subscribes to a [pay range](/fair-pay/pay-ranges). The subscription tells exIQtive.com which range to compare the pay of the employee in that position with.
+
+The subscription belongs to the position, not to the person in it. When the employee changes, the position keeps its pay range.
+
+## How subscriptions work
+
+- **One pay range at a time.** A position subscribes to one pay range on any given day. It can't be subscribed to two ranges on the same day.
+- **Dated.** Every subscription has an **Effective from** date and, once it ends, an **Effective to** date. Both dates are inclusive, so a subscription that ends on May 31 is followed by one that starts on June 1.
+- **Gaps are allowed.** A position can have days with no pay range, for example before its first subscription or after one you end. Overlaps are never allowed.
+- **History stays.** When a position moves to another pay range, the earlier subscription ends and stays on record. You can look at any date and see what applied.
+
+## Subscribe a position to a pay range
+
+<Steps>
+  <Step title="Open the Positions tab">
+    Open **Fair Base Pay** in the side menu and select **Positions**. The list shows each position with the pay range it subscribes to.
+  </Step>
+  <Step title="Subscribe">
+    In the **Pay Range Subscription** column of the position, select **Subscribe to Pay Range**. This button appears when no subscription covers the date you are looking at.
+  </Step>
+  <Step title="Choose the pay range and the start date">
+    Pick the pay range and set **Effective from**. A start date in the future subscribes the position from that day, and the current subscription ends the day before.
+  </Step>
+</Steps>
+
+To end a subscription without a replacement, choose **Unsubscribe** and set **Effective to**. The earliest date you can pick is the day the subscription started.
+
+## Subscriptions and versions
+
+A subscription is to the pay range, not to one version of it. The amounts a position uses on a date come from the version that is in force on that date. When you [add a new version](/fair-pay/pay-ranges#add-a-new-version), positions that subscribe to the range use it from the version's start date. Nothing else changes for the position.
+
+The subscription card shows the pay range, the version in force on the date you are looking at, and its dates.
+
+## See a position's pay range on any date
+
+The **Positions** list resolves every row **as of** a date. Change the date to look at the past or the future.
+
+- The **Occupied by** column shows who held the position on that date. It is empty when nobody did, even if someone holds it today.
+- The **Pay Range Subscription** column shows the subscription that covered that date, or **Subscribe to Pay Range** when none did.
+- Use the arrows beside the subscription card to step to the position's previous or next subscription.
+- Use the arrows beside the version line to step through the versions of the same subscription. These stay within the subscription's own dates.
+- An arrow appears only when there is something to step to in that direction.
+- Select **Reset to today** to return to today's date.
+
+A position that nobody occupies on the date can still have a pay range. Occupancy and subscription are independent.
+
+## Pay plans and the pay range
+
+When a pay plan version starts, it keeps a copy of the pay range its position had on that date. If the position had no pay range that day, the plan version keeps none, and no error appears. Changing the subscription or the pay range later never changes the plans that already started.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Pay ranges and versions" icon="chart-line" href="/fair-pay/pay-ranges">
+    How a pay range changes over time.
+  </Card>
+
+  <Card title="Positions" icon="briefcase" href="/organization/positions">
+    The positions that subscribe to pay ranges.
+  </Card>
+</CardGroup>
