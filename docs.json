@@ -26,191 +26,210 @@
     ]
   },
   "navigation": {
-    "tabs": [
+    "products": [
       {
-        "tab": "Get started",
-        "groups": [
+        "product": "The exIQtive method",
+        "icon": "diagram-project",
+        "description": "The method: Clarify, Certify, Pay fairly, Engage, Synchronize",
+        "tabs": [
           {
-            "group": "Welcome",
-            "pages": [
-              "index",
-              "get-started/administrator-quickstart",
-              "get-started/employee-quickstart",
-              "get-started/keys-for-success"
-            ]
-          },
-          {
-            "group": "Key concepts",
-            "pages": [
-              "concepts/readiness",
-              "concepts/organization",
-              "concepts/personas",
-              "concepts/modules",
-              "concepts/on-readiness"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "The exIQtive method",
-        "groups": [
-          {
-            "group": "Introduction",
-            "pages": [
-              "get-started/what-is-exiqtive",
-              "get-started/who-its-for"
-            ]
-          },
-          {
-            "group": "The five pillars",
-            "pages": [
-              "concepts/method",
-              "concepts/clarify",
-              "concepts/certify",
-              "concepts/pay-fairly",
-              "concepts/engage",
-              "concepts/synchronize"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Organization",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "organization/understanding-your-organization",
-              "organization/organizational-tree"
-            ]
-          },
-          {
-            "group": "Employees",
-            "pages": [
-              "organization/employees",
-              "organization/employee-position-assignments",
-              "user-guide/positions/relieve-an-employee"
-            ]
-          },
-          {
-            "group": "Positions",
-            "pages": [
-              "organization/positions",
-              "user-guide/positions/retire-a-position",
-              "user-guide/positions/assign-a-job-family"
-            ]
-          },
-          {
-            "group": "Roles",
-            "pages": [
-              "organization/roles"
-            ]
-          },
-          {
-            "group": "Responsibilities",
-            "pages": [
-              "responsibilities/managing-responsibilities",
-              "responsibilities/catalog",
+            "tab": "The exIQtive method",
+            "groups": [
               {
-                "group": "Checkpoints",
+                "group": "Introduction",
                 "pages": [
-                  "checkpoints/overview",
-                  "checkpoints/editing-a-checkpoint",
-                  "checkpoints/editing-an-article",
-                  "checkpoints/importing-a-scribe-article",
-                  "checkpoints/importing-a-pdf",
-                  "checkpoints/quizzes"
+                  "get-started/what-is-exiqtive",
+                  "get-started/who-its-for"
+                ]
+              },
+              {
+                "group": "The five pillars",
+                "pages": [
+                  "concepts/method",
+                  "concepts/clarify",
+                  "concepts/certify",
+                  "concepts/pay-fairly",
+                  "concepts/engage",
+                  "concepts/synchronize"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "product": "exIQtive.com",
+        "icon": "desktop",
+        "description": "The software: how to use exIQtive",
+        "tabs": [
+          {
+            "tab": "Get started",
+            "groups": [
+              {
+                "group": "Welcome",
+                "pages": [
+                  "index",
+                  "get-started/administrator-quickstart",
+                  "get-started/employee-quickstart",
+                  "get-started/keys-for-success"
+                ]
+              },
+              {
+                "group": "Key concepts",
+                "pages": [
+                  "concepts/readiness",
+                  "concepts/organization",
+                  "concepts/personas",
+                  "concepts/modules",
+                  "concepts/on-readiness"
                 ]
               }
             ]
           },
           {
-            "group": "Departments",
-            "pages": [
-              "organization/departments"
+            "tab": "Organization",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "organization/understanding-your-organization",
+                  "organization/organizational-tree"
+                ]
+              },
+              {
+                "group": "Employees",
+                "pages": [
+                  "organization/employees",
+                  "organization/employee-position-assignments",
+                  "user-guide/positions/relieve-an-employee"
+                ]
+              },
+              {
+                "group": "Positions",
+                "pages": [
+                  "organization/positions",
+                  "user-guide/positions/retire-a-position",
+                  "user-guide/positions/assign-a-job-family"
+                ]
+              },
+              {
+                "group": "Roles",
+                "pages": [
+                  "organization/roles"
+                ]
+              },
+              {
+                "group": "Responsibilities",
+                "pages": [
+                  "responsibilities/managing-responsibilities",
+                  "responsibilities/catalog",
+                  {
+                    "group": "Checkpoints",
+                    "pages": [
+                      "checkpoints/overview",
+                      "checkpoints/editing-a-checkpoint",
+                      "checkpoints/editing-an-article",
+                      "checkpoints/importing-a-scribe-article",
+                      "checkpoints/importing-a-pdf",
+                      "checkpoints/quizzes"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Departments",
+                "pages": [
+                  "organization/departments"
+                ]
+              },
+              {
+                "group": "Job families",
+                "pages": [
+                  "organization/job-families"
+                ]
+              },
+              {
+                "group": "Job categories",
+                "pages": [
+                  "organization/job-categories"
+                ]
+              }
             ]
           },
           {
-            "group": "Job families",
-            "pages": [
-              "organization/job-families"
+            "tab": "Readiness",
+            "groups": [
+              {
+                "group": "Readiness",
+                "pages": [
+                  "readiness/overview",
+                  "user-guide/readiness/how-readiness-is-calculated",
+                  "user-guide/readiness/badge-ladder",
+                  "readiness/communicating-readiness",
+                  "readiness/tasks"
+                ]
+              },
+              {
+                "group": "Coaches and Architects",
+                "pages": [
+                  "coaching/what-is-a-coach",
+                  "coaching/coach-operations",
+                  "coaching/inspecting-a-responsibility",
+                  "coaching/what-is-an-architect",
+                  "coaching/architect-operations"
+                ]
+              }
             ]
           },
           {
-            "group": "Job categories",
-            "pages": [
-              "organization/job-categories"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Readiness",
-        "groups": [
-          {
-            "group": "Readiness",
-            "pages": [
-              "readiness/overview",
-              "user-guide/readiness/how-readiness-is-calculated",
-              "user-guide/readiness/badge-ladder",
-              "readiness/communicating-readiness",
-              "readiness/tasks"
+            "tab": "Fair Pay",
+            "groups": [
+              {
+                "group": "Fair Pay",
+                "pages": [
+                  "fair-pay/overview"
+                ]
+              }
             ]
           },
           {
-            "group": "Coaches and Architects",
-            "pages": [
-              "coaching/what-is-a-coach",
-              "coaching/coach-operations",
-              "coaching/inspecting-a-responsibility",
-              "coaching/what-is-an-architect",
-              "coaching/architect-operations"
+            "tab": "IQ",
+            "groups": [
+              {
+                "group": "The Organizational Intelligence Agent",
+                "pages": [
+                  "iq/ask-iq",
+                  "iq/eu-ai-act-position"
+                ]
+              }
             ]
           },
           {
-            "group": "IQ",
-            "pages": [
-              "iq/ask-iq",
-              "iq/eu-ai-act-position"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Fair Pay",
-        "groups": [
-          {
-            "group": "Fair Pay",
-            "pages": [
-              "fair-pay/overview"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Account",
-        "groups": [
-          {
-            "group": "Roles and permissions",
-            "pages": [
-              "account/roles-and-permissions",
-              "account/account-owner",
-              "account/co-owner",
-              "account/administrator",
-              "account/account-users",
-              "account/view-as"
-            ]
-          },
-          {
-            "group": "Notifications",
-            "pages": [
-              "account/email-notifications"
-            ]
-          },
-          {
-            "group": "Settings",
-            "pages": [
-              "account/operating-countries-and-currencies"
+            "tab": "Account",
+            "groups": [
+              {
+                "group": "Roles and permissions",
+                "pages": [
+                  "account/roles-and-permissions",
+                  "account/account-owner",
+                  "account/co-owner",
+                  "account/administrator",
+                  "account/account-users",
+                  "account/view-as"
+                ]
+              },
+              {
+                "group": "Notifications",
+                "pages": [
+                  "account/email-notifications"
+                ]
+              },
+              {
+                "group": "Settings",
+                "pages": [
+                  "account/operating-countries-and-currencies"
+                ]
+              }
             ]
           }
         ]
