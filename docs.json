@@ -188,9 +188,12 @@
                 ]
               },
               {
-                "group": "Settings",
+                "group": "Configuration",
                 "pages": [
-                  "account/operating-countries-and-currencies"
+                  "account/operating-countries-and-currencies",
+                  "account/branding",
+                  "account/jobs-settings",
+                  "account/iq-agent-settings"
                 ]
               }
             ]
