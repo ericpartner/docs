@@ -69,6 +69,7 @@
                 "group": "Welcome",
                 "pages": [
                   "index",
+                  "concepts/modules",
                   "get-started/administrator-quickstart",
                   "get-started/employee-quickstart",
                   "get-started/keys-for-success"
@@ -80,7 +81,6 @@
                   "concepts/readiness",
                   "concepts/organization",
                   "concepts/personas",
-                  "concepts/modules",
                   "concepts/on-readiness"
                 ]
               }
@@ -182,10 +182,10 @@
             ]
           },
           {
-            "tab": "Fair Pay",
+            "tab": "Fair Base Pay",
             "groups": [
               {
-                "group": "Fair Pay",
+                "group": "Fair Base Pay",
                 "pages": [
                   "fair-pay/overview"
                 ]
