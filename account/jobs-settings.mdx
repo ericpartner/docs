@@ -1,0 +1,77 @@
+---
+title: "Jobs settings"
+description: "Choose how many value bands your job categories are grouped into."
+icon: "briefcase"
+---
+
+The Jobs settings control how [job categories](/fair-pay/job-categories) are grouped by score. You set one thing here: the number of value bands.
+
+Go to **Settings → Configuration → Jobs**.
+
+<Info>
+  Only Owners and Co-Owners can change this setting. Administrators can see each job category's score and band, but can't change the number of bands.
+</Info>
+
+## What value bands are
+
+Every job category has a Total Score. Value bands split the range of possible scores into groups, so you can compare job categories of similar value.
+
+A band has no name or number. It is identified only by its range of points.
+
+The bands are near-equal in size, not exactly equal. The range of scores rarely divides evenly, so band sizes can differ by one point.
+
+## Change the number of bands
+
+<Steps>
+  <Step title="Open Jobs">
+    Go to **Settings → Configuration** and select the **Jobs** tile.
+  </Step>
+
+  <Step title="Enter the number of bands">
+    Type a whole number from 2 to 10 in **Number of bands**. New accounts start with 5.
+  </Step>
+
+  <Step title="Check the preview">
+    The preview shows the point range of each band as you type.
+  </Step>
+
+  <Step title="Save">
+    Click **Save**. To undo your change, click **Cancel**.
+  </Step>
+</Steps>
+
+**Save** and **Cancel** appear only while your entry differs from the saved number. If the entry isn't a whole number from 2 to 10, **Save** stays disabled until it is valid.
+
+The change applies right away. You don't need to recalculate anything, and every job category moves to its new band automatically.
+
+## How the score is built
+
+The weighting of the four scoring factors is fixed, so you can't change it. It follows the published EIGE scoring scheme, so it isn't tuned to any one result.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Can I name the bands?">
+    No. A band is identified by its point range only.
+  </Accordion>
+
+  <Accordion title="Can I change the weighting of the scoring factors?">
+    No. The weighting is fixed for every account.
+  </Accordion>
+
+  <Accordion title="What happens to existing job categories when I change the number of bands?">
+    Nothing is lost. Each job category keeps its score, and its band updates to match the new setting.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Job categories" icon="layer-group" href="/fair-pay/job-categories">
+    Group positions by the value of the work.
+  </Card>
+
+  <Card title="Job families" icon="sitemap" href="/fair-pay/job-families">
+    Group positions by discipline and seniority.
+  </Card>
+</CardGroup>
