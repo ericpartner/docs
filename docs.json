@@ -80,12 +80,6 @@
                   "get-started/employee-quickstart",
                   "get-started/keys-for-success"
                 ]
-              },
-              {
-                "group": "Key concepts",
-                "pages": [
-                  "concepts/on-readiness"
-                ]
               }
             ]
           },
@@ -262,6 +256,10 @@
     {
       "source": "/concepts/personas",
       "destination": "/account/roles-and-permissions"
+    },
+    {
+      "source": "/concepts/on-readiness",
+      "destination": "/concepts/method"
     }
   ]
 }
