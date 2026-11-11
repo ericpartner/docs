@@ -34,8 +34,6 @@
             "group": "Welcome",
             "pages": [
               "index",
-              "get-started/what-is-exiqtive",
-              "get-started/who-its-for",
               "get-started/administrator-quickstart",
               "get-started/employee-quickstart",
               "get-started/keys-for-success"
@@ -57,7 +55,14 @@
         "tab": "The exIQtive method",
         "groups": [
           {
-            "group": "The exIQtive method",
+            "group": "Introduction",
+            "pages": [
+              "get-started/what-is-exiqtive",
+              "get-started/who-its-for"
+            ]
+          },
+          {
+            "group": "The five pillars",
             "pages": [
               "concepts/method",
               "concepts/clarify",
