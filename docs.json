@@ -46,7 +46,13 @@
                 "group": "The five pillars",
                 "pages": [
                   "concepts/method",
-                  "concepts/clarify",
+                  {
+                    "group": "Clarify",
+                    "pages": [
+                      "concepts/clarify",
+                      "concepts/readiness"
+                    ]
+                  },
                   "concepts/certify",
                   "concepts/pay-fairly",
                   "concepts/engage",
@@ -78,9 +84,6 @@
               {
                 "group": "Key concepts",
                 "pages": [
-                  "concepts/readiness",
-                  "concepts/organization",
-                  "concepts/personas",
                   "concepts/on-readiness"
                 ]
               }
@@ -93,6 +96,7 @@
                 "group": "Overview",
                 "pages": [
                   "organization/understanding-your-organization",
+                  "concepts/organization",
                   "organization/organizational-tree"
                 ]
               },
@@ -198,6 +202,7 @@
               {
                 "group": "The Organizational Intelligence Agent",
                 "pages": [
+                  "iq/overview",
                   "iq/ask-iq",
                   "iq/eu-ai-act-position"
                 ]
@@ -252,5 +257,11 @@
       "label": "Open exIQtive",
       "href": "https://exiqtive.com"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/concepts/personas",
+      "destination": "/account/roles-and-permissions"
+    }
+  ]
 }
