@@ -133,6 +133,17 @@
             ]
           },
           {
+            "tab": "Knowledge",
+            "groups": [
+              {
+                "group": "Knowledge",
+                "pages": [
+                  "knowledge/overview"
+                ]
+              }
+            ]
+          },
+          {
             "tab": "Fair Base Pay",
             "groups": [
               {
