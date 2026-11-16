@@ -209,6 +209,10 @@
                   "account/jobs-settings",
                   "account/iq-agent-settings"
                 ]
+              },
+              {
+                "group": "Security and data",
+                "pages": []
               }
             ]
           }
