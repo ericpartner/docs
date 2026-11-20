@@ -47,7 +47,7 @@ Employee Status controls whether an employee can be assigned to positions and wh
 | **Draft** | Just created. Can't be assigned to a position yet, and can still be deleted. |
 | **Active** | Ready to work. Can be assigned to positions and inherits responsibilities through them. |
 | **Terminated** | No longer active and removed from all position assignments. Can be reactivated or archived. |
-| **Archived** | Long-term storage. All history is preserved, and the employee is no longer assignable. |
+| **Archived** | Long-term storage. All history is preserved, and the employee is no longer assignable. Unarchive returns the employee to Terminated. |
 
 ## Access Status
 
@@ -68,14 +68,14 @@ Access Status tells you whether an employee can log in to the portal and see the
     Go to **Organization → Employees**.
   </Step>
   <Step title="Add the employee">
-    Click **+ Add Employee** and enter the employee's name.
+    Click **+ Add Employee** and enter the employee's first and last name.
 
     <Frame>
       ![The Add employee dialog with First Name and Last Name](/images/organization/employees/add-employee.png)
     </Frame>
   </Step>
   <Step title="Save">
-    Save the new employee.
+    Click **Save as Draft**.
   </Step>
 </Steps>
 
@@ -93,15 +93,20 @@ The menu shows only the actions that apply to the employee's current status and 
 
 | Action | Available when | What it does |
 | --- | --- | --- |
+| **View as** | You're an Owner, Co-Owner or Administrator | Shows exIQtive.com as the employee sees it. For employees you can't view as, **Preview as** appears instead. See [View as](/account/view-as). |
 | **Delete** | Draft only | Permanently removes the employee. Once activated, use Terminate instead. |
 | **Activate** | Draft only | Makes the employee Active so they can be assigned to positions. |
 | **Terminate** | Active only | Marks the employee Terminated, removes them from their position assignments, and automatically suspends their portal access. |
 | **Reactivate** | Terminated only | Returns the employee to Active. Doesn't restore position assignments or portal access; do those separately. |
 | **Archive** | Terminated only | Moves the employee to long-term storage. All history is preserved. |
-| **Edit** | Always | Updates the employee's name. |
+| **Unarchive** | Archived only | Returns the employee to Terminated. |
+| **Rename** | Always | Updates the employee's name. |
 | **Change Picture** | Always | Uploads a profile picture for the employee. |
 | **Give Access** | No access yet | Starts the invitation flow. Enter an email address and the employee receives a signup invitation. |
+| **Resend Invite** | Invitation sent, not yet accepted | Sends the invitation email again. |
+| **Cancel Invite** | Invitation sent, not yet accepted | Withdraws the invitation. |
 | **Suspend Access** | Access is active | Immediately stops the employee from logging in. Their account is preserved and can be restored. |
+| **Restore Access** | Access is suspended | Lets the employee log in again. |
 
 ## Employee availability
 
@@ -137,7 +142,7 @@ To change it, click the availability icon next to the employee's name. You can c
     They lose all their responsibilities immediately, because responsibilities flow through Position → Role → Responsibility and terminating removes them from their positions. Their badge history and Readiness records are fully preserved.
   </Accordion>
   <Accordion title="The blue invitation dot has been showing for a week. What should I do?">
-    Follow up with the employee directly. The invitation may have landed in spam, or the email address may have a typo. Use **Resend Invite** on the [Account Users](/account/account-users) page (**Settings → Users**) to send a fresh one. If the address is wrong, use **Change Email** on the same page to correct it.
+    Follow up with the employee directly. The invitation may have landed in spam, or the email address may have a typo. Use **Resend Invite** in the employee's row menu, or on the [Account Users](/account/account-users) page (**Settings → Users**), to send a fresh one. If the address is wrong, use **Change Email** on the same page to correct it.
   </Accordion>
 </AccordionGroup>
 
