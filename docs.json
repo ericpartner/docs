@@ -49,6 +49,7 @@
               {
                 "group": "For employees",
                 "pages": [
+                  "employees/welcome",
                   "get-started/employee-quickstart",
                   "employees/join-and-sign-in",
                   "employees/your-stuff",
