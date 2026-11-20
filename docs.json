@@ -33,28 +33,33 @@
         "description": "The software: how to use exIQtive.com",
         "tabs": [
           {
-            "tab": "Get started",
+            "tab": "Getting started as an employee",
             "groups": [
               {
-                "group": "Welcome",
-                "pages": [
-                  "index",
-                  "concepts/modules",
-                  "concepts/module-features",
-                  "get-started/administrator-quickstart",
-                  "get-started/keys-for-success",
-                  "get-started/mobile"
-                ]
-              },
-              {
-                "group": "For employees",
+                "group": "Getting started",
                 "pages": [
                   "employees/welcome",
                   "get-started/employee-quickstart",
                   "employees/join-and-sign-in",
                   "employees/your-stuff",
                   "employees/prepare-on-a-responsibility",
-                  "employees/request-an-inspection"
+                  "employees/request-an-inspection",
+                  "get-started/mobile"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Getting started as an administrator",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "index",
+                  "get-started/administrator-quickstart",
+                  "concepts/modules",
+                  "concepts/module-features",
+                  "get-started/keys-for-success"
                 ]
               }
             ]
