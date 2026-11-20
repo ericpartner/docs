@@ -1,0 +1,110 @@
+---
+title: "Giving, awarding and appointing badges"
+sidebarTitle: "Issuing badges"
+description: "How a badge is issued in exIQtive.com, who decides each time, and which button you see."
+keywords: ["badge", "give", "award", "appoint", "inspect", "evaluate", "Coach", "checkpoint"]
+---
+
+{/* DRAFT on branch eric/update-62de62. Do not merge until the badge issuing rules (EC Employee Readiness Badges, Rule 18) are live in production. */}
+
+A badge can be issued in three ways: **awarded**, **given**, or **appointed**. The difference is **who decides**: the evidence, the Coach, or nobody.
+
+Every badge shows how it was issued, in the badge history and on the Timeline, so you can always tell an awarded badge from a given or appointed one.
+
+## The three ways
+
+| Way | Who decides | When it applies |
+| --- | --- | --- |
+| **Award** | The evidence | Every checkpoint up to the level is a quiz or an inspection, and you passed them all. No Coach judgment is involved in the result. |
+| **Give** | The Coach | The responsibility has no checkpoint up to the level, or its checkpoints only list criteria that the Coach judges as met. |
+| **Appoint** | Nobody | The badge is issued without any evaluation or inspection. It is like forcing a badge. |
+
+<Note>
+  A checkpoint that only has criteria is documented, but a person still decides whether the criteria were met. That is why it leads to a given badge, not an awarded one. Only quizzes and inspections remove the Coach's judgment from the result.
+</Note>
+
+## Inspect and evaluate
+
+A Coach checks an employee in one of two ways. Neither one guarantees a badge, because the employee can fail or not meet the criteria.
+
+- **Inspect**: the Coach observes the employee against the inspection protocol and marks each step Pass or Fail. Passing leads to an awarded badge.
+- **Evaluate**: the checkpoint has criteria only. The Coach judges whether the employee met them. Meeting them leads to a given badge.
+
+**Give** and **Appoint** always issue a badge. **Award** is what you get when the evidence says you passed.
+
+## Which button you see
+
+On a responsibility, the primary button depends on the checkpoints up to the level. **Appoint** sits in the dropdown next to the primary button, and always asks you to confirm that the evaluation is bypassed.
+
+| What the level has | Primary button | Dropdown | Result |
+| --- | --- | --- | --- |
+| A checkpoint with an inspection protocol | Inspect | Appoint as {Level} | Awarded when passed |
+| A checkpoint with criteria only | Evaluate | Appoint as {Level} | Given when met |
+| No checkpoint | Give badge | Appoint as {Level} | Given |
+| Quiz-only checkpoints | None | Appoint as {Level} in the 3-dots menu | Awarded automatically |
+
+{/* CONTENT TODO: UI steps and screenshots pending walkthrough once the split button is built. */}
+
+## Quizzes alone can award a badge
+
+When every checkpoint on a responsibility is quiz-only, nobody has to issue the badge. exIQtive.com awards it automatically when you have passed every quiz up to the level you completed. There is no button and nothing for a Coach to do.
+
+If the responsibility mixes quiz-only checkpoints with checkpoints that have an inspection protocol, nothing is automatic. The quizzes count as passed, and the Coach awards the badge with **Inspect** once every checkpoint up to the level is passed.
+
+Automatic awards apply to the Apprentice and Proficient badges. Coach and Architect badges are always issued by a person.
+
+## Who can issue a badge
+
+The same people can give, award, or appoint a badge, and it depends on the level of the badge:
+
+- **Apprentice and Proficient**: a Coach for the responsibility, an Architect on it, or an administrator.
+- **Coach**: an Architect on the responsibility, or an administrator.
+- **Architect**: an administrator only.
+
+Every issuance records who did it and when.
+
+## After a badge is issued
+
+A given or awarded badge stays in good standing only while you keep passing the checkpoints up to its level. If a checkpoint is added later and you have not passed it, the badge becomes **Obsolete** at the next nightly check and a grace period starts. If you pass the checkpoint in time, the badge returns to good standing. If not, it expires. See the grace period on the responsibility for how long you have.
+
+An appointed badge is never made obsolete by this check, because it was issued without evaluation. It can still be revoked, upgraded, or end on an expiry date.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Why is a badge from a criteria-only checkpoint given, not awarded?">
+    Because a person decided that the criteria were met. Awarded badges come only from quizzes and inspections, where the result does not depend on one Coach's judgment.
+  </Accordion>
+
+  <Accordion title="When should I appoint a badge?">
+    Appoint only when you need to issue a badge without evaluation, for example to put the first Architect on a responsibility. Prefer inspecting or evaluating whenever the checkpoints allow it, because that keeps the badge auditable.
+  </Accordion>
+
+  <Accordion title="Can I appoint a badge when the employee already passed everything?">
+    Yes. Appoint is available next to the primary button. If the evidence already supports the badge, though, awarding is the better record.
+  </Accordion>
+
+  <Accordion title="Does Inspect always lead to a badge?">
+    No. Inspect starts the inspection. The badge is awarded only when the employee passes.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Inspecting a responsibility" icon="clipboard-check" href="/coaching/inspecting-a-responsibility">
+    How a Coach runs an inspection.
+  </Card>
+
+  <Card title="The Badge Ladder" icon="stairs" href="/user-guide/readiness/badge-ladder">
+    Novice through Architect.
+  </Card>
+
+  <Card title="Coach operations" icon="graduation-cap" href="/coaching/coach-operations">
+    What a Coach does and does not do.
+  </Card>
+
+  <Card title="Readiness concepts" icon="gauge" href="/concepts/readiness">
+    Readiness, badges, and zones.
+  </Card>
+</CardGroup>
