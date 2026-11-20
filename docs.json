@@ -167,7 +167,8 @@
                   "fair-pay/job-categories"
                 ]
               }
-            ]
+            ],
+            "hidden": true
           },
           {
             "tab": "IQ",
