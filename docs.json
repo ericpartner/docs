@@ -46,6 +46,12 @@
                   "get-started/keys-for-success",
                   "get-started/mobile"
                 ]
+              },
+              {
+                "group": "For employees",
+                "pages": [
+                  "employees/join-and-sign-in"
+                ]
               }
             ]
           },
