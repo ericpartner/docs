@@ -42,7 +42,6 @@
                   "concepts/modules",
                   "concepts/module-features",
                   "get-started/administrator-quickstart",
-                  "get-started/employee-quickstart",
                   "get-started/keys-for-success",
                   "get-started/mobile"
                 ]
@@ -50,6 +49,7 @@
               {
                 "group": "For employees",
                 "pages": [
+                  "get-started/employee-quickstart",
                   "employees/join-and-sign-in",
                   "employees/your-stuff",
                   "employees/prepare-on-a-responsibility",
