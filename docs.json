@@ -72,8 +72,7 @@
                 "group": "Positions",
                 "pages": [
                   "organization/positions",
-                  "user-guide/positions/retire-a-position",
-                  "user-guide/positions/assign-a-job-family"
+                  "user-guide/positions/retire-a-position"
                 ]
               },
               {
@@ -145,31 +144,6 @@
             ]
           },
           {
-            "tab": "Fair Base Pay",
-            "groups": [
-              {
-                "group": "Fair Base Pay",
-                "pages": [
-                  "fair-pay/overview",
-                  "fair-pay/pay-ranges",
-                  "fair-pay/position-subscriptions"
-                ]
-              },
-              {
-                "group": "Job families",
-                "pages": [
-                  "fair-pay/job-families"
-                ]
-              },
-              {
-                "group": "Job categories",
-                "pages": [
-                  "fair-pay/job-categories"
-                ]
-              }
-            ]
-          },
-          {
             "tab": "IQ",
             "groups": [
               {
@@ -205,9 +179,7 @@
               {
                 "group": "Configuration",
                 "pages": [
-                  "account/operating-countries-and-currencies",
                   "account/branding",
-                  "account/jobs-settings",
                   "account/iq-agent-settings"
                 ]
               }
@@ -279,26 +251,40 @@
   "redirects": [
     {
       "source": "/concepts/personas",
-      "destination": "/account/roles-and-permissions"
+      "destination": "/account/users-and-permissions"
     },
     {
       "source": "/concepts/on-readiness",
       "destination": "/concepts/method"
     },
     {
-      "source": "/organization/job-families",
-      "destination": "/fair-pay/job-families",
-      "permanent": true
-    },
-    {
-      "source": "/organization/job-categories",
-      "destination": "/fair-pay/job-categories",
-      "permanent": true
-    },
-    {
       "source": "/account/roles-and-permissions",
       "destination": "/account/users-and-permissions",
       "permanent": true
+    },
+    {
+      "source": "/organization/job-families",
+      "destination": "/concepts/modules"
+    },
+    {
+      "source": "/organization/job-categories",
+      "destination": "/concepts/modules"
+    },
+    {
+      "source": "/fair-pay/:slug*",
+      "destination": "/concepts/modules"
+    },
+    {
+      "source": "/user-guide/positions/assign-a-job-family",
+      "destination": "/concepts/modules"
+    },
+    {
+      "source": "/account/jobs-settings",
+      "destination": "/concepts/modules"
+    },
+    {
+      "source": "/account/operating-countries-and-currencies",
+      "destination": "/concepts/modules"
     }
   ]
 }
