@@ -43,7 +43,6 @@
                   "employees/join-and-sign-in",
                   "employees/your-stuff",
                   "employees/prepare-on-a-responsibility",
-                  "employees/request-an-inspection",
                   "get-started/mobile"
                 ]
               }
@@ -265,6 +264,10 @@
     }
   },
   "redirects": [
+    {
+      "source": "/employees/request-an-inspection",
+      "destination": "/employees/prepare-on-a-responsibility"
+    },
     {
       "source": "/concepts/personas",
       "destination": "/account/users-and-permissions"
