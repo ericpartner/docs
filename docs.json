@@ -109,6 +109,7 @@
                       "checkpoints/editing-an-article",
                       "checkpoints/importing-a-scribe-article",
                       "checkpoints/importing-a-pdf",
+                      "checkpoints/importing-a-word-document",
                       "checkpoints/quizzes"
                     ]
                   }
