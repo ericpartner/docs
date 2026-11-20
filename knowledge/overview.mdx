@@ -1,74 +1,33 @@
 ---
 title: "Knowledge"
 sidebarTitle: "Overview"
-description: "Capture the videos, articles and quizzes your checkpoints draw on, keep them versioned, and group them into courses."
+description: "The videos, articles and quizzes your checkpoints draw on, so employees can prepare before an inspection."
 icon: "book-open"
 ---
 
-<Note>
-  Knowledge is available now. The videos and articles your checkpoints use are part of Readiness.
-</Note>
+Knowledge holds what your organization knows about doing the work: short videos, articles and quizzes. It's part of the [Certify](/concepts/certify) step. In Certify, an Architect first **captures knowledge**, then turns it into [checkpoints](/checkpoints/overview) that Coaches inspect against.
 
-Knowledge holds what your organization knows about doing the work: short videos, articles and quizzes. It's part of the [Certify](/concepts/certify) step. In Certify, an Architect first **captures knowledge**, then turns it into [checkpoints](/checkpoints/overview) that Coaches inspect against. Knowledge is where that captured knowledge lives, so you can keep it current and reuse it.
+## Videos, articles and quizzes on checkpoints
 
-## Lessons
+Each checkpoint can carry the knowledge an employee needs to prepare:
 
-A **lesson** is one video or one article. Each lesson has its own code, such as **L-12**.
+- A short **video** that shows how the work is done.
+- An **article** with the steps written out. You can write it yourself, or import it from [Scribe](/checkpoints/importing-a-scribe-article) or a [PDF](/checkpoints/importing-a-pdf). See [Editing an article](/checkpoints/editing-an-article).
+- A **quiz** that checks the employee understood it. See [Quizzes](/checkpoints/quizzes).
 
-- **Quiz:** a lesson usually comes with a quiz that checks the employee understood it. The **Requires quiz** switch is on by default. Turn it off for a lesson that doesn't need one.
-- **Status:** a lesson is **Draft**, **Active**, **Retired** or **Archived**, like the objects in [Organization](/organization/understanding-your-organization).
+Employees study the video or article and take the quiz before they request an inspection.
 
-## Lesson versions
-
-When the way the work is done changes, you publish a new version of the lesson, such as **L-12 v3**. A new version never changes anything on its own:
-
-- Checkpoints that use the lesson keep the version they were built on and show that an update is available.
-- Accepting the update creates a new version of the checkpoint.
-- Quiz results and badges stay tied to the version the employee actually took.
-
-## Lessons and checkpoints
-
-A checkpoint uses at most one lesson. When you create a checkpoint with a video or an article, exIQtive.com creates its lesson for you. You can also use an existing lesson.
+## What it takes to pass a checkpoint
 
 The checkpoint decides what it takes to pass:
 
 | To pass requires | What happens |
 | --- | --- |
-| **Quiz only** | The employee passes the lesson's quiz. |
+| **Quiz only** | The employee passes the quiz. |
 | **Quiz and Inspection** | The employee passes the quiz, then a Coach inspects them. |
-| **Inspection only** | A Coach inspects the employee. The lesson needs no quiz. |
+| **Inspection only** | A Coach inspects the employee. No quiz is needed. |
 
 The inspection protocol belongs to the checkpoint. See [Inspecting a responsibility](/coaching/inspecting-a-responsibility).
-
-## Courses
-
-A **course** is an ordered set of lessons, with its own code, such as **C-4**.
-
-1. An administrator assigns a course to one or more employees, with an optional deadline.
-2. Each employee gets a **Complete course** task in **Your Stuff → Your Tasks**, with a progress bar.
-3. The task completes on its own when the employee completes every lesson in the course. Nobody can mark it done by hand.
-
-An administrator can cancel the task or change its deadline.
-
-## Lesson progress
-
-Every lesson an employee opens has a progress state:
-
-| State | What it means |
-| --- | --- |
-| **Seen** | The employee watched the video or read the article. |
-| **Quiz seen** | The employee opened the quiz but hasn't finished it. |
-| **Quiz passed** | The employee passed the quiz. |
-| **Quiz failed** | The employee didn't pass and can try again. |
-
-A lesson with no quiz counts as completed once it's seen. The employee's file shows a **Knowledge** tab with every lesson they've started or completed. Administrators can reset a quiz, which keeps the history and asks the employee to take the quiz again.
-
-## Without Knowledge
-
-If your account doesn't have Knowledge:
-
-- Checklists use only checkpoints that don't need a lesson (**Criteria only**).
-- Administrators see the **Knowledge** menu item, which explains the module. Employees don't see it.
 
 ## Related
 
@@ -82,10 +41,10 @@ If your account doesn't have Knowledge:
   </Card>
 
   <Card title="Quizzes" icon="circle-question" href="/checkpoints/quizzes">
-    How quizzes work today.
+    How quizzes work.
   </Card>
 
   <Card title="Modules" icon="grid-2" href="/concepts/modules">
-    Every module and which are available today.
+    Readiness and Knowledge.
   </Card>
 </CardGroup>
