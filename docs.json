@@ -50,7 +50,10 @@
               {
                 "group": "For employees",
                 "pages": [
-                  "employees/join-and-sign-in"
+                  "employees/join-and-sign-in",
+                  "employees/your-stuff",
+                  "employees/prepare-on-a-responsibility",
+                  "employees/request-an-inspection"
                 ]
               }
             ]
