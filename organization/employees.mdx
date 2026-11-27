@@ -81,6 +81,100 @@ Access Status tells you whether an employee can log in to the portal and see the
 
 The employee is created in **Draft** status with no access. From there you can activate them, give them access, and assign them to a position, in whatever order suits your workflow.
 
+To add many employees at once, see [Import employees with IQ](#import-employees-with-iq).
+
+## Import employees with IQ
+
+If you have a list of people in Excel or CSV, you don't need to type them in one by one. Upload the file and IQ reads it, finds the people in it, and shows them in a table for you to review. IQ only suggests. Nothing is saved until you select **Import**.
+
+The file doesn't need a template. IQ works out which sheet and which columns hold the names, even when the columns are in any order, the header isn't on the first row, or a single column holds the full name.
+
+If you can add employees, you can import them. **Import Employees with IQ** appears in the dropdown next to **\+ Add Employee**.
+
+<Steps>
+  <Step title="Open the import">
+    Go to **Organization → Employees**. Open the dropdown next to **\+ Add Employee** and select **Import Employees with IQ**.
+
+    <Frame>
+      ![The Add Employee dropdown open, listing Import Employees with IQ](/images/organization/employees/import-employees-entry-point.png)
+    </Frame>
+  </Step>
+  <Step title="Upload your file">
+    Click to upload, or drag and drop. The file must be Excel (`.xlsx`) or CSV (`.csv`) and can have up to 3,000 rows. IQ rejects any other file type immediately.
+
+    <Frame>
+      ![The Import Employees with IQ window with the file upload area](/images/organization/employees/import-employees-upload.png)
+    </Frame>
+  </Step>
+  <Step title="Wait while IQ reads the file">
+    The window shows the file name and the number of rows while IQ reads it. When IQ finishes, the people it found appear in a table.
+  </Step>
+  <Step title="Review and fix the table">
+    The table has **First Name**, **Last Name** and **Title** columns, and an **Email** column when the file has email addresses. A missing value shows as **—**. Check each row's **On import** status, then edit or remove rows until you're happy. See [Review the table](#review-the-table).
+  </Step>
+  <Step title="Import">
+    Select **Import N employees**. There's no confirmation step. The result shows what was imported and what was skipped.
+  </Step>
+</Steps>
+
+### Review the table
+
+Above the table you see how many rows are ready and how many can't be imported. If some rows can't be imported, a notice tells you how many. Those rows are left out and nothing is saved for them.
+
+- **Edit a cell.** Click any cell and type. Press **Enter** or click away to save, or press **Esc** to cancel. Press **Tab** to move to the next cell.
+- **Remove a row.** Select **Remove** on the row. The row disappears at once, with no confirmation.
+
+The **On import** column updates as you edit, so you always see what will happen to each row.
+
+<Frame>
+  ![The review table with IQ's results and the On import column](/images/organization/employees/import-employees-review-table.png)
+</Frame>
+
+| On import | What it means |
+| --- | --- |
+| **Ready to import** | The row will be imported. |
+| **Skipped · missing first name** | The row has no first name. Add one to import it. |
+| **Skipped · missing last name** | The row has no last name. Add one to import it. |
+| **Skipped · already an employee** | This person is already an employee in your account. Existing employees are never updated. |
+| **Skipped · duplicate in file** | The same person appears earlier in the file. Only the first row is imported. |
+| **Checking…** | exIQtive.com is checking the row against your existing employees. |
+| **Unverified** | The check didn't finish. Select **Retry**. If you import anyway, exIQtive.com checks the row again during the import. |
+
+### What an import creates
+
+- Employees are created in **Draft** status. They have no portal access, and exIQtive.com doesn't send any invitation or email.
+- The title is saved as the employee's job title only. It doesn't create a position or assign the employee to one. To assign an employee, see [Employee/position assignments](/organization/employee-position-assignments).
+- Email is saved when the file has one.
+- The import is all or nothing. If it fails, no employees are created. You see an error, your edits are kept, and you can select **Retry import**.
+
+When the import finishes, the result shows **N imported, N skipped**, with a tile for each reason rows were skipped and a **Skipped rows** table listing the first name, last name and reason. Select **Close** to return to the Employees list, which refreshes to show the new employees.
+
+If you close the window before you import, exIQtive.com discards the run. Open the import again and upload the file again to start over.
+
+### If IQ can't read the file
+
+| Message | What to do |
+| --- | --- |
+| **This file type isn't supported** | Upload an `.xlsx` or `.csv` file. |
+| **This file has too many rows** | Split the file so each part has 3,000 rows or fewer. |
+| **IQ couldn't find any people** | Check that the file lists names, then upload a different file. |
+| **IQ took too long to read this file** | Select **Retry**, or import a smaller file. Nothing was saved. |
+| **IQ couldn't read this file** | Select **Retry**. Nothing was saved. |
+
+### Find the people you just imported
+
+For 3 days after an import, an **Imported** tag appears next to each new employee's name in the Employees list. Hover over the tag to see who imported the employee and when, for example "Imported by Eric Kish on Nov 6, 2026, 4:27 PM". The time is shown in your time zone. After 3 days the tag goes away. The tag doesn't change the employee's status.
+
+<Frame>
+  ![The Employees list with Imported tags next to new employees](/images/organization/employees/import-employees-imported-tag.png)
+</Frame>
+
+To list only these employees, open the filter and choose **Imported (last 3 days)** under **Source**. Combine it with the **Draft** status filter to find a fresh import to review.
+
+<Frame>
+  ![The filter with the Imported (last 3 days) source option](/images/organization/employees/import-employees-source-filter.png)
+</Frame>
+
 ## Employee actions
 
 All actions are in the three-dot menu (⋯) on the right of the employee's row.
@@ -131,6 +225,12 @@ To change it, click the availability icon next to the employee's name. You can c
 <AccordionGroup>
   <Accordion title="What's the difference between Employee Status and Access Status?">
     Employee Status is about the employee's place in the organization: whether they can hold a position and receive responsibilities. Access Status is about their login: whether they can use the portal. You can have an Active employee with no portal access, or a Draft employee with an invitation already sent. Each is managed independently so you can set things up at your own pace.
+  </Accordion>
+  <Accordion title="Does importing employees with IQ update people who already exist?">
+    No. If a row matches an employee who's already in your account, exIQtive.com skips it and doesn't change that employee. The skipped row appears in the result so you can see what was left out.
+  </Accordion>
+  <Accordion title="Does importing employees send invitations?">
+    No. Imported employees are created as Draft with no portal access, and exIQtive.com sends no email. Give access later, one employee at a time, when you're ready.
   </Accordion>
   <Accordion title="Can I delete an employee I've already activated?">
     No. Once an employee is activated, deletion isn't available. Use Terminate instead, which preserves all their history. If you made a mistake and genuinely need to remove them, contact your Account Owner.
